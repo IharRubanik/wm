@@ -1,0 +1,27 @@
+<svg width="744" height="750" viewBox="0 0 744 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_323_1354)">
+<ellipse cx="384.22" cy="375" rx="334.22" ry="325" fill="#F80068"/>
+<path d="M717.94 375C717.94 554.203 568.542 699.5 384.22 699.5C199.898 699.5 50.5 554.203 50.5 375C50.5 195.797 199.898 50.5 384.22 50.5C568.542 50.5 717.94 195.797 717.94 375Z" stroke="#9E2900"/>
+</g>
+<ellipse cx="384.22" cy="375" rx="334.22" ry="325" fill="#F80068"/>
+<g filter="url(#filter1_i_323_1354)">
+<ellipse cx="384.408" cy="375" rx="307.039" ry="299.342" fill="#131313"/>
+</g>
+<defs>
+<filter id="filter0_f_323_1354" x="0" y="0" width="768.439" height="750" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur_323_1354"/>
+</filter>
+<filter id="filter1_i_323_1354" x="77.3682" y="75.6577" width="614.079" height="602.684" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="40"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.658333 0 0 0 0 0.00548613 0 0 0 0 0.279261 0 0 0 1 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_323_1354"/>
+</filter>
+</defs>
+</svg>

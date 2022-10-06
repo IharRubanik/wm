@@ -1,0 +1,16 @@
+<svg width="120" height="117" viewBox="0 0 120 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="59.857" cy="58.137" rx="59.857" ry="58.137" fill="white" fill-opacity="0.01"/>
+<ellipse cx="59.857" cy="58.137" rx="59.857" ry="58.137" fill="url(#paint0_radial_1145_357)" fill-opacity="0.02"/>
+<path d="M118.891 58.137C118.891 89.7684 92.4836 115.451 59.857 115.451C27.2305 115.451 0.82266 89.7684 0.82266 58.137C0.82266 26.5056 27.2305 0.82266 59.857 0.82266C92.4836 0.82266 118.891 26.5056 118.891 58.137Z" stroke="url(#paint1_radial_1145_357)" stroke-opacity="0.57" stroke-width="1.64532"/>
+<defs>
+<radialGradient id="paint0_radial_1145_357" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(64 -19) rotate(96.3694) scale(108.168 111.368)">
+<stop/>
+<stop offset="1" stop-color="#FFA800"/>
+</radialGradient>
+<radialGradient id="paint1_radial_1145_357" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(41 78.5) rotate(-65.6661) scale(86.1539 88.7029)">
+<stop offset="0.361968" stop-color="white" stop-opacity="0.18"/>
+<stop offset="0.697093" stop-opacity="0.03"/>
+<stop offset="1" stop-color="#FF8A00" stop-opacity="0.45"/>
+</radialGradient>
+</defs>
+</svg>
