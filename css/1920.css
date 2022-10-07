@@ -990,7 +990,7 @@ body .wrapper .portfolio::before {
   width: 348.31px;
   height: 348.31px;
   border-radius: 50%;
-  background: #DD351B;
+  background: #dd351b;
   box-shadow: 0px 0px 20px 20px rgba(221, 53, 27, 0.45);
 }
 body .wrapper .portfolio .potfolio-container {
@@ -2065,12 +2065,12 @@ body .wrapper .instruments .instruments-container .instruments__circl-js h3 {
   color: #ffffff;
   text-shadow: 0px 0px 2.5px #ffffff;
 }
-body .wrapper .footer {
+body .wrapper .form {
   position: relative;
   padding: 100px 0 0 0;
   position: relative;
 }
-body .wrapper .footer .footer__purple-circle {
+body .wrapper .form .form__purple-circle {
   position: absolute;
   right: 0;
   top: -250px;
@@ -2078,73 +2078,68 @@ body .wrapper .footer .footer__purple-circle {
   height: auto;
   border-radius: 50%;
 }
-body .wrapper .footer .footer-container {
+body .wrapper .form .form-container {
   position: relative;
-}
-body .wrapper .footer .footer-container .footer__title {
-  width: 1384px;
-  height: 232px;
-  background: linear-gradient(89.95deg, rgba(0, 0, 0, 0.38) -5.08%, rgba(0, 0, 0, 0) 115.47%);
-  -webkit-backdrop-filter: blur(69.2172px);
-          backdrop-filter: blur(69.2172px);
+  height: 479px;
+  width: 100%;
   border-radius: 36.2903px;
+  display: flex;
+}
+body .wrapper .form .form-container .form__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 481px;
+  height: 481px;
+  border-radius: 50%;
   background-image: url(../images/footer/title-bg.svg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  -webkit-backdrop-filter: blur(95.6788px);
+          backdrop-filter: blur(95.6788px);
+  z-index: 2;
 }
-body .wrapper .footer .footer-container .footer__title h2 {
-  padding: 20px 0 0 65px;
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 74px;
-  text-shadow: 0px 1px 20px rgba(248, 136, 6, 0.25);
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-image: linear-gradient(268.31deg, #c5fb1b 55.9%, #fe8900 110.78%);
-}
-body .wrapper .footer .footer-container .footer__title ul {
-  margin: 30px 0 0 0;
-  padding: 0 0 0 65px;
-}
-body .wrapper .footer .footer-container .footer__title ul li {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
-  color: #ffffff;
-}
-body .wrapper .footer .footer-container .footer__title ul li span {
-  font-size: 24px;
-}
-body .wrapper .footer .footer-container .footer__title ul li:last-child {
-  background: linear-gradient(276.24deg, #c5fb1b 0.64%, #fe8900 111.59%);
+body .wrapper .form .form-container .form__title h2 {
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 67px;
+  text-align: center;
+  background: linear-gradient(268.31deg, #f80068 55.9%, #fe8900 110.78%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  filter: blur(1px);
 }
-body .wrapper .footer .footer__application-form {
-  margin: 25px 0 0 0;
-  width: 1384px;
-  height: auto;
+body .wrapper .form .form-container .form__title span {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0px 0px 3.13218px #ffffff;
+  width: 355px;
+}
+body .wrapper .form .form__application-form {
+  width: 889px;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
   gap: 24px;
   z-index: 1;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(69.2172px);
+          backdrop-filter: blur(69.2172px);
+  border-radius: 36.2903px;
+  background-image: url(../images/footer/form-bg.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transform: translateX(-240px);
 }
-body .wrapper .footer .footer__application-form .input-container {
-  box-sizing: border-box;
-  width: 680px;
-  border-radius: 25px;
-  height: 91px;
+body .wrapper .form .form__application-form .input-container {
+  width: 384px;
   font-weight: 600;
   font-size: 36px;
   line-height: 42px;
@@ -2154,47 +2149,21 @@ body .wrapper .footer .footer__application-form .input-container {
   align-items: center;
   padding: 0 65px 0 87px;
 }
-body .wrapper .footer .footer__application-form .input-container:nth-child(1) {
-  background-image: url(../images/footer/name-bg.svg);
-  background-image: 100% 100%;
-  background-repeat: no-repeat;
-  -webkit-backdrop-filter: blur(69.2172px);
-          backdrop-filter: blur(69.2172px);
-}
-body .wrapper .footer .footer__application-form .input-container:nth-child(2) {
-  padding: 0 65px 0 65px;
-  background-image: url(../images/footer/tel-bg.svg);
-  background-image: 100% 100%;
-  background-repeat: no-repeat;
-  -webkit-backdrop-filter: blur(69.2172px);
-          backdrop-filter: blur(69.2172px);
-}
-body .wrapper .footer .footer__application-form .input-container:nth-child(3) {
-  align-items: flex-start;
-  padding: 25px 65px 0 87px;
-  background-image: url(../images/footer/coment-bg.svg);
-  background-image: 100% 100%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 161px;
-}
-body .wrapper .footer .footer__application-form .input-container input {
+body .wrapper .form .form__application-form .input-container input {
   border: none;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 35.8849px;
   line-height: 42px;
-  height: 50px;
-  width: 100%;
   background: none;
-  color: rgb(248, 0, 104);
-  text-shadow: 0px 0px 3.5px #c56e3e;
-  font-size: 46px;
+  border-bottom: 2px solid rgba(255, 185, 163, 0.51);
+  color: rgba(255, 255, 255, 0.07);
+  text-shadow: 0px 0px 3.48881px #FF8845;
   transition: 0.3s border-bottom;
 }
-body .wrapper .footer .footer__application-form .input-container input:focus {
+body .wrapper .form .form__application-form .input-container input:focus {
   border-bottom: #cbfb1f solid 4px;
 }
-body .wrapper .footer .footer__application-form .footer__button-orange {
+body .wrapper .form .form__application-form .form__button-orange {
   position: relative;
   position: absolute;
   width: 279.3px;
@@ -2209,7 +2178,7 @@ body .wrapper .footer .footer__application-form .footer__button-orange {
   -webkit-animation: border-pulse 2.5s infinite;
           animation: border-pulse 2.5s infinite;
 }
-body .wrapper .footer .footer__application-form .footer__button-orange .footer__button-green {
+body .wrapper .form .form__application-form .form__button-orange .form__button-green {
   position: absolute;
   width: 256.59px;
   height: 250.16px;
@@ -2221,7 +2190,7 @@ body .wrapper .footer .footer__application-form .footer__button-orange .footer__
   box-shadow: inset 0px 1.66116px 33.2232px #cbfb1f;
   border-radius: 50%;
 }
-body .wrapper .footer .footer__application-form .footer__button-orange .footer__button-green .footer__button-blur {
+body .wrapper .form .form__application-form .form__button-orange .form__button-green .form__button-blur {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2236,11 +2205,11 @@ body .wrapper .footer .footer__application-form .footer__button-orange .footer__
   height: 219.2564849854px;
   width: 219.2564849854px;
 }
-body .wrapper .footer .footer__application-form .footer__button-orange .footer__button-green .footer__button-blur:hover {
+body .wrapper .form .form__application-form .form__button-orange .form__button-green .form__button-blur:hover {
   cursor: pointer;
   background: linear-gradient(268.31deg, #f300f8 55.9%, #fe8900 110.78%);
 }
-body .wrapper .footer .footer__application-form .footer__button-orange .footer__button-green .footer__button-blur .form__input {
+body .wrapper .form .form__application-form .form__button-orange .form__button-green .form__button-blur .form__input {
   border-radius: 50%;
   width: 100%;
   height: 100%;
@@ -2256,9 +2225,6 @@ body .wrapper .footer .footer__application-form .footer__button-orange .footer__
 body .wrapper .footer .footer__info {
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  bottom: 100px;
-  width: 1620px;
   height: 83px;
   background: rgba(255, 255, 255, 0.01);
   -webkit-backdrop-filter: blur(10px);
