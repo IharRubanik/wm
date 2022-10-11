@@ -8,7 +8,8 @@ window.onload = () => {
     ),
     header = document.querySelector(".header"),
     lang = document.querySelector(".lang"),
-    langText = document.querySelector(".lang-text");
+    langText = document.querySelector(".lang-text"),
+    cursor = document.querySelector('.cursor');
 
   // scroll
   const smoothLinks = document.querySelectorAll('a[href^="#"]');
@@ -51,6 +52,9 @@ window.onload = () => {
   body.onmousemove = function (event) {
     event = event || window.event;
     hoverLigting.style.left = event.clientX + "px";
+    cursor.style.left = event.clientX + "px";
+    cursor.style.top = event.clientY + "px";
+
     headerNav.onmouseout = function () {
       hoverLigting.style.opacity = "0";
     };
@@ -58,6 +62,8 @@ window.onload = () => {
       hoverLigting.style.opacity = "1";
     };
   };
+
+
 // lang
   lang.onclick = function () {
     lang.classList.toggle("active");
