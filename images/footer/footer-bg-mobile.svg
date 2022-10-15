@@ -1,0 +1,28 @@
+<svg width="980" height="93" viewBox="0 0 980 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b_2126_524)">
+<rect width="980" height="93" rx="14.8628" fill="white" fill-opacity="0.01"/>
+<rect x="0.594513" y="0.594513" width="978.811" height="91.811" rx="14.2683" stroke="url(#paint0_linear_2126_524)" stroke-width="1.18903"/>
+<rect x="0.594513" y="0.594513" width="978.811" height="91.811" rx="14.2683" stroke="url(#paint1_linear_2126_524)" stroke-opacity="0.5" stroke-width="1.18903"/>
+<rect x="0.594513" y="0.594513" width="978.811" height="91.811" rx="14.2683" stroke="url(#paint2_linear_2126_524)" stroke-opacity="0.3" stroke-width="1.18903"/>
+</g>
+<defs>
+<filter id="filter0_b_2126_524" x="-59.4513" y="-59.4513" width="1098.9" height="211.903" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="29.7257"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2126_524"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2126_524" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_2126_524" x1="1002.66" y1="97.6579" x2="970.314" y2="-120.635" gradientUnits="userSpaceOnUse">
+<stop offset="0.0574394" stop-opacity="0.3"/>
+<stop offset="0.933023" stop-color="white" stop-opacity="0.32"/>
+</linearGradient>
+<linearGradient id="paint1_linear_2126_524" x1="498.152" y1="-49.3012" x2="471.611" y2="114.624" gradientUnits="userSpaceOnUse">
+<stop stop-color="#DD351B"/>
+<stop offset="1" stop-opacity="0.22"/>
+</linearGradient>
+<linearGradient id="paint2_linear_2126_524" x1="292.551" y1="-12.3253" x2="298.676" y2="25.6352" gradientUnits="userSpaceOnUse">
+<stop stop-color="#58CC10"/>
+<stop offset="1" stop-color="#58CC10" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
