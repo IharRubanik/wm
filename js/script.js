@@ -163,21 +163,13 @@ window.onload = () => {
 
 for (let i = 0; i < sentenceElem.length; i++) {
   sentenceElem[i].onclick = function() {
-    sentenceElem[i].classList.toggle('active')
-    
-   
-    let heightElem = sentenceElem[i].clientHeight + "px !important"
-    // sentenceElem[i].style.height = heightElem
-    console.log (heightElem)
-    
-
-
-     
-    
-   
-
+    if (sentenceElem[i].classList.contains('active')){
+      sentenceElem[i].classList.remove('active')
+    }
+    else{
+      sentenceElem[i].classList.add('active')
+    }   
   }
-
 }
   }
 };
