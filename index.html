@@ -15,7 +15,7 @@
   <link rel="stylesheet" id="main-style-css" href="css/1024.css" type="text/css" media="all" />
   <link rel="stylesheet" id="main-style-css" href="css/375.css" type="text/css" media="all" />
   <link rel="stylesheet" id="reset-style-css" href="css/reset.css" type="text/css" media="all" />
-  <link rel="stylesheet" id="formalert-style-css" href="css/sweetalert.min.css" type="text/css" media="all" />
+  <!-- <link rel="stylesheet" id="formalert-style-css" href="css/sweetalert.min.css" type="text/css" media="all" /> -->
 </head>
 
 <body>
@@ -52,7 +52,7 @@
       <div class="header-container">
        
         <div class="header__left-block">
-          <a href="#wrapper">
+          <a id="logo" href="#wrapper">
             <img class="header__logo" src="./images/header/header-logo.svg" alt="webmedia диджитал агентство" /></a>
           <div class="header__nav">
             <a class="header__nav-item" href="#portfolio">Портфолио</a>
@@ -180,7 +180,7 @@
           <h2 id="portfoli__title-h2"><span>Портфолио</span> — наши последние работы</h2>
         </div>
         <div class="portfolio__grid">
-          <a class="portfolio__grid-elem active" href="https://metaunivercity.ga/" target="_blank">
+          <a class="portfolio__grid-elem" href="https://metaunivercity.ga/" target="_blank">
             <img class="preview" src="images/portfolio/portfolio-elem1.webp" />
             <object data="" type="">
               <a class="portfolio-button" href="">Подробнее</a>
@@ -267,7 +267,7 @@
           <h2 id="sentence__title-h2" ><span>Мы предлагаем</span> — широкий спектр web услуг</h2>
         </div>
         <div class="container-flex-elem">
-          <div class="sentence__flex-el sentence__flex-el-1 active">
+          <div class="sentence__flex-el sentence__flex-el-1">
             <h3>
               Сайты <br />
               под ключ
@@ -401,64 +401,64 @@
             инструменты
           </h2>
         </div>
-        <div class="instruments__circl-html">
+        <div class="instruments__circl instruments__circl-html">
           <h3>HTML</h3>
         </div>
-        <div class="instruments__circl-sql">
+        <div class="instruments__circl instruments__circl-sql">
           <h3>SQL</h3>
         </div>
-        <div class="instruments__circl-css">
+        <div class="instruments__circl instruments__circl-css">
           <h3>CSS</h3>
         </div>
-        <div class="instruments__circl-adobe">
+        <div class="instruments__circl instruments__circl-adobe">
           <h3>Adobe</h3>
         </div>
-        <div class="instruments__circl-github">
+        <div class="instruments__circl instruments__circl-github">
           <h3>GitHub</h3>
         </div>
-        <div class="instruments__circl-ux">
+        <div class="instruments__circl instruments__circl-ux">
           <h3>UI/UX</h3>
         </div>
-        <div class="instruments__circl-react">
+        <div class="instruments__circl instruments__circl-react">
           <h3>React</h3>
         </div>
-        <div class="instruments__circl-yandex">
+        <div class="instruments__circl instruments__circl-yandex">
           <h3>Yandex</h3>
         </div>
-        <div class="instruments__circl-bem">
+        <div class="instruments__circl instruments__circl-bem">
           <h3>BEM</h3>
         </div>
-        <div class="instruments__circl-google">
+        <div class="instruments__circl instruments__circl-google">
           <h3>Google</h3>
         </div>
-        <div class="instruments__circl-ads">
+        <div class="instruments__circl instruments__circl-ads">
           <h3>ADS</h3>
         </div>
-        <div class="instruments__circl-node">
+        <div class="instruments__circl instruments__circl-node">
           <h3>Node JS</h3>
         </div>
-        <div class="instruments__circl-wp">
+        <div class="instruments__circl instruments__circl-wp">
           <h3>Wordpress</h3>
         </div>
-        <div class="instruments__circl-tilda">
+        <div class="instruments__circl instruments__circl-tilda">
           <h3>Tilda</h3>
         </div>
-        <div class="instruments__circl-bitrix">
+        <div class="instruments__circl instruments__circl-bitrix">
           <h3>Bitrix</h3>
         </div>
-        <div class="instruments__circl-cms">
+        <div class="instruments__circl instruments__circl-cms">
           <h3>CMS</h3>
         </div>
-        <div class="instruments__circl-api">
+        <div class="instruments__circl instruments__circl-api">
           <h3>API</h3>
         </div>
-        <div class="instruments__circl-crm">
+        <div class="instruments__circl instruments__circl-crm">
           <h3>CRM</h3>
         </div>
-        <div class="instruments__circl-php">
+        <div class="instruments__circl instruments__circl-php">
           <h3>PHP</h3>
         </div>
-        <div class="instruments__circl-js">
+        <div class="instruments__circl instruments__circl-js">
           <h3>JS</h3>
         </div>
       </div>
@@ -476,7 +476,7 @@
           <input class="entry" placeholder="Телефон" type="tel" autocomplete="new-text" maxlength="15" name="phone"
             required />
           <div class="textarea-wrapper">
-            <textarea autofocus class="entry" placeholder="Комментарий" name="coment" maxlength="100" id="" cols="30"
+            <textarea class="entry" placeholder="Комментарий" name="coment" maxlength="100" id="" cols="30"
               rows="3"></textarea>
           </div>
         </form>

@@ -841,7 +841,7 @@ body .wrapper .services .services-bg {
 body .wrapper .services .services-container {
   position: relative;
 }
-body .wrapper .services .services-container .services__ads-circl.anime-active {
+body .wrapper .services .services-container .services__ads-circl.active {
   -webkit-animation: circle-services-ads 2.5s forwards;
           animation: circle-services-ads 2.5s forwards;
 }
@@ -872,7 +872,7 @@ body .wrapper .services .services-container .services__ads-circl h2 {
   color: #ffffff;
   text-shadow: 0px 0px 2.5px #ffffff;
 }
-body .wrapper .services .services-container .services__sites-circl.anime-active {
+body .wrapper .services .services-container .services__sites-circl.active {
   -webkit-animation: circle-services-sites 2s forwards;
           animation: circle-services-sites 2s forwards;
 }
@@ -903,7 +903,7 @@ body .wrapper .services .services-container .services__sites-circl h2 {
   color: #ffffff;
   text-shadow: 0px 0px 2.5px #ffffff;
 }
-body .wrapper .services .services-container .services__audit-circl.anime-active {
+body .wrapper .services .services-container .services__audit-circl.active {
   -webkit-animation: circle-services-audit 2s forwards;
           animation: circle-services-audit 2s forwards;
 }
@@ -934,7 +934,7 @@ body .wrapper .services .services-container .services__audit-circl h2 {
   color: #ffffff;
   text-shadow: 0px 0px 2.5px #ffffff;
 }
-body .wrapper .services .services-container .services__seo-circl.anime-active {
+body .wrapper .services .services-container .services__seo-circl.active {
   -webkit-animation: circle-services-seo 1.7s forwards;
           animation: circle-services-seo 1.7s forwards;
 }
@@ -965,7 +965,7 @@ body .wrapper .services .services-container .services__seo-circl h2 {
   color: #ffffff;
   text-shadow: 0px 0px 2.5px #ffffff;
 }
-body .wrapper .services .services-container .services__smm-circl.anime-active {
+body .wrapper .services .services-container .services__smm-circl.active {
   -webkit-animation: circle-services-smm 1s forwards;
           animation: circle-services-smm 1s forwards;
 }

@@ -702,7 +702,7 @@ body {
       }
       .services-container {
         position: relative;
-        .services__ads-circl.anime-active {
+        .services__ads-circl.active {
           animation: circle-services-ads 2.5s forwards;
         }
         .services__ads-circl {
@@ -731,7 +731,7 @@ body {
             text-shadow: 0px 0px 2.5px #ffffff;
           }
         }
-        .services__sites-circl.anime-active {
+        .services__sites-circl.active {
           animation: circle-services-sites 2s forwards;
         }
         .services__sites-circl {
@@ -761,7 +761,7 @@ body {
             text-shadow: 0px 0px 2.5px #ffffff;
           }
         }
-        .services__audit-circl.anime-active {
+        .services__audit-circl.active {
           animation: circle-services-audit 2s forwards;
         }
         .services__audit-circl {
@@ -790,7 +790,7 @@ body {
             text-shadow: 0px 0px 2.5px #ffffff;
           }
         }
-        .services__seo-circl.anime-active {
+        .services__seo-circl.active {
           animation: circle-services-seo 1.7s forwards;
         }
         .services__seo-circl {
@@ -819,7 +819,7 @@ body {
             text-shadow: 0px 0px 2.5px #ffffff;
           }
         }
-        .services__smm-circl.anime-active {
+        .services__smm-circl.active {
           animation: circle-services-smm 1s forwards;
         }
         .services__smm-circl {

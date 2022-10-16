@@ -152,10 +152,11 @@
     border-radius: 0px 0px 20px 20px;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
-    transform: translateY(calc(-100% + 42px));
-    transition: 1s transform;
+    top: -100%;
+    transition: 1s top;
   }
   body .wrapper .header.active {
+    top: 0;
     transform: translateY(0);
   }
   body .wrapper .header .header-container {
@@ -456,7 +457,7 @@
     box-shadow: 0px 0px 20px 20px rgba(221, 53, 27, 0.45);
   }
   body .wrapper .portfolio .potfolio-container .portfolio__title {
-    padding: 0;
+    padding: 0 0 10px 0px;
     height: auto;
     width: auto;
     background-image: none;
@@ -465,13 +466,13 @@
             backdrop-filter: blur(0px);
   }
   body .wrapper .portfolio .potfolio-container .portfolio__title h2 {
-    font-size: 38px;
-    line-height: 44px;
+    font-size: 32px;
+    line-height: 37px;
     text-shadow: 0px 1px 20px rgba(248, 136, 6, 0.25);
   }
   body .wrapper .portfolio .potfolio-container .portfolio__title h2 span {
-    font-size: 38px;
-    line-height: 44px;
+    font-size: 32px;
+    line-height: 37px;
     text-shadow: 0px 1px 20px rgba(248, 136, 6, 0.25);
   }
   body .wrapper .portfolio .potfolio-container .portfolio__grid {
@@ -654,6 +655,7 @@
     height: auto;
   }
   body .wrapper .sentence .sentence-container .sentence__title {
+    margin: 0 0 20px 0;
     width: 250px;
     height: auto;
     padding: 0;
@@ -674,27 +676,30 @@
     flex-direction: column;
     justify-content: flex-start;
     border-radius: 20px;
-    -webkit-backdrop-filter: blur(11.9906px) !important;
-            backdrop-filter: blur(11.9906px) !important;
+    -webkit-backdrop-filter: 0;
+            backdrop-filter: 0;
     gap: 10px;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el {
-    box-shadow: 0px 0px 9px 0px rgb(200, 251, 27);
+    box-shadow: 0px 0px 4px 1px rgba(196, 251, 23, 0.2);
     width: 100% !important;
     background: none !important;
     border-radius: 20px;
-    height: 90px;
+    height: 65px;
     padding: 20px !important;
     overflow: hidden;
-    transition: 0.5s height;
+    transition: 0.5s height, 0.5s box-shadow;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el h3 {
     font-size: 22px;
     line-height: 25px;
   }
+  body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el h3 br {
+    display: none;
+  }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el ul {
     opacity: 0;
-    margin: 30px 0 0 0;
+    margin: 15px 0 0 0;
     transition: 0.5s opacity;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el ul li {
@@ -721,6 +726,9 @@
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el:hover {
     transform: none;
   }
+  body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el.active {
+    box-shadow: 0px 0px 9px 0px rgb(200, 251, 27);
+  }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el.active ul {
     opacity: 1;
   }
@@ -728,295 +736,305 @@
     transform: rotate(45deg);
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el.active.sentence__flex-el-1 {
-    height: 266px;
+    height: 226px;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el.active.sentence__flex-el-2 {
-    height: 240px;
+    height: 200px;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el.active.sentence__flex-el-3 {
-    height: 188px;
+    height: 148px;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el.active.sentence__flex-el-4 {
-    height: 266px;
+    height: 226px;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el.active.sentence__flex-el-5 {
-    height: 256px;
+    height: 216px;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el.active.sentence__flex-el-6 {
-    height: 256px;
+    height: 216px;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el.active.sentence__flex-el-7 {
-    height: 240px;
+    height: 200px;
+  }
+  body .wrapper .instruments {
+    padding: 150px 0 0 0;
+  }
+  body .wrapper .instruments .instruments-container {
+    position: relative;
+    height: 500px;
   }
   body .wrapper .instruments .instruments-container .instruments__title {
-    top: 367px;
-    left: 40px;
+    top: -90px;
+    left: 0;
   }
   body .wrapper .instruments .instruments-container .instruments__title h2 {
-    font-size: 38px;
-    line-height: 44px;
+    font-size: 32px;
+    line-height: 37px;
     text-shadow: 0px 1px 20px rgba(248, 136, 6, 0.25);
   }
+  body .wrapper .instruments .instruments-container .instruments__circl {
+    background-image: url(../images/instruments/ellipse1.svg);
+  }
   body .wrapper .instruments .instruments-container .instruments__circl-html {
-    height: 85px;
-    width: 85px;
-    left: 245px;
-    top: 85px;
+    height: 55px;
+    width: 55px;
+    left: 14px;
+    top: 122.5700683594px;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
   }
   body .wrapper .instruments .instruments-container .instruments__circl-html h3 {
-    font-size: 23.7805px;
-    line-height: 27px;
-    text-shadow: 0px 0px 2.5px #ffffff;
+    font-size: 14px;
+    line-height: 16px;
+    text-shadow: 0px 0px 1px #ffffff;
   }
   body .wrapper .instruments .instruments-container .instruments__circl-sql {
-    height: 140px;
-    width: 140px;
-    left: 246px;
-    top: 150px;
+    height: 95px;
+    width: 95px;
+    left: 172.001953125px;
+    top: 23.3815917969px;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
   }
   body .wrapper .instruments .instruments-container .instruments__circl-sql h3 {
-    font-size: 39.2379px;
-    line-height: 45px;
-    text-shadow: 0px 0px 2.5px #ffffff;
+    font-size: 26px;
+    line-height: 30px;
+    text-shadow: 0px 0px 1px #ffffff;
   }
   body .wrapper .instruments .instruments-container .instruments__circl-css {
-    height: 85px;
-    width: 85px;
-    left: 352px;
-    top: 115px;
+    height: 53.4195480347px;
+    width: 55px;
+    left: 243.794921875px;
+    top: 0px;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
   }
   body .wrapper .instruments .instruments-container .instruments__circl-css h3 {
-    font-size: 23.7805px;
-    line-height: 27px;
-    text-shadow: 0px 0px 2.5px #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+    text-shadow: 0px 0px 1px #ffffff;
   }
   body .wrapper .instruments .instruments-container .instruments__circl-adobe {
-    height: 100px;
-    width: 100px;
-    left: 454px;
-    top: 200px;
+    height: 65px;
+    width: 65px;
+    left: 143.080078125px;
+    top: 82.8568725586px;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
   }
   body .wrapper .instruments .instruments-container .instruments__circl-adobe h3 {
-    font-size: 23.7805px;
-    line-height: 27px;
-    text-shadow: 0px 0px 2.5px #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+    text-shadow: 0px 0px 1px #ffffff;
   }
   body .wrapper .instruments .instruments-container .instruments__circl-github {
-    height: 155px;
-    width: 155px;
-    left: 371.44px;
-    top: 295.16px;
+    height: 105px;
+    width: 105px;
+    left: 91px;
+    top: 287.5700683594px;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
   }
   body .wrapper .instruments .instruments-container .instruments__circl-github h3 {
-    font-size: 33.2927px;
-    line-height: 38px;
-    text-shadow: 0px 0px 2.5px #ffffff;
+    font-size: 24px;
+    line-height: 28px;
+    text-shadow: 0px 0px 1px #ffffff;
   }
   body .wrapper .instruments .instruments-container .instruments__circl-ux {
-    width: 85px;
-    height: 85px;
-    left: 328.63px;
-    top: 403.36px;
+    height: 55px;
+    width: 55px;
+    left: 129px;
+    top: 161.5700683594px;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
   }
   body .wrapper .instruments .instruments-container .instruments__circl-ux h3 {
-    font-size: 23.7805px;
-    line-height: 27px;
-    text-shadow: 0px 0px 2.5px #ffffff;
+    font-size: 14px;
+    line-height: 16px;
+    text-shadow: 0px 0px 1px #ffffff;
   }
   body .wrapper .instruments .instruments-container .instruments__circl-react {
-    width: 70px;
-    height: 70px;
-    left: 223.41px;
-    top: 464px;
+    height: 45px;
+    width: 45px;
+    left: 137px;
+    top: 227.5700683594px;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
   }
   body .wrapper .instruments .instruments-container .instruments__circl-react h3 {
-    font-size: 19.0244px;
-    line-height: 22px;
-    text-shadow: 0px 0px 2.5px #ffffff;
+    font-size: 12px;
+    line-height: 14px;
+    text-shadow: 0px 0px 1px #ffffff;
   }
   body .wrapper .instruments .instruments-container .instruments__circl-yandex {
-    width: 65px;
-    height: 65px;
-    left: 503.42px;
-    top: 455.08px;
+    height: 45px;
+    width: 45px;
+    left: 107px;
+    top: 26.5700683594px;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
   }
   body .wrapper .instruments .instruments-container .instruments__circl-yandex h3 {
-    font-size: 14.2683px;
-    line-height: 16px;
-    text-shadow: 0px 0px 2.5px #ffffff;
+    font-size: 10px;
+    line-height: 11px;
+    text-shadow: 0px 0px 1px #ffffff;
   }
   body .wrapper .instruments .instruments-container .instruments__circl-bem {
-    width: 85px;
-    height: 85px;
-    left: 550.39px;
-    top: 298.13px;
+    height: 55px;
+    width: 55px;
+    left: 4px;
+    top: 412.5700683594px;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
   }
   body .wrapper .instruments .instruments-container .instruments__circl-bem h3 {
-    font-size: 23.7805px;
-    line-height: 27px;
-    text-shadow: 0px 0px 2.5px #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+    text-shadow: 0px 0px 1px #ffffff;
   }
   body .wrapper .instruments .instruments-container .instruments__circl-google {
-    width: 153px;
-    height: 153px;
-    left: 550.39px;
-    top: 363.53px;
+    height: 100px;
+    width: 100px;
+    left: 30px;
+    top: 36.5700683594px;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
   }
   body .wrapper .instruments .instruments-container .instruments__circl-google h3 {
-    font-size: 34.4818px;
-    line-height: 40px;
-    text-shadow: 0px 0px 2.5px #ffffff;
+    font-size: 24px;
+    line-height: 28px;
+    text-shadow: 0px 0px 1px #ffffff;
   }
   body .wrapper .instruments .instruments-container .instruments__circl-ads {
-    width: 45px;
-    height: 45px;
-    left: 641.95px;
-    top: 263.65px;
+    height: 30px;
+    width: 30px;
+    left: 65px;
+    top: 122.5700683594px;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
   }
   body .wrapper .instruments .instruments-container .instruments__circl-ads h3 {
-    font-size: 12px;
-    line-height: 14px;
-    text-shadow: 0px 0px 2.5px #ffffff;
+    font-size: 8px;
+    line-height: 9px;
+    text-shadow: 0px 0px 1px #ffffff;
   }
   body .wrapper .instruments .instruments-container .instruments__circl-node {
-    width: 206px;
-    height: 200px;
-    left: 1102px;
-    top: 458px;
+    height: 80px;
+    width: 80px;
+    left: 236px;
+    top: 317.5700683594px;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
   }
   body .wrapper .instruments .instruments-container .instruments__circl-node h3 {
-    font-size: 40px;
-    line-height: 46px;
-    text-shadow: 0px 0px 2.5px #ffffff;
+    font-size: 16.0125px;
+    line-height: 18px;
+    text-shadow: 0px 0px 1px #ffffff;
   }
   body .wrapper .instruments .instruments-container .instruments__circl-wp {
-    width: 110px;
-    height: 110px;
-    left: 694.26px;
-    top: 449.13px;
+    height: 75px;
+    width: 75px;
+    left: 0px;
+    top: 243.5700683594px;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
     z-index: 1;
   }
   body .wrapper .instruments .instruments-container .instruments__circl-wp h3 {
-    font-size: 17.8354px;
-    line-height: 20px;
-    text-shadow: 0px 0px 2.5px #ffffff;
+    font-size: 12px;
+    line-height: 14px;
+    text-shadow: 0px 0px 1px #ffffff;
   }
   body .wrapper .instruments .instruments-container .instruments__circl-tilda {
-    width: 103px;
-    height: 103px;
-    left: 725.77px;
-    top: 189.76px;
+    height: 70px;
+    width: 70px;
+    left: 236px;
+    top: 121.5700683594px;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
   }
   body .wrapper .instruments .instruments-container .instruments__circl-tilda h3 {
-    font-size: 19.0244px;
-    line-height: 22px;
-    text-shadow: 0px 0px 2.5px #ffffff;
+    font-size: 18px;
+    line-height: 21px;
+    text-shadow: 0px 0px 1px #ffffff;
   }
   body .wrapper .instruments .instruments-container .instruments__circl-bitrix {
-    width: 141px;
-    height: 141px;
-    left: 767.39px;
-    top: 333.8px;
+    height: 95px;
+    width: 97.8106460571px;
+    left: 208px;
+    top: 179.5700683594px;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
   }
   body .wrapper .instruments .instruments-container .instruments__circl-bitrix h3 {
-    font-size: 23.7805px;
-    line-height: 27px;
-    text-shadow: 0px 0px 2.5px #ffffff;
+    font-size: 18px;
+    line-height: 21px;
+    text-shadow: 0px 0px 1px #ffffff;
   }
   body .wrapper .instruments .instruments-container .instruments__circl-cms {
-    width: 50px;
-    height: 50px;
-    left: 756.69px;
-    top: 119.77px;
+    height: 35px;
+    width: 35px;
+    left: 82px;
+    top: 224.5700683594px;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
   }
   body .wrapper .instruments .instruments-container .instruments__circl-cms h3 {
-    font-size: 13.0793px;
-    line-height: 15px;
-    text-shadow: 0px 0px 2.5px #ffffff;
+    font-size: 10px;
+    line-height: 11px;
+    text-shadow: 0px 0px 1px #ffffff;
   }
   body .wrapper .instruments .instruments-container .instruments__circl-api {
-    width: 67px;
-    height: 67px;
-    left: 814.44px;
-    top: 188.14px;
+    height: 45px;
+    width: 45px;
+    left: 33px;
+    top: 357.5700683594px;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
   }
   body .wrapper .instruments .instruments-container .instruments__circl-api h3 {
-    font-size: 17.8354px;
-    line-height: 20px;
-    text-shadow: 0px 0px 2.5px #ffffff;
+    font-size: 14px;
+    line-height: 16px;
+    text-shadow: 0px 0px 1px #ffffff;
   }
   body .wrapper .instruments .instruments-container .instruments__circl-crm {
-    width: 85px;
-    height: 85px;
-    left: 819.11px;
-    top: 75.19px;
+    height: 55px;
+    width: 55px;
+    left: 44px;
+    top: 189.5700683594px;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
   }
   body .wrapper .instruments .instruments-container .instruments__circl-crm h3 {
-    font-size: 23.7805px;
-    line-height: 27px;
-    text-shadow: 0px 0px 2.5px #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+    text-shadow: 0px 0px 1px #ffffff;
   }
   body .wrapper .instruments .instruments-container .instruments__circl-php {
-    width: 85px;
-    height: 85px;
-    left: 886.29px;
-    top: 315.96px;
+    height: 55px;
+    width: 55px;
+    left: 78px;
+    top: 365.5700683594px;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
   }
   body .wrapper .instruments .instruments-container .instruments__circl-php h3 {
-    font-size: 23.7805px;
-    line-height: 27px;
-    text-shadow: 0px 0px 2.5px #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+    text-shadow: 0px 0px 1px #ffffff;
   }
   body .wrapper .instruments .instruments-container .instruments__circl-js {
-    width: 70px;
-    height: 70px;
-    left: 906.5px;
-    top: 148.91px;
+    height: 45px;
+    width: 45px;
+    left: 180px;
+    top: 403.5700683594px;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
   }
   body .wrapper .instruments .instruments-container .instruments__circl-js h3 {
-    font-size: 19.0244px;
-    line-height: 22px;
-    text-shadow: 0px 0px 2.5px #ffffff;
+    font-size: 14px;
+    line-height: 16px;
+    text-shadow: 0px 0px 1px #ffffff;
   }
   body .wrapper .form .form__purple-circle {
     right: -60px;

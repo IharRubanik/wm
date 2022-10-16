@@ -2,6 +2,8 @@ window.onload = () => {
   let body = document.querySelector("body"),
     preloader = document.getElementById("page-preloader"),
     headerNav = document.querySelector(".header__nav"),
+    logo = document.querySelector("#logo"),
+    headerNavItem = document.querySelectorAll(".header__nav-item"),
     hoverLigting = document.querySelector(".hover-ligting"),
     animeElem = document.querySelectorAll(
       ".services__ads-circl, .services__sites-circl, .services__audit-circl, .services__seo-circl, .services__smm-circl, .portfolio__button"
@@ -15,7 +17,7 @@ window.onload = () => {
     sentenceTitle = document.querySelector("#sentence__title-h2"),
     sentenceElem = document.querySelectorAll(".sentence__flex-el"),
     menuMobile = document.querySelector("#header");
-  const mediaQuery = window.matchMedia("only screen and (max-width: 1024px)"),
+  const mediaQuery = window.matchMedia("only screen and (max-width: 1280px)"),
     mediaQueryMobile = window.matchMedia("only screen and (max-width: 600px)");
 
   // scroll
@@ -34,25 +36,26 @@ window.onload = () => {
   // preloader
   setTimeout(function () {
     if (!preloader.classList.contains("done")) {
-      preloader.classList.add("done"), (body.style.overflow = "auto");
+      preloader.classList.add("done"), (body.style.overflow = "visible");
     }
   }, 2000);
 
   // animacion scroll
   const options = {
     root: null,
-    rootMargin: "20%",
+    rootMargin: "30%",
     threshold: 1,
   };
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("anime-active");
+        entry.target.classList.add("active");
       }
     });
   }, options);
   for (let i = 0; i < animeElem.length; i++) {
     observer.observe(animeElem[i]);
+    observer.observe(portfolioElem[0]);
   }
 
   // anime cursor
@@ -115,6 +118,24 @@ window.onload = () => {
         body.style.overflow = "hidden";
       }
     };
+    
+    // closeMenu
+    function closeMenu() {
+      burger.classList.remove("active");
+      menuMobile.classList.remove("active");
+      lang.classList.remove("active");
+      body.style.overflow = "visible";
+    }
+
+    // headerNavItem
+    for (let i = 0; i < headerNavItem.length; i++) {
+      headerNavItem[i].addEventListener("click", function () {
+        closeMenu();
+      });
+    }
+    logo.addEventListener("click", function () {
+      closeMenu();
+    });
 
     // swipe menu
     menuMobile.addEventListener("touchstart", handleTouchStart, false);
@@ -161,15 +182,19 @@ window.onload = () => {
       yDown = null;
     }
 
-for (let i = 0; i < sentenceElem.length; i++) {
-  sentenceElem[i].onclick = function() {
-    if (sentenceElem[i].classList.contains('active')){
-      sentenceElem[i].classList.remove('active')
+    // accordion
+    for (let i = 0; i < sentenceElem.length; i++) {
+      sentenceElem[0].classList.add("active");
+
+      sentenceElem[i].addEventListener("click", function () {
+        sentenceElem[i].classList.toggle("active");
+        console.log(sentenceElem[i].clientHeight);
+        for (let x = 0; x < sentenceElem.length; x++) {
+          if (x !== i) {
+            sentenceElem[x].classList.remove("active");
+          }
+        }
+      });
     }
-    else{
-      sentenceElem[i].classList.add('active')
-    }   
-  }
-}
   }
 };
