@@ -1,3 +1,9 @@
+@media only screen and (min-aspect-ratio: 375/667) and (max-width: 600px) {
+  body .wrapper .header {
+    height: 189.067vw !important;
+    top: -177.867vw !important;
+  }
+}
 @media only screen and (max-width: 600px) {
   .container {
     max-width: 90.667vw;
@@ -149,16 +155,17 @@
     top: 78.4vw;
   }
   body .wrapper .header {
+    min-height: 667px;
     height: calc(100% + 11.2vw);
     border-radius: 0vw 0vw 5.333vw 5.333vw;
     -webkit-backdrop-filter: blur(5.333vw);
             backdrop-filter: blur(5.333vw);
     top: -100%;
-    transition: 1s top;
+    transition: 1s transform;
+    overflow-y: scroll;
   }
   body .wrapper .header.active {
-    top: 0;
-    transform: translateY(0);
+    transform: translateY(calc(100% - 11.2vw));
   }
   body .wrapper .header .header-container {
     border-radius: 0vw 0vw 5.333vw 5.333vw;

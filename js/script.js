@@ -223,11 +223,10 @@ window.onload = () => {
 
       // accordion
       for (let i = 0; i < sentenceElem.length; i++) {
-        sentenceElem[0].classList.add("active");
         sentenceElem[i].addEventListener("click", function () {
-          sentenceElem[i].classList.toggle("active");
+          sentenceElem[i].classList.add("active");
           for (let x = 0; x < sentenceElem.length; x++) {
-            if (x !== i) {
+            if (x != i) {
               sentenceElem[x].classList.remove("active");
             }
           }
