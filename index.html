@@ -59,7 +59,7 @@
             <a class="header__nav-item" href="#sentence">Услуги</a>
             <a class="header__nav-item" href="#">Проекты</a>
             <a class="header__nav-item" href="#">Хостинг</a>
-            <a class="header__nav-item" href="#footer">Контакты</a>
+            <a class="header__nav-item" href="#form">Контакты</a>
           </div>
         </div>
         <div class="header__right-block">
@@ -101,7 +101,7 @@
               за честную цену
             </h1>
           </div>
-          <a href="#footer">
+          <a href="#form">
             <button class="button-orange">
               <div class="button-green">
                 <div class="button-blur">
@@ -175,7 +175,10 @@
       </div>
     </section>
     <section class="portfolio" id="portfolio">
-      <div class="potfolio-container container swiper">
+      <video class="portfolio-anime" autoplay muted loop>
+        <source src="media/anime-circles.mp4" tupe="video/mp4" />
+      </video>
+      <div class="potfolio-container container">
         <div class="portfolio__title">
           <h2 id="portfoli__title-h2"><span>Портфолио</span> — наши последние работы</h2>
         </div>
@@ -213,7 +216,7 @@
             </object>
           </a>
           <div class="portfolio__grid-elem">
-            <a class="portfolio__link" href="#footer">
+            <a class="portfolio__link" href="#form">
               <h4>Просмотреть больше наших работ</h4>
               <span>В портфолио собраны проекты выполненные командой WebMedia.
               </span>
@@ -261,6 +264,9 @@
       </div>
     </section>
     <section class="sentence" id="sentence">
+      <video class="sentence-anime" autoplay muted loop>
+        <source src="media/anime-circles.mp4" tupe="video/mp4" />
+      </video>
       <img src="./images/sentence/sentence-circle.svg" alt="" class="sentence-circle">
       <div class="sentence-container container">
         <div class="sentence__title">
@@ -463,21 +469,28 @@
         </div>
       </div>
     </section>
-    <section class="form">
+    <section id="form" class="form">
       <img class="form__purple-circle" src="./images/footer/purple_lighting.png" alt="" />
       <div class="form-container container">
         <div class="form__title">
-          <h2>Оставить заявку</h2>
+          <h2>Оставьте заявку</h2>
           <span>и получите полную консульиацию бесплатно</span>
         </div>
         <form class="form__application-form">
+         
           <input class="entry" placeholder="Имя" maxlength="25" name="name" autocomplete="new-text" type="text"
             required />
           <input class="entry" placeholder="Телефон" type="tel" autocomplete="new-text" maxlength="15" name="phone"
             required />
           <div class="textarea-wrapper">
-            <textarea class="entry" placeholder="Комментарий" name="coment" maxlength="100" id="" cols="30"
+            <textarea class="entry textarea" placeholder="Комментарий" name="coment" maxlength="100" id="" cols="30"
               rows="3"></textarea>
+          </div>
+          <div class="checkbox active">
+            <div class="checkbox-button">
+              <span></span>
+            </div>
+            <div class="checkbox-title"> Я согласен на обработку персональных данных</div>
           </div>
         </form>
         <div class="form__button-orange">
