@@ -19,23 +19,10 @@ window.onload = () => {
     portfolioTitle = document.querySelector("#portfoli__title-h2"),
     sentenceTitle = document.querySelector("#sentence__title-h2"),
     sentenceElem = document.querySelectorAll(".sentence__flex-el"),
-    menuMobile = document.querySelector("#header");
-
-
-    let mediaQuery = window.matchMedia("only screen and (max-width: 1280px)");
-    let mediaQueryMobile = window.matchMedia("only screen and (max-width: 600px)");
-
-
-
-    // mediaQuery.addListener(handleTabletChange);
-      // resize
-  // window.addEventListener("resize", resizeWindow);
-  // function resizeWindow() {
-  //   console.log('asdasdasdas')
-  //   mediaQuery = window.matchMedia("only screen and (max-width: 1280px)")
-  //   mediaQueryMobile = window.matchMedia("only screen and (max-width: 600px)")
-  // }
- 
+    menuMobile = document.querySelector("#header"),
+    newScrinWidth = screen.width,
+    mediaQuery = window.matchMedia("only screen and (max-width: 1280px)"),
+    mediaQueryMobile = window.matchMedia("only screen and (max-width: 600px)");
 
   // scroll
   const smoothLinks = document.querySelectorAll('a[href^="#"]');
@@ -109,17 +96,20 @@ window.onload = () => {
     textareaInput.focus();
   });
 
+  // resize
+  window.addEventListener("resize", function () {
+    newScrinWidth = screen.width;
+    media();
+  });
 
-
-    // media 1024
-
-
-    function checkMediaQuery() {
-
-
-   
-
-    if (mediaQuery.matches) {
+  function media() {
+    if (newScrinWidth <= 1280) {
+      title.innerHTML =
+        "<span>Web-студия</span> решающая задачи любого уровня сложности за честную цену";
+      portfolioTitle.innerHTML =
+        "<span>Портфолио</span> — наши последние работы";
+      sentenceTitle.innerHTML =
+        "<span>Мы предлагаем</span>  — широкий спектр web услуг";
       // Portfolio
       for (let i = 0; i < portfolioElem.length; i++) {
         portfolioElem[i].onclick = function () {
@@ -133,10 +123,8 @@ window.onload = () => {
         };
       }
     }
-
-
-    // media 375
-    if (mediaQueryMobile.matches) {
+    // media 600
+    if (newScrinWidth <= 600) {
       title.innerHTML =
         "Мы решаем  задачи любого уровня сложности за честную цену";
       portfolioTitle.innerHTML = "<span>Портфолио</span>";
@@ -222,18 +210,19 @@ window.onload = () => {
       }
 
       // accordion
-      for (let i = 0; i < sentenceElem.length; i++) {
-        sentenceElem[i].addEventListener("click", function () {
-          sentenceElem[i].classList.add("active");
-          for (let x = 0; x < sentenceElem.length; x++) {
-            if (x != i) {
-              sentenceElem[x].classList.remove("active");
-            }
-          }
+      sentenceElem.forEach((e) => {
+        e.addEventListener("click", () => {
+          removeClass();
+          e.classList.toggle("active");
+        });
+      });
+      function removeClass() {
+        sentenceElem.forEach((e) => {
+          e.classList.remove("active");
         });
       }
     }
   }
-  checkMediaQuery()
-  window.addEventListener('resize', checkMediaQuery);
+
+  media();
 };

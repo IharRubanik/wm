@@ -10,16 +10,16 @@
     height: 153.067vw;
   }
   ::-webkit-input-placeholder {
-    text-shadow: 0vw 0vw 0.835vw #ff8845;
+    text-shadow: 0vw 0vw 0.267vw #ff8845;
   }
   :-moz-placeholder {
-    text-shadow: 0vw 0vw 0.835vw #ff8845;
+    text-shadow: 0vw 0vw 0.267vw #ff8845;
   }
   ::-moz-placeholder {
-    text-shadow: 0vw 0vw 0.835vw #ff8845;
+    text-shadow: 0vw 0vw 0.267vw #ff8845;
   }
   :-ms-input-#ffffff {
-    text-shadow: 0vw 0vw 0.835vw #ff8845;
+    text-shadow: 0vw 0vw 0.267vw #ff8845;
   }
   @-webkit-keyframes border-pulse {
     0% {
@@ -270,11 +270,10 @@
     padding: 26.667vw 0 0 0;
     height: auto;
   }
-  body .wrapper .main::before {
-    content: url(../images/header/header-logo.svg);
+  body .wrapper .main .logo-mobile {
     width: 73.675vw;
-    height: auto;
     margin: 0 auto;
+    height: auto;
     display: block;
   }
   body .wrapper .main .main-container {
@@ -299,7 +298,7 @@
   body .wrapper .main .main-container .main__left-block .main__title h1 {
     font-size: 8.533vw;
     line-height: 9.867vw;
-    text-shadow: 0vw 0vw 2.667vw rgba(235, 255, 154, 0.36);
+    text-shadow: 0vw 0vw 0.267vw rgba(235, 255, 154, 0.36);
     width: auto;
   }
   body .wrapper .main .main-container .main__left-block .main__title h1 span {
@@ -334,7 +333,7 @@
   body .wrapper .main .main-container .main__left-block .button-orange .button-green .button-blur span {
     font-size: 4.8vw;
     line-height: 5.6vw;
-    text-shadow: 0vw 0vw 0.933vw #ffffff;
+    text-shadow: 0vw 0vw 0.267vw #ffffff;
   }
   body .wrapper .main .main-container .main__right-block {
     position: relative;
@@ -351,7 +350,7 @@
     margin: 0;
     font-size: 6.933vw;
     line-height: 8vw;
-    text-shadow: 0vw 0vw 0.667vw #ffffff;
+    text-shadow: 0vw 0vw 0.267vw #ffffff;
   }
   body .wrapper .main .main-container .main__right-block ul {
     font-size: 4.8vw;
@@ -399,7 +398,7 @@
   body .wrapper .services .services-container .services__ads-circl h2 {
     font-size: 4.267vw;
     line-height: 4.8vw;
-    text-shadow: 0vw 0vw 0.667vw #ffffff;
+    text-shadow: 0vw 0vw 0.267vw #ffffff;
   }
   body .wrapper .services .services-container .services__sites-circl {
     width: 60.947vw;
@@ -412,7 +411,7 @@
   body .wrapper .services .services-container .services__sites-circl h2 {
     font-size: 7.467vw;
     line-height: 8.533vw;
-    text-shadow: 0vw 0vw 0.667vw #ffffff;
+    text-shadow: 0vw 0vw 0.267vw #ffffff;
   }
   body .wrapper .services .services-container .services__audit-circl {
     top: 130.667vw;
@@ -426,7 +425,7 @@
   body .wrapper .services .services-container .services__audit-circl h2 {
     font-size: 3.733vw;
     line-height: 4.267vw;
-    text-shadow: 0vw 0vw 0.667vw #ffffff;
+    text-shadow: 0vw 0vw 0.267vw #ffffff;
   }
   body .wrapper .services .services-container .services__seo-circl {
     width: 57.547vw;
@@ -439,7 +438,7 @@
   body .wrapper .services .services-container .services__seo-circl h2 {
     font-size: 7.467vw;
     line-height: 8.533vw;
-    text-shadow: 0vw 0vw 0.667vw #ffffff;
+    text-shadow: 0vw 0vw 0.267vw #ffffff;
   }
   body .wrapper .services .services-container .services__smm-circl {
     width: 44.08vw;
@@ -452,7 +451,7 @@
   body .wrapper .services .services-container .services__smm-circl h2 {
     font-size: 5.867vw;
     line-height: 6.933vw;
-    text-shadow: 0vw 0vw 0.667vw #ffffff;
+    text-shadow: 0vw 0vw 0.267vw #ffffff;
   }
   body .wrapper .portfolio {
     padding: 18.667vw 0 0 0;
@@ -483,12 +482,12 @@
   body .wrapper .portfolio .potfolio-container .portfolio__title h2 {
     font-size: 8.533vw;
     line-height: 9.867vw;
-    text-shadow: 0vw 0.267vw 5.333vw rgba(248, 136, 6, 0.25);
+    text-shadow: 0vw 0.267vw 0.267vw rgba(248, 136, 6, 0.25);
   }
   body .wrapper .portfolio .potfolio-container .portfolio__title h2 span {
     font-size: 8.533vw;
     line-height: 9.867vw;
-    text-shadow: 0vw 0.267vw 5.333vw rgba(248, 136, 6, 0.25);
+    text-shadow: 0vw 0.267vw 0.267vw rgba(248, 136, 6, 0.25);
   }
   body .wrapper .portfolio .potfolio-container .portfolio__grid {
     margin-top: 2.667vw;
@@ -514,7 +513,7 @@
     box-shadow: 0vw 0vw 4.267vw 1.6vw rgba(200, 251, 27, 0.21);
     font-size: 4.8vw;
     line-height: 5.6vw;
-    text-shadow: 0vw 0vw 0.667vw #ffffff;
+    text-shadow: 0vw 0vw 0.267vw #ffffff;
   }
   body .wrapper .portfolio .potfolio-container .portfolio__grid .portfolio__grid-elem:hover {
     box-shadow: 0vw 0vw 4.267vw 1.6vw rgba(200, 251, 27, 0.21);
@@ -596,7 +595,7 @@
     left: 0vw;
     font-size: 8.533vw;
     line-height: 9.867vw;
-    text-shadow: 0vw 0.267vw 5.333vw rgba(248, 136, 6, 0.25);
+    text-shadow: 0vw 0.267vw 0.267vw rgba(248, 136, 6, 0.25);
   }
   body .wrapper .benefits .benefits-container .benefits__profit {
     min-width: 50.133vw;
@@ -609,7 +608,7 @@
   body .wrapper .benefits .benefits-container .benefits__profit h3 {
     font-size: 5.333vw;
     line-height: 6.133vw;
-    text-shadow: 0vw 0vw 1.055vw #ffffff;
+    text-shadow: 0vw 0vw 0.267vw #ffffff;
   }
   body .wrapper .benefits .benefits-container .benefits__project {
     padding: 0 0 29% 0;
@@ -622,7 +621,7 @@
   body .wrapper .benefits .benefits-container .benefits__project h3 {
     font-size: 9.6vw;
     line-height: 10.933vw;
-    text-shadow: 0vw 0vw 0.933vw #ffffff;
+    text-shadow: 0vw 0vw 0.267vw #ffffff;
   }
   body .wrapper .benefits .benefits-container .benefits__quality {
     top: 37.867vw;
@@ -635,7 +634,7 @@
   body .wrapper .benefits .benefits-container .benefits__quality h3 {
     font-size: 3.2vw;
     line-height: 3.733vw;
-    text-shadow: 0vw 0vw 0.663vw #ffffff;
+    text-shadow: 0vw 0vw 0.267vw #ffffff;
   }
   body .wrapper .benefits .benefits-container .benefits__budget {
     padding: 13%;
@@ -649,7 +648,7 @@
   body .wrapper .benefits .benefits-container .benefits__budget h3 {
     font-size: 11.2vw;
     line-height: 12.8vw;
-    text-shadow: 0vw 0vw 0.933vw #ffffff;
+    text-shadow: 0vw 0vw 0.267vw #ffffff;
   }
   body .wrapper .benefits .benefits-container .benefits__support {
     top: 71.467vw;
@@ -661,7 +660,7 @@
   body .wrapper .benefits .benefits-container .benefits__support h3 {
     font-size: 2.667vw;
     line-height: 2.933vw;
-    text-shadow: 0vw 0vw 0.536vw #ffffff;
+    text-shadow: 0vw 0vw 0.267vw #ffffff;
   }
   body .wrapper .sentence {
     padding: 18.667vw 0 0 0;
@@ -702,7 +701,7 @@
     line-height: 9.867vw;
   }
   body .wrapper .sentence .sentence-container .sentence__title h2 span {
-    text-shadow: 0vw 0.267vw 5.333vw rgba(248, 136, 6, 0.25);
+    text-shadow: 0vw 0.267vw 0.267vw rgba(248, 136, 6, 0.25);
   }
   body .wrapper .sentence .sentence-container .container-flex-elem {
     margin: 2.667vw 0 0 0;
@@ -803,7 +802,7 @@
   body .wrapper .instruments .instruments-container .instruments__title h2 {
     font-size: 8.533vw;
     line-height: 9.867vw;
-    text-shadow: 0vw 0.267vw 5.333vw rgba(248, 136, 6, 0.25);
+    text-shadow: 0vw 0.267vw 0.267vw rgba(248, 136, 6, 0.25);
   }
   body .wrapper .instruments .instruments-container .instruments__circl {
     background-image: url(../images/instruments/ellipse1.svg);
@@ -1096,12 +1095,11 @@
     width: min-content;
     font-size: 8.533vw;
     line-height: 9.867vw;
-    filter: blur(0.267vw);
   }
   body .wrapper .form .form-container .form__title span {
     font-size: 4.8vw;
     line-height: 5.6vw;
-    text-shadow: 0vw 0vw 0.835vw #ffffff;
+    text-shadow: 0vw 0vw 0.267vw #ffffff;
     width: 100%;
   }
   body .wrapper .form .form__application-form {
@@ -1165,7 +1163,7 @@
   body .wrapper .form .form__button-orange .form__button-green .form__button-blur .form__input {
     font-size: 10.885vw;
     line-height: 12.8vw;
-    text-shadow: 0vw 0vw 2.578vw rgba(196, 251, 23, 0.97);
+    text-shadow: 0vw 0vw 0.267vw rgba(196, 251, 23, 0.97);
   }
   body .wrapper .footer {
     padding: 18.667vw 0 8vw 0;

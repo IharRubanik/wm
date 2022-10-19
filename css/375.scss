@@ -15,16 +15,16 @@
     height: 153.067vw;
   }
   ::-webkit-input-placeholder {
-    text-shadow: 0vw 0vw 0.835vw #ff8845;
+    text-shadow: 0vw 0vw 0.267vw #ff8845;
   }
   :-moz-placeholder {
-    text-shadow: 0vw 0vw 0.835vw #ff8845;
+    text-shadow: 0vw 0vw 0.267vw #ff8845;
   }
   ::-moz-placeholder {
-    text-shadow: 0vw 0vw 0.835vw #ff8845;
+    text-shadow: 0vw 0vw 0.267vw #ff8845;
   }
   :-ms-input-#ffffff {
-    text-shadow: 0vw 0vw 0.835vw #ff8845;
+    text-shadow: 0vw 0vw 0.267vw #ff8845;
   }
   @keyframes border-pulse {
     0% {
@@ -260,13 +260,21 @@
       .main {
         padding: 26.667vw 0 0 0;
         height: auto;
-        &::before {
-          content: url(../images/header/header-logo.svg);
+        .logo-mobile{
           width: 73.675vw;
-          height: auto;
           margin: 0 auto;
+          height: auto;
           display: block;
         }
+        // &::before {
+        //   content: '';
+        //   width: 73.675vw;
+        //   height: 50.71px;
+        //   background-image: url(../images/header/header-logo.svg);
+        //   background-size: 73.675vw 50.71px ;
+        //   margin: 0 auto;
+        //   display: block;
+        // }
         .main-container {
           height: auto;
           margin-top: 9.333vw;
@@ -285,7 +293,7 @@
               h1 {
                 font-size: 8.533vw;
                 line-height: 9.867vw;
-                text-shadow: 0vw 0vw 2.667vw rgba(235, 255, 154, 0.36);
+                text-shadow: 0vw 0vw 0.267vw rgba(235, 255, 154, 0.36);
                 width: auto;
                 span {
                   display: none;
@@ -317,7 +325,7 @@
                   span {
                     font-size: 4.8vw;
                     line-height: 5.6vw;
-                    text-shadow: 0vw 0vw 0.933vw #ffffff;
+                    text-shadow: 0vw 0vw 0.267vw #ffffff;
                   }
                 }
               }
@@ -336,7 +344,7 @@
               margin: 0;
               font-size: 6.933vw;
               line-height: 8vw;
-              text-shadow: 0vw 0vw 0.667vw #ffffff;
+              text-shadow: 0vw 0vw 0.267vw #ffffff;
             }
             ul {
               font-size: 4.8vw;
@@ -384,7 +392,7 @@
             h2 {
               font-size: 4.267vw;
               line-height: 4.8vw;
-              text-shadow: 0vw 0vw 0.667vw #ffffff;
+              text-shadow: 0vw 0vw 0.267vw #ffffff;
             }
           }
           .services__sites-circl {
@@ -397,7 +405,7 @@
             h2 {
               font-size: 7.467vw;
               line-height: 8.533vw;
-              text-shadow: 0vw 0vw 0.667vw #ffffff;
+              text-shadow: 0vw 0vw 0.267vw #ffffff;
             }
           }
           .services__audit-circl {
@@ -410,7 +418,7 @@
             h2 {
               font-size: 3.733vw;
               line-height: 4.267vw;
-              text-shadow: 0vw 0vw 0.667vw #ffffff;
+              text-shadow: 0vw 0vw 0.267vw #ffffff;
             }
           }
           .services__seo-circl {
@@ -422,7 +430,7 @@
             h2 {
               font-size: 7.467vw;
               line-height: 8.533vw;
-              text-shadow: 0vw 0vw 0.667vw #ffffff;
+              text-shadow: 0vw 0vw 0.267vw #ffffff;
             }
           }
           .services__smm-circl {
@@ -434,7 +442,7 @@
             h2 {
               font-size: 5.867vw;
               line-height: 6.933vw;
-              text-shadow: 0vw 0vw 0.667vw #ffffff;
+              text-shadow: 0vw 0vw 0.267vw #ffffff;
             }
           }
         }
@@ -466,11 +474,11 @@
             h2 {
               font-size: 8.533vw;
               line-height: 9.867vw;
-              text-shadow: 0vw 0.267vw 5.333vw rgba(248, 136, 6, 0.25);
+              text-shadow: 0vw 0.267vw 0.267vw rgba(248, 136, 6, 0.25);
               span {
                 font-size: 8.533vw;
                 line-height: 9.867vw;
-                text-shadow: 0vw 0.267vw 5.333vw rgba(248, 136, 6, 0.25);
+                text-shadow: 0vw 0.267vw 0.267vw rgba(248, 136, 6, 0.25);
               }
             }
           }
@@ -498,7 +506,7 @@
                   box-shadow: 0vw 0vw 4.267vw 1.6vw rgba(200, 251, 27, 0.21);
                   font-size: 4.8vw;
                   line-height: 5.6vw;
-                  text-shadow: 0vw 0vw 0.667vw #ffffff;
+                  text-shadow: 0vw 0vw 0.267vw #ffffff;
                 }
               }
               &:hover {
@@ -593,7 +601,7 @@
             left: 0vw;
             font-size: 8.533vw;
             line-height: 9.867vw;
-            text-shadow: 0vw 0.267vw 5.333vw rgba(248, 136, 6, 0.25);
+            text-shadow: 0vw 0.267vw 0.267vw rgba(248, 136, 6, 0.25);
           }
           .benefits__profit {
             min-width: 50.133vw;
@@ -605,7 +613,7 @@
             h3 {
               font-size: 5.333vw;
               line-height: 6.133vw;
-              text-shadow: 0vw 0vw 1.055vw #ffffff;
+              text-shadow: 0vw 0vw 0.267vw #ffffff;
             }
           }
           .benefits__project {
@@ -619,7 +627,7 @@
             h3 {
               font-size: 9.6vw;
               line-height: 10.933vw;
-              text-shadow: 0vw 0vw 0.933vw #ffffff;
+              text-shadow: 0vw 0vw 0.267vw #ffffff;
             }
           }
           .benefits__quality {
@@ -632,7 +640,7 @@
             h3 {
               font-size: 3.2vw;
               line-height: 3.733vw;
-              text-shadow: 0vw 0vw 0.663vw #ffffff;
+              text-shadow: 0vw 0vw 0.267vw #ffffff;
             }
           }
           .benefits__budget {
@@ -646,7 +654,7 @@
             h3 {
               font-size: 11.2vw;
               line-height: 12.8vw;
-              text-shadow: 0vw 0vw 0.933vw #ffffff;
+              text-shadow: 0vw 0vw 0.267vw #ffffff;
             }
           }
           .benefits__support {
@@ -658,7 +666,7 @@
             h3 {
               font-size: 2.667vw;
               line-height: 2.933vw;
-              text-shadow: 0vw 0vw 0.536vw #ffffff;
+              text-shadow: 0vw 0vw 0.267vw #ffffff;
             }
           }
         }
@@ -697,7 +705,7 @@
               font-size: 8.533vw;
               line-height: 9.867vw;
               span {
-                text-shadow: 0vw 0.267vw 5.333vw rgba(248, 136, 6, 0.25);
+                text-shadow: 0vw 0.267vw 0.267vw rgba(248, 136, 6, 0.25);
               }
             }
           }
@@ -802,7 +810,7 @@
             h2 {
               font-size: 8.533vw;
               line-height: 9.867vw;
-              text-shadow: 0vw 0.267vw 5.333vw rgba(248, 136, 6, 0.25);
+              text-shadow: 0vw 0.267vw 0.267vw rgba(248, 136, 6, 0.25);
             }
           }
           .instruments__circl {
@@ -1076,12 +1084,11 @@
               width: min-content;
               font-size: 8.533vw;
               line-height: 9.867vw;
-              filter: blur(0.267vw);
             }
             span {
               font-size: 4.8vw;
               line-height: 5.6vw;
-              text-shadow: 0vw 0vw 0.835vw #ffffff;
+              text-shadow: 0vw 0vw 0.267vw #ffffff;
               width: 100%;
             }
           }
@@ -1147,7 +1154,7 @@
               .form__input {
                 font-size: 10.885vw;
                 line-height: 12.8vw;
-                text-shadow: 0vw 0vw 2.578vw rgba(196, 251, 23, 0.97);
+                text-shadow: 0vw 0vw 0.267vw rgba(196, 251, 23, 0.97);
               }
             }
           }

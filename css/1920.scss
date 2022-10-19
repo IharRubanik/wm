@@ -55,19 +55,19 @@ a:active {
 }
 ::-webkit-input-placeholder {
   color: #ff8845;
-  text-shadow: 0vw 0vw 0.163vw #ff8845;
+  text-shadow: 0vw 0vw 0.052vw #ff8845;
 }
 :-moz-placeholder {
   color: #ff8845;
-  text-shadow: 0vw 0vw 0.163vw #ff8845;
+  text-shadow: 0vw 0vw 0.052vw #ff8845;
 }
 ::-moz-placeholder {
   color: #ff8845;
-  text-shadow: 0vw 0vw 0.163vw #ff8845;
+  text-shadow: 0vw 0vw 0.052vw #ff8845;
 }
 :-ms-input-#ffffff {
   color: #ff8845;
-  text-shadow: 0vw 0vw 0.163vw #ff8845;
+  text-shadow: 0vw 0vw 0.052vw #ff8845;
 }
 @keyframes border-pulse {
   0% {
@@ -533,6 +533,9 @@ body {
       display: none;
     }
     .main {
+      .logo-mobile{
+        display: none;
+      }
       .main-container {
         height: 45.833vw;
         position: relative;
@@ -561,7 +564,7 @@ body {
               font-size: 2.76vw;
               line-height: 3.177vw;
               color: #ffffff;
-              text-shadow: 0vw 0vw 0.521vw rgba(235, 255, 154, 0.36);
+              text-shadow: 0vw 0vw 0.052vw rgba(235, 255, 154, 0.36);
               width: 37.5vw;
               span {
                 font-size: 3.75vw;
@@ -632,7 +635,7 @@ body {
                   font-size: 1.875vw;
                   line-height: 2.135vw;
                   color: #ffffff;
-                  text-shadow: 0vw 0vw 0.182vw #ffffff;
+                  text-shadow: 0vw 0vw 0.052vw #ffffff;
                 }
               }
             }
@@ -653,7 +656,7 @@ body {
             font-size: 1.875vw;
             line-height: 2.135vw;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
           ul {
             font-weight: normal;
@@ -746,7 +749,7 @@ body {
             line-height: 2.135vw;
             text-align: center;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .services__sites-circl.active {
@@ -776,7 +779,7 @@ body {
             text-align: center;
             text-align: center;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .services__audit-circl.active {
@@ -805,7 +808,7 @@ body {
             line-height: 1.771vw;
             text-align: center;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .services__seo-circl.active {
@@ -834,7 +837,7 @@ body {
             line-height: 4.323vw;
             text-align: center;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .services__smm-circl.active {
@@ -864,7 +867,7 @@ body {
             line-height: 3.438vw;
             text-align: center;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
       }
@@ -905,13 +908,13 @@ body {
             font-weight: bold;
             font-size: 3.333vw;
             line-height: 3.854vw;
-            text-shadow: 0vw 0.052vw 1.042vw rgba(248, 136, 6, 0.25);
+            text-shadow: 0vw 0.052vw 0.052vw rgba(248, 136, 6, 0.25);
             color: #ffffff;
             span {
               font-weight: bold;
               font-size: 3.333vw;
               line-height: 3.854vw;
-              text-shadow: 0vw 0.052vw 1.042vw rgba(248, 136, 6, 0.25);
+              text-shadow: 0vw 0.052vw 0.052vw rgba(248, 136, 6, 0.25);
               color: transparent;
               -webkit-background-clip: text;
               background-clip: text;
@@ -1022,7 +1025,7 @@ body {
           font-weight: bold;
           font-size: 3.333vw;
           line-height: 3.854vw;
-          text-shadow: 0vw 0.052vw 1.042vw rgba(248, 136, 6, 0.25);
+          text-shadow: 0vw 0.052vw 0.052vw rgba(248, 136, 6, 0.25);
           color: transparent;
           -webkit-background-clip: text;
           background-clip: text;
@@ -1055,7 +1058,7 @@ body {
             line-height: 2.031vw;
             text-align: center;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.206vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .benefits__project {
@@ -1080,7 +1083,7 @@ body {
             line-height: 5.365vw;
             text-align: center;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.182vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .benefits__quality {
@@ -1105,7 +1108,7 @@ body {
             line-height: 1.198vw;
             text-align: center;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.129vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .benefits__budget {
@@ -1132,7 +1135,7 @@ body {
             text-align: center;
             color: #ffffff;
             opacity: 0.97;
-            text-shadow: 0vw 0vw 0.182vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
             z-index: 1;
           }
         }
@@ -1159,7 +1162,7 @@ body {
             line-height: 0.938vw;
             text-align: center;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.105vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
       }
@@ -1195,7 +1198,7 @@ body {
             line-height: 3.854vw;
             color: #ffffff;
             span {
-              text-shadow: 0vw 0.052vw 1.042vw rgba(248, 136, 6, 0.25);
+              text-shadow: 0vw 0.052vw 0.052vw rgba(248, 136, 6, 0.25);
               color: transparent;
               -webkit-background-clip: text;
               background-clip: text;
@@ -1397,7 +1400,7 @@ body {
             font-weight: bold;
             font-size: 3.333vw;
             line-height: 3.854vw;
-            text-shadow: 0vw 0.052vw 1.042vw rgba(248, 136, 6, 0.25);
+            text-shadow: 0vw 0.052vw 0.052vw rgba(248, 136, 6, 0.25);
             color: transparent;
             -webkit-background-clip: text;
             background-clip: text;
@@ -1431,7 +1434,7 @@ body {
             font-size: 2.083vw;
             line-height: 2.396vw;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .instruments__circl-sql {
@@ -1458,7 +1461,7 @@ body {
             font-size: 3.438vw;
             line-height: 3.958vw;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .instruments__circl-css {
@@ -1484,7 +1487,7 @@ body {
             font-size: 2.083vw;
             line-height: 2.396vw;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .instruments__circl-adobe {
@@ -1510,7 +1513,7 @@ body {
             font-size: 2.083vw;
             line-height: 2.396vw;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .instruments__circl-github {
@@ -1537,7 +1540,7 @@ body {
             font-size: 2.917vw;
             line-height: 3.333vw;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .instruments__circl-ux {
@@ -1563,7 +1566,7 @@ body {
             font-size: 2.083vw;
             line-height: 2.396vw;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .instruments__circl-react {
@@ -1589,7 +1592,7 @@ body {
             font-size: 1.667vw;
             line-height: 1.927vw;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .instruments__circl-yandex {
@@ -1616,7 +1619,7 @@ body {
             font-size: 1.25vw;
             line-height: 1.458vw;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .instruments__circl-bem {
@@ -1642,7 +1645,7 @@ body {
             font-size: 2.083vw;
             line-height: 2.396vw;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .instruments__circl-google {
@@ -1669,7 +1672,7 @@ body {
             font-size: 3.021vw;
             line-height: 3.49vw;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .instruments__circl-ads {
@@ -1696,7 +1699,7 @@ body {
             font-size: 1.042vw;
             line-height: 1.198vw;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .instruments__circl-node {
@@ -1723,7 +1726,7 @@ body {
             font-size: 2.083vw;
             line-height: 2.396vw;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .instruments__circl-wp {
@@ -1749,7 +1752,7 @@ body {
             font-size: 1.563vw;
             line-height: 1.771vw;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .instruments__circl-tilda {
@@ -1775,7 +1778,7 @@ body {
             font-size: 1.667vw;
             line-height: 1.927vw;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .instruments__circl-bitrix {
@@ -1802,7 +1805,7 @@ body {
             font-size: 2.917vw;
             line-height: 3.333vw;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .instruments__circl-cms {
@@ -1828,7 +1831,7 @@ body {
             font-size: 1.146vw;
             line-height: 1.302vw;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .instruments__circl-api {
@@ -1854,7 +1857,7 @@ body {
             font-size: 1.563vw;
             line-height: 1.771vw;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .instruments__circl-crm {
@@ -1880,7 +1883,7 @@ body {
             font-size: 2.083vw;
             line-height: 2.396vw;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .instruments__circl-php {
@@ -1906,7 +1909,7 @@ body {
             font-size: 2.083vw;
             line-height: 2.396vw;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
         .instruments__circl-js {
@@ -1932,7 +1935,7 @@ body {
             font-size: 1.667vw;
             line-height: 1.927vw;
             color: #ffffff;
-            text-shadow: 0vw 0vw 0.13vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
           }
         }
       }
@@ -1963,6 +1966,7 @@ body {
           flex-direction: column;
           gap: 1.563vw;
           width: 22.135vw;
+
           h2 {
             font-weight: 700;
             font-size: 3.333vw;
@@ -1977,7 +1981,6 @@ body {
             -webkit-text-fill-color: transparent;
             background-clip: text;
             text-fill-color: transparent;
-            filter: blur(0.052vw);
           }
           span {
             font-weight: 700;
@@ -1985,7 +1988,7 @@ body {
             line-height: 2.135vw;
             color: #ffffff;
 
-            text-shadow: 0vw 0vw 0.163vw #ffffff;
+            text-shadow: 0vw 0vw 0.052vw #ffffff;
             width: 18.49vw;
           }
         }
@@ -2053,6 +2056,7 @@ body {
           }
         }
         .entry {
+          border-radius: 0;
           width: 100%;
           border: none;
           font-weight: 600;
@@ -2062,7 +2066,6 @@ body {
           border-bottom: 0.104vw solid rgba(255, 185, 163, 0.51);
           color: #ff8845;
           transition: 0.3s border-bottom;
-          caret-color: #c8fb1b;
           &:focus {
             border-bottom: #cbfb1f solid 0.104vw;
           }
@@ -2140,6 +2143,7 @@ body {
               );
             }
             .form__input {
+              padding: 0;
               border-radius: 50%;
               width: 100%;
               height: 100%;
@@ -2150,7 +2154,7 @@ body {
               font-size: 3.212vw;
               line-height: 3.75vw;
               color: #cbfb1f;
-              text-shadow: 0vw 0vw 0.503vw rgba(196, 251, 23, 0.97);
+              text-shadow: 0vw 0vw 0.052vw rgba(196, 251, 23, 0.97);
             }
           }
         }
