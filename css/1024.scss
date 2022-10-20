@@ -4,18 +4,13 @@
     height: 65.43vw;
   }
 
-  ::-webkit-input-placeholder {
+  input::placeholder{
     text-shadow: 0vw 0vw 0.098vw #ff8845;
   }
-  :-moz-placeholder {
+  textarea::placeholder{
     text-shadow: 0vw 0vw 0.098vw #ff8845;
   }
-  ::-moz-placeholder {
-    text-shadow: 0vw 0vw 0.098vw #ff8845;
-  }
-  :-ms-input-#ffffff {
-    text-shadow: 0vw 0vw 0.098vw #ff8845;
-  }
+
   @keyframes border-pulse {
     0% {
       box-shadow: 0vw 0vw 0.781vw 0vw #f80068;
@@ -369,7 +364,7 @@
                 transition: none;
               }
               &:hover {
-                transform: scaleY(1.05);
+                transform: scaleY(1);
                 -webkit-box-shadow: 0vw 0vw 1.563vw 0.586vw rgba(200, 251, 27, 0.21);
                 -moz-box-shadow: 0vw 0vw 1.563vw 0.586vw rgba(200, 251, 27, 0.21);
                 box-shadow: 0vw 0vw 1.563vw 0.586vw rgba(200, 251, 27, 0.21);
@@ -1013,7 +1008,7 @@
           .form__button-green {
             width: 14.16vw;
             height: 14.16vw;
-            box-shadow: inset 0vw 0.162vw 3.244vw #cbfb1f;
+            box-shadow: inset 0vw 0.162vw 2.244vw #cbfb1f;
             .form__button-blur {
               backdrop-filter: blur(0.977vw);
               height: 12.109vw;

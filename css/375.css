@@ -9,16 +9,22 @@
     max-width: 90.667vw;
     height: 153.067vw;
   }
-  ::-webkit-input-placeholder {
+  input::-moz-placeholder {
     text-shadow: 0vw 0vw 0.267vw #ff8845;
   }
-  :-moz-placeholder {
+  input:-ms-input-placeholder {
     text-shadow: 0vw 0vw 0.267vw #ff8845;
   }
-  ::-moz-placeholder {
+  input::placeholder {
     text-shadow: 0vw 0vw 0.267vw #ff8845;
   }
-  :-ms-input-#ffffff {
+  textarea::-moz-placeholder {
+    text-shadow: 0vw 0vw 0.267vw #ff8845;
+  }
+  textarea:-ms-input-placeholder {
+    text-shadow: 0vw 0vw 0.267vw #ff8845;
+  }
+  textarea::placeholder {
     text-shadow: 0vw 0vw 0.267vw #ff8845;
   }
   @-webkit-keyframes border-pulse {
@@ -42,6 +48,41 @@
     100% {
       box-shadow: 0vw 0vw 2.133vw 0vw #f80068;
     }
+  }
+  body .preloader::before {
+    left: 50%;
+    top: 40px;
+    font-size: 24px;
+    line-height: 28px;
+    width: 405px;
+    height: 35px;
+    text-shadow: -2px 2px 8px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0px 5.92308px 4.84615px rgba(0, 0, 0, 0.25));
+    border-radius: 16.1538px;
+    transform: translateX(-50%);
+  }
+  body .preloader .preloader__block .preloader__logo {
+    gap: 9.766vw;
+    height: 27.437vw;
+    width: 75.195vw;
+  }
+  body .preloader .preloader__block .preloader__logo .preloader-anime {
+    width: 27.637vw;
+  }
+  body .preloader .preloader__block .preloader__logo h2 {
+    width: 27.344vw;
+    font-size: 9.375vw;
+    line-height: 7.5vw;
+    text-shadow: 0vw 1.074vw 0.879vw rgba(0, 0, 0, 0.25);
+  }
+  body .preloader .preloader__block .preloader__line {
+    padding: 0 0 0 41%;
+    height: 9.348vw;
+    width: 94.328vw;
+    filter: drop-shadow(0vw 1.074vw 0.879vw rgba(0, 0, 0, 0.25));
+    border-radius: 0.488vw;
+    font-size: 4.518vw;
+    line-height: 4.004vw;
   }
   body .wrapper .burger-menu {
     width: 6.667vw;
@@ -315,6 +356,7 @@
     border-radius: 5.333vw;
     width: 88vw;
     height: 12.8vw;
+    box-shadow: inset 0vw 0.087vw 3.73vw #cbfb1f;
   }
   body .wrapper .main .main-container .main__left-block .button-orange .button-green .button-blur {
     -webkit-backdrop-filter: blur(2.667vw);
@@ -1152,7 +1194,7 @@
   body .wrapper .form .form__button-orange .form__button-green {
     width: 38.667vw;
     height: 38.667vw;
-    box-shadow: inset 0vw 0.443vw 8.86vw #cbfb1f;
+    box-shadow: inset 0vw 0.443vw 6.86vw #cbfb1f;
   }
   body .wrapper .form .form__button-orange .form__button-green .form__button-blur {
     -webkit-backdrop-filter: blur(2.667vw);

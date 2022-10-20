@@ -1,6 +1,7 @@
 window.onload = () => {
   let body = document.querySelector("body"),
     preloader = document.getElementById("page-preloader"),
+    preloaderLine = document.querySelector(".preloader__line"),
     headerNav = document.querySelector(".header__nav"),
     logo = document.querySelector("#logo"),
     headerNavItem = document.querySelectorAll(".header__nav-item"),
@@ -43,6 +44,27 @@ window.onload = () => {
       preloader.classList.add("done"), (body.style.overflow = "visible");
     }
   }, 2000);
+
+function loading() {
+setTimeout(() => {
+  setTimeout(() => {
+    preloaderLine.innerHTML = "Loading"
+  }, 500);
+  setTimeout(() => {
+    preloaderLine.innerHTML = "Loading."
+  }, 1000);
+  setTimeout(() => {
+    preloaderLine.innerHTML = "Loading.."
+  }, 1500);
+  setTimeout(() => {
+    if(!preloader.classList.contains('done')){
+      preloaderLine.innerHTML = "Loading..."
+      loading()
+    }
+  }, 2000);
+}, 100);
+}
+loading()
 
   // animacion scroll
   const options = {
@@ -107,7 +129,7 @@ window.onload = () => {
       title.innerHTML =
         "<span>Web-студия</span> решающая задачи любого уровня сложности за честную цену";
       portfolioTitle.innerHTML =
-        "<span>Портфолио</span> — наши последние работы";
+        "<span>Портфолио</span> — работы нашей команды";
       sentenceTitle.innerHTML =
         "<span>Мы предлагаем</span>  — широкий спектр web услуг";
       // Portfolio
@@ -208,12 +230,11 @@ window.onload = () => {
         xDown = null;
         yDown = null;
       }
-
       // accordion
       sentenceElem.forEach((e) => {
         e.addEventListener("click", () => {
           removeClass();
-          e.classList.toggle("active");
+          e.classList.add("active");
         });
       });
       function removeClass() {
@@ -223,6 +244,5 @@ window.onload = () => {
       }
     }
   }
-
   media();
 };

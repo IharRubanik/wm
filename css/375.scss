@@ -14,18 +14,16 @@
     max-width: 90.667vw;
     height: 153.067vw;
   }
-  ::-webkit-input-placeholder {
+
+
+  input::placeholder{
     text-shadow: 0vw 0vw 0.267vw #ff8845;
   }
-  :-moz-placeholder {
+  textarea::placeholder{
     text-shadow: 0vw 0vw 0.267vw #ff8845;
   }
-  ::-moz-placeholder {
-    text-shadow: 0vw 0vw 0.267vw #ff8845;
-  }
-  :-ms-input-#ffffff {
-    text-shadow: 0vw 0vw 0.267vw #ff8845;
-  }
+
+
   @keyframes border-pulse {
     0% {
       box-shadow: 0vw 0vw 2.133vw 0vw #f80068;
@@ -38,6 +36,45 @@
     }
   }
   body {
+    .preloader {
+      &::before {
+        left: 50%;
+        top: 40px;
+        font-size: 24px;
+        line-height: 28px;
+        width: 405px;
+        height: 35px;
+        text-shadow: -2px 2px 8px rgba(0, 0, 0, 0.25);
+        filter: drop-shadow(0px 5.92308px 4.84615px rgba(0, 0, 0, 0.25));
+        border-radius: 16.1538px;
+        transform: translateX(-50%);
+      }
+      .preloader__block {
+        .preloader__logo {
+          gap: 9.766vw;
+          height: 27.437vw;
+          width: 75.195vw;
+          .preloader-anime {
+            width: 27.637vw;
+          }
+          h2 {
+            width: 27.344vw;
+            font-size: 9.375vw;
+            line-height: 7.5vw;
+            text-shadow: 0vw 1.074vw 0.879vw rgba(0, 0, 0, 0.25);
+          }
+        }
+        .preloader__line {
+          padding: 0 0 0 41%;
+          height: 9.348vw;
+          width: 94.328vw;
+          filter: drop-shadow(0vw 1.074vw 0.879vw rgba(0, 0, 0, 0.25));
+          border-radius: 0.488vw;
+          font-size: 4.518vw;
+          line-height: 4.004vw;
+        }
+      }
+    }
     .wrapper {
       .burger-menu {
         width: 6.667vw;
@@ -266,15 +303,6 @@
           height: auto;
           display: block;
         }
-        // &::before {
-        //   content: '';
-        //   width: 73.675vw;
-        //   height: 50.71px;
-        //   background-image: url(../images/header/header-logo.svg);
-        //   background-size: 73.675vw 50.71px ;
-        //   margin: 0 auto;
-        //   display: block;
-        // }
         .main-container {
           height: auto;
           margin-top: 9.333vw;
@@ -310,6 +338,7 @@
                 border-radius: 5.333vw;
                 width: 88vw;
                 height: 12.8vw;
+                box-shadow: inset 0vw 0.087vw 3.73vw #cbfb1f;
                 .button-blur {
                   backdrop-filter: blur(2.667vw);
                   border-radius: 5.333vw;
@@ -1146,7 +1175,7 @@
           .form__button-green {
             width: 38.667vw;
             height: 38.667vw;
-            box-shadow: inset 0vw 0.443vw 8.86vw #cbfb1f;
+            box-shadow: inset 0vw 0.443vw 6.86vw #cbfb1f;
             .form__button-blur {
               backdrop-filter: blur(2.667vw);
               height: 33.067vw;
