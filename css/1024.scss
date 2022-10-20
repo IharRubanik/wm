@@ -984,9 +984,15 @@
             font-weight: 600;
             font-size: 2.338vw;
             line-height: 2.734vw;
-            border-bottom: 0.195vw solid rgba(255, 185, 163, 0.51);
+            border-bottom: 0.222vw solid rgba(255, 185, 163, 0.51);
+            &:focus {
+              border-bottom: #cbfb1f solid 0.222vw;
+            }
           }
           .textarea-wrapper {
+            .entry{
+              border: none;
+            }
             &::before {
               width: 22.461vw;
               height: 3.418vw;
@@ -999,6 +1005,7 @@
               border-top: 0.222vw solid rgba(255, 185, 163, 0.51);
               border-right: 0.222vw solid rgba(255, 185, 163, 0.51);
             }
+          
           }
         }
         .form__button-orange {

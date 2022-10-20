@@ -210,14 +210,6 @@ textarea::placeholder {
     top: 0;
   }
 }
-// @keyframes preloader {
-//   0% {
-//     opacity: 0;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
 @keyframes portfolio__button-img {
   0% {
     transform: scale(1);
@@ -291,17 +283,10 @@ body {
       width: 21.094vw;
       height: 1.823vw;
       text-align: center;
-      text-shadow: -0.104vw 0.104vw 0.417vw rgba(0, 0, 0, 0.25);
-      background: linear-gradient(
-        90.14deg,
-        rgba(36, 36, 36, 0) 12.65%,
-        #ad9100 39.8%,
-        #2e5889 47.78%,
-        rgba(16, 16, 16, 0) 83.95%
-      );
-      filter: drop-shadow(0vw 0.308vw 0.252vw rgba(0, 0, 0, 0.25));
-      border-radius: 0.841vw;
-      // transform: matrix(1, 0, 0, -1, 0, 0);
+      background: linear-gradient(90.14deg, rgba(36, 36, 36, 0) 12.65%, #F7CE00 39.8%, #0058B5 47.78%, rgba(16, 16, 16, 0) 83.95%);
+      filter: drop-shadow(0px 5.92308px 4.84615px rgba(0, 0, 0, 0.25));
+      border-radius: 16.1538px;
+      box-shadow: 0px 0px 40px 0 rgba(19, 19, 19, 0.73) inset;
     }
     &.done {
       opacity: 0;
@@ -2097,11 +2082,11 @@ body {
           font-size: 1.869vw;
           line-height: 2.188vw;
           background: none;
-          border-bottom: 0.104vw solid rgba(255, 185, 163, 0.51);
+          border-bottom: 0.118vw solid rgba(255, 185, 163, 0.51);
           color: #f80067d7;
           transition: 0.3s border-bottom;
           &:focus {
-            border-bottom: #cbfb1f solid 0.104vw;
+            border-bottom: #cbfb1f solid 0.118vw;
           }
         }
         .textarea-wrapper {
@@ -2121,6 +2106,7 @@ body {
             height: 3.125vw;
             border-left: 0.118vw solid rgba(255, 185, 163, 0.51);
             border-bottom: 0.118vw solid rgba(255, 185, 163, 0.51);
+            transition: 0.3s border-color;
           }
           &::after {
             content: "";
@@ -2131,6 +2117,13 @@ body {
             height: 3.229vw;
             border-top: 0.118vw solid rgba(255, 185, 163, 0.51);
             border-right: 0.118vw solid rgba(255, 185, 163, 0.51);
+            transition: 0.3s border-color;
+          }
+          &.active {
+            &::before,
+            &::after {
+              border-color: #cbfb1f;
+            }
           }
         }
       }

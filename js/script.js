@@ -116,7 +116,16 @@ loading()
   // textaria focus
   textareaWrapper.addEventListener("click", function () {
     textareaInput.focus();
+
+      textareaWrapper.classList.add('active')
   });
+
+  textareaWrapper.addEventListener("focusout", function (){
+    textareaWrapper.classList.remove('active')
+  });
+
+
+  
 
   // resize
   window.addEventListener("resize", function () {

@@ -15,14 +15,12 @@
     height: 153.067vw;
   }
 
-
-  input::placeholder{
+  input::placeholder {
     text-shadow: 0vw 0vw 0.267vw #ff8845;
   }
-  textarea::placeholder{
+  textarea::placeholder {
     text-shadow: 0vw 0vw 0.267vw #ff8845;
   }
-
 
   @keyframes border-pulse {
     0% {
@@ -170,7 +168,6 @@
         transition: 1s transform;
         overflow-y: scroll;
         &.active {
-          // top: 0;
           transform: translateY(calc(100% - 11.2vw));
         }
         .header-container {
@@ -297,7 +294,7 @@
       .main {
         padding: 26.667vw 0 0 0;
         height: auto;
-        .logo-mobile{
+        .logo-mobile {
           width: 73.675vw;
           margin: 0 auto;
           height: auto;
@@ -1151,9 +1148,15 @@
             font-weight: 600;
             font-size: 6.385vw;
             line-height: 7.467vw;
-            border-bottom: 0.533vw solid rgba(255, 185, 163, 0.51);
+            border-bottom: 0.606vw solid rgba(255, 185, 163, 0.51);
+            &:focus {
+              border-bottom: #cbfb1f solid 0.606vw;
+            }
           }
           .textarea-wrapper {
+            .entry {
+              border: none;
+            }
             &::before {
               width: 61.333vw;
               height: 9.333vw;

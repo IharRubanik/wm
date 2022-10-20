@@ -1172,7 +1172,13 @@
     font-weight: 600;
     font-size: 6.385vw;
     line-height: 7.467vw;
-    border-bottom: 0.533vw solid rgba(255, 185, 163, 0.51);
+    border-bottom: 0.606vw solid rgba(255, 185, 163, 0.51);
+  }
+  body .wrapper .form .form__application-form .entry:focus {
+    border-bottom: #cbfb1f solid 0.606vw;
+  }
+  body .wrapper .form .form__application-form .textarea-wrapper .entry {
+    border: none;
   }
   body .wrapper .form .form__application-form .textarea-wrapper::before {
     width: 61.333vw;
