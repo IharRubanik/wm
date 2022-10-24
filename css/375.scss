@@ -1226,9 +1226,10 @@ box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
             gap: 2.667vw;
             justify-content: center;
             flex-direction: column-reverse;
+            align-items: flex-start;
             img {
               width: 37.333vw;
-              transform: translateY(-1.333vw);
+              transform: translate(-1.333vw, 1vw);
             }
             h3 {
               font-weight: normal;

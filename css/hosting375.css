@@ -44,7 +44,7 @@
   }
   body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem {
     width: 100%;
-    padding: 9.333vw;
+    padding: 9.333vw 5.333vw;
     -webkit-backdrop-filter: blur(5.333vw);
             backdrop-filter: blur(5.333vw);
     border-radius: 4.267vw;

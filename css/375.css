@@ -1244,10 +1244,11 @@
     gap: 2.667vw;
     justify-content: center;
     flex-direction: column-reverse;
+    align-items: flex-start;
   }
   body .wrapper .footer .footer__info .footer__right-block img {
     width: 37.333vw;
-    transform: translateY(-1.333vw);
+    transform: translate(-1.333vw, 1vw);
   }
   body .wrapper .footer .footer__info .footer__right-block h3 {
     font-weight: normal;
