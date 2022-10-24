@@ -293,13 +293,15 @@ window.onload = () => {
         //   });
         // }
         for (let  i = 0; i < sentenceElem.length; i++) {
-          sentenceElem[i].addEventListener("touchstart", function () {
+          sentenceElem[i].addEventListener("click", function () {
             if (!sentenceElem[i].classList.contains('active')) {
               sentenceElem[i].classList.add('active')
-             
               for (let x = 0; x < sentenceElem.length; x++) {
                 if(x !== i) {
                     sentenceElem[x].classList.remove('active')
+                }
+                else{
+                  sentenceElem[x].classList.add('active')
                 }
               }
             } 
