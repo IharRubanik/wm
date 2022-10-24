@@ -20,6 +20,8 @@ window.onload = () => {
     portfolioTitle = document.querySelector("#portfoli__title-h2"),
     sentenceTitle = document.querySelector("#sentence__title-h2"),
     sentenceElem = document.querySelectorAll(".sentence__flex-el"),
+    checkboxButton = document.querySelectorAll(".checkbox-button"),
+    // checkboxArrow = document.querySelectorAll(".checkbox-img"),
     menuMobile = document.querySelector("#header"),
     newScrinWidth = screen.width,
     mediaQuery = window.matchMedia("only screen and (max-width: 1280px)"),
@@ -39,32 +41,37 @@ window.onload = () => {
   }
 
   // preloader
-  setTimeout(function () {
-    if (!preloader.classList.contains("done")) {
-      preloader.classList.add("done"), (body.style.overflow = "visible");
-    }
-  }, 2000);
+  if (preloader) {
+    setTimeout(function () {
+      if (!preloader.classList.contains("done")) {
+        preloader.classList.add("done"), (body.style.overflow = "visible");
+      }
+    }, 2000);
 
-function loading() {
-setTimeout(() => {
-  setTimeout(() => {
-    preloaderLine.innerHTML = "Loading"
-  }, 500);
-  setTimeout(() => {
-    preloaderLine.innerHTML = "Loading."
-  }, 1000);
-  setTimeout(() => {
-    preloaderLine.innerHTML = "Loading.."
-  }, 1500);
-  setTimeout(() => {
-    if(!preloader.classList.contains('done')){
-      preloaderLine.innerHTML = "Loading..."
-      loading()
+    // preloader loading
+    function loading() {
+      setTimeout(() => {
+        setTimeout(() => {
+          preloaderLine.innerHTML = "Loading";
+        }, 500);
+        setTimeout(() => {
+          preloaderLine.innerHTML = "Loading.";
+        }, 1000);
+        setTimeout(() => {
+          preloaderLine.innerHTML = "Loading..";
+        }, 1500);
+        setTimeout(() => {
+          if (!preloader.classList.contains("done")) {
+            preloaderLine.innerHTML = "Loading...";
+            loading();
+          }
+        }, 2000);
+      }, 100);
     }
-  }, 2000);
-}, 100);
-}
-loading()
+    loading();
+  } else {
+    body.style.overflow = "visible";
+  }
 
   // animacion scroll
   const options = {
@@ -113,20 +120,34 @@ loading()
     checkbox.classList.toggle("active");
   });
 
+  if (checkboxButton) {
+    for (let  i = 0; i < checkboxButton.length; i++) {
+      checkboxButton[i].addEventListener("click", function () {
+        if (!checkboxButton[i].classList.contains('active')) {
+          checkboxButton[i].classList.add('active')
+          for (let x = 0; x < checkboxButton.length; x++) {
+            if(x !== i) {
+              checkboxButton[x].classList.remove('active')
+            }
+          }
+        } 
+        else{
+          checkboxButton[i].classList.remove('active')
+        }     
+      });
+    }
+  }
+
   // textaria focus
-  textareaWrapper.addEventListener("click", function () {
-    textareaInput.focus();
-
-      textareaWrapper.classList.add('active')
-  });
-
-  textareaWrapper.addEventListener("focusout", function (){
-    textareaWrapper.classList.remove('active')
-  });
-
-
-  
-
+  if (textareaWrapper) {
+    textareaWrapper.addEventListener("click", function () {
+      textareaInput.focus();
+      textareaWrapper.classList.add("active");
+    });
+    textareaWrapper.addEventListener("focusout", function () {
+      textareaWrapper.classList.remove("active");
+    });
+  }
   // resize
   window.addEventListener("resize", function () {
     newScrinWidth = screen.width;
@@ -135,31 +156,50 @@ loading()
 
   function media() {
     if (newScrinWidth <= 1280) {
-      title.innerHTML =
+
+      if (title) {
+        title.innerHTML =
         "<span>Web-студия</span> решающая задачи любого уровня сложности за честную цену";
-      portfolioTitle.innerHTML =
+      }
+      if (portfolioTitle) {
+        portfolioTitle.innerHTML =
         "<span>Портфолио</span> — работы нашей команды";
+      }
+     if(sentenceTitle) {
       sentenceTitle.innerHTML =
-        "<span>Мы предлагаем</span>  — широкий спектр web услуг";
+      "<span>Мы предлагаем</span>  — широкий спектр web услуг";
+     }
+    
       // Portfolio
-      for (let i = 0; i < portfolioElem.length; i++) {
-        portfolioElem[i].onclick = function () {
-          if (i != 5) {
-            this.removeAttribute("href");
-            for (let n = 0; n < portfolioElem.length; n++) {
-              portfolioElem[n].classList.remove("active");
+      if (portfolioElem) {
+        for (let i = 0; i < portfolioElem.length; i++) {
+          portfolioElem[i].onclick = function () {
+            if (i != 5) {
+              this.removeAttribute("href");
+              for (let n = 0; n < portfolioElem.length; n++) {
+                portfolioElem[n].classList.remove("active");
+              }
+              this.classList.add("active");
             }
-            this.classList.add("active");
-          }
-        };
+          };
+        }
       }
     }
     // media 600
     if (newScrinWidth <= 600) {
-      title.innerHTML =
+      if (title) {
+        title.innerHTML =
         "Мы решаем  задачи любого уровня сложности за честную цену";
-      portfolioTitle.innerHTML = "<span>Портфолио</span>";
-      sentenceTitle.innerHTML = "<span>Мы предлагаем</span>";
+      }
+      if(portfolioTitle) {
+        portfolioTitle.innerHTML = "<span>Портфолио</span>";
+      }
+      if(sentenceTitle) {
+        sentenceTitle.innerHTML = "<span>Мы предлагаем</span>";
+      }
+     
+      
+      
 
       // Burger
       burger.onclick = function () {
@@ -240,16 +280,33 @@ loading()
         yDown = null;
       }
       // accordion
-      sentenceElem.forEach((e) => {
-        e.addEventListener("click", () => {
-          removeClass();
-          e.classList.add("active");
-        });
-      });
-      function removeClass() {
-        sentenceElem.forEach((e) => {
-          e.classList.remove("active");
-        });
+      if (sentenceElem) {
+        // sentenceElem.forEach((e) => {
+        //   e.addEventListener("click", () => {
+        //     removeClass();
+        //     e.classList.add("active");
+        //   });
+        // });
+        // function removeClass() {
+        //   sentenceElem.forEach((e) => {
+        //     e.classList.remove("active");
+        //   });
+        // }
+        for (let  i = 0; i < sentenceElem.length; i++) {
+          sentenceElem[i].addEventListener("click", function () {
+            if (!sentenceElem[i].classList.contains('active')) {
+              sentenceElem[i].classList.add('active')
+              for (let x = 0; x < sentenceElem.length; x++) {
+                if(x !== i) {
+                  sentenceElem[x].classList.remove('active')
+                }
+              }
+            } 
+            else{
+              sentenceElem[i].classList.remove('active')
+            }     
+          });
+        }
       }
     }
   }

@@ -1,0 +1,154 @@
+@media only screen and (max-width: 1280px) {
+  body .wrapper .hosting {
+    padding: 3.646vw 0 0 0;
+  }
+  body .wrapper .hosting .hosting-circle {
+    width: 81.487vw;
+    height: 81.487vw;
+    right: 10.104vw;
+    bottom: -5vw;
+    border-width: 0.885vw;
+    box-shadow: 0vw 0vw 3.802vw 0.625vw rgba(248, 0, 104, 0.58);
+  }
+  body .wrapper .hosting .hosting-circle::before {
+    box-shadow: 0vw 0vw 3.802vw -0.938vw rgba(248, 0, 104, 0.58) inset;
+  }
+  body .wrapper .hosting .hosting__continer {
+    width: 95.703vw;
+  }
+  body .wrapper .hosting .hosting__continer .hosting-title {
+    padding: 0 3.906vw;
+    height: 7.422vw;
+    border-radius: 1.465vw;
+    -webkit-backdrop-filter: blur(1.953vw);
+            backdrop-filter: blur(1.953vw);
+  }
+  body .wrapper .hosting .hosting__continer .hosting-title h1 {
+    font-size: 3.711vw;
+    line-height: 4.297vw;
+    text-shadow: 0vw 0.098vw 0.098vw rgba(248, 136, 6, 0.25);
+  }
+  body .wrapper .hosting .hosting__continer .hosting-title h1 span {
+    font-size: 3.711vw;
+    line-height: 4.297vw;
+    text-shadow: 0vw 0.098vw 0.098vw rgba(248, 136, 6, 0.25);
+  }
+  body .wrapper .hosting .hosting__continer .hosting__elem-wrapper {
+    padding: 0.885vw 0 3.646vw 0;
+  }
+  body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem {
+    width: 16.436vw;
+    padding: 1.823vw;
+    -webkit-backdrop-filter: blur(1.042vw);
+            backdrop-filter: blur(1.042vw);
+    border-radius: 0.781vw;
+  }
+  body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem ul span {
+    font-size: 2.011vw;
+    line-height: 2.292vw;
+    margin: 0 0 0.26vw 0;
+  }
+  body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem ul li {
+    font-size: 0.769vw;
+    line-height: 0.885vw;
+    gap: 0.521vw;
+  }
+  body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem ul li img {
+    width: 1.302vw;
+  }
+  body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem:nth-child(1) {
+    background-image: url(../images/hosting/border-elem1.svg);
+  }
+  body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem:nth-child(2) {
+    background-image: url(../images/hosting/border-elem2.svg);
+  }
+  body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem:nth-child(3) {
+    background-image: url(../images/hosting/border-elem3.svg);
+  }
+  body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem span {
+    margin: 0.365vw 0 0.26vw 0;
+    font-size: 1.538vw;
+  }
+  body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem .buttom-block .left-block strong,
+body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem .buttom-block .right-block strong {
+    font-size: 2.05vw;
+    line-height: 2.344vw;
+  }
+  body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem .buttom-block .left-block p,
+body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem .buttom-block .right-block p {
+    font-size: 0.847vw;
+  }
+  body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem:hover {
+    transform: translateY(-1%);
+  }
+  body .wrapper .form {
+    z-index: 1;
+  }
+  body .wrapper .form .form__green-circle {
+    width: 19.792vw;
+    height: 19.792vw;
+    border-width: 1.042vw;
+    box-shadow: 0vw 0vw 1.979vw 0.625vw rgba(197, 251, 27, 0.6);
+  }
+  body .wrapper .form .form__green-circle::before {
+    box-shadow: 0vw 0vw 1.979vw -0.521vw rgba(197, 251, 27, 0.6) inset;
+  }
+  body .wrapper .form .form-container .form__title {
+    width: 13.281vw;
+    gap: 0.521vw;
+  }
+  body .wrapper .form .form-container .form__title h2 {
+    font-size: 1.815vw;
+    line-height: 2.083vw;
+  }
+  body .wrapper .form .form-container .form__title span {
+    font-size: 1.153vw;
+    line-height: 1.302vw;
+  }
+  body .wrapper .form .form-container .form__title .form__subtitle {
+    margin: 0 0 0 1.563vw;
+    gap: 1.302vw;
+  }
+  body .wrapper .form .form-container .form__title .form__subtitle img {
+    width: 1.563vw;
+    height: 1.563vw;
+    transform: scale(2.8) translateY(2%);
+  }
+  body .wrapper .form .form-container .form__title .form__subtitle span {
+    font-size: 1.153vw;
+    line-height: 1.302vw;
+    text-shadow: 0vw 0.052vw 0.052vw rgba(248, 136, 6, 0.25);
+  }
+  body .wrapper .form .form-container .form__application-form {
+    gap: 2vw;
+  }
+  body .wrapper .form .form-container .form__application-form span {
+    font-size: 2.338vw;
+    line-height: 2.734vw;
+  }
+  body .wrapper .form .form-container .form__application-form .checkbox-evaluate {
+    gap: 1.302vw;
+  }
+  body .wrapper .form .form-container .form__application-form .checkbox-evaluate .checkbox-button {
+    gap: 0.417vw;
+  }
+  body .wrapper .form .form-container .form__application-form .checkbox-evaluate .checkbox-button span {
+    width: 0.833vw;
+    height: 0.833vw;
+    border-width: 0.078vw;
+    border-radius: 0.128vw;
+  }
+  body .wrapper .form .form-container .form__application-form .checkbox-evaluate .checkbox-button span .checkbox-img {
+    width: 1.302vw;
+  }
+  body .wrapper .form .form-container .form__application-form .checkbox-evaluate .checkbox-button::after {
+    font-size: 0.769vw;
+    line-height: 0.885vw;
+  }
+  body .wrapper .form .form-container .form__application-form .checkbox-evaluate .checkbox-button.active {
+    transform: scale(1.14);
+  }
+  body .wrapper .form .form-container .form__application-form .checkbox-evaluate .checkbox-button.active span {
+    border-width: 0.078vw;
+  }
+}/*# sourceMappingURL=hosting1024.css.map */

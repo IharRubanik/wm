@@ -1,0 +1,25 @@
+<svg width="513" height="657" viewBox="0 0 513 657" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b_2379_382)">
+<path d="M0 24.9791C0 11.1835 11.1835 0 24.9792 0H488C501.807 0 513 11.1929 513 25V632C513 645.807 501.807 657 488 657H25C11.1929 657 0 645.807 0 632V24.9791Z" fill="white" fill-opacity="0.01"/>
+<path d="M0 24.9791C0 11.1835 11.1835 0 24.9792 0H488C501.807 0 513 11.1929 513 25V632C513 645.807 501.807 657 488 657H25C11.1929 657 0 645.807 0 632V24.9791Z" fill="url(#paint0_radial_2379_382)" fill-opacity="0.2"/>
+<path d="M24.9792 1.49875H488C500.979 1.49875 511.501 12.0206 511.501 25V632C511.501 644.979 500.979 655.501 488 655.501H25C12.0206 655.501 1.49875 644.979 1.49875 632V24.9791C1.49875 12.0112 12.0113 1.49875 24.9792 1.49875Z" stroke="url(#paint1_linear_2379_382)" stroke-width="2.9975"/>
+</g>
+<defs>
+<filter id="filter0_b_2379_382" x="-213.651" y="-213.651" width="940.302" height="1084.3" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="106.826"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2379_382"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2379_382" result="shape"/>
+</filter>
+<radialGradient id="paint0_radial_2379_382" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(392.596 403.256) rotate(-144.231) scale(460.687 511.323)">
+<stop offset="0.2375" stop-opacity="0"/>
+<stop offset="0.76875" stop-color="#D2FF1D" stop-opacity="0.3"/>
+<stop offset="0.930208" stop-color="#4F6300" stop-opacity="0.46"/>
+</radialGradient>
+<linearGradient id="paint1_linear_2379_382" x1="493.232" y1="566.665" x2="30.2145" y2="404.065" gradientUnits="userSpaceOnUse">
+<stop offset="0.191" stop-color="#F80068" stop-opacity="0.27"/>
+<stop offset="0.768459" stop-color="#3E3E3E" stop-opacity="0.119944"/>
+<stop offset="1" stop-color="#F80068" stop-opacity="0.36"/>
+</linearGradient>
+</defs>
+</svg>

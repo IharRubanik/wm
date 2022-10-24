@@ -11,7 +11,7 @@
 
 @media only screen and (max-width: 600px) {
   .container {
-    max-width: 90.667vw;
+    width: 90.667vw;
     height: 153.067vw;
   }
 
@@ -37,14 +37,14 @@
     .preloader {
       &::before {
         left: 50%;
-        top: 40px;
-        font-size: 24px;
-        line-height: 28px;
-        width: 405px;
-        height: 35px;
-        text-shadow: -2px 2px 8px rgba(0, 0, 0, 0.25);
-        filter: drop-shadow(0px 5.92308px 4.84615px rgba(0, 0, 0, 0.25));
-        border-radius: 16.1538px;
+        top: 10.667vw;
+        font-size: 6.4vw;
+        line-height: 7.467vw;
+        width: 108vw;
+        height: 9.333vw;
+        text-shadow: -0.533vw 0.533vw 2.133vw rgba(0, 0, 0, 0.25);
+        filter: drop-shadow(0vw 1.579vw 1.292vw rgba(0, 0, 0, 0.25));
+        border-radius: 4.308vw;
         transform: translateX(-50%);
       }
       .preloader__block {
@@ -160,7 +160,7 @@
         top: 78.4vw;
       }
       .header {
-        min-height: 667px;
+        min-height: 177.867vw;
         height: calc(100% + 11.2vw);
         border-radius: 0vw 0vw 5.333vw 5.333vw;
         backdrop-filter: blur(5.333vw);
@@ -192,17 +192,18 @@
           .header__left-block {
             flex-direction: column;
             gap: 13.333vw;
-
             .header__logo {
               width: 73.675vw;
             }
             .header__nav {
               flex-direction: column;
               gap: 5.333vw;
-              a {
-                text-align: center;
-                font-size: 6.4vw;
-                line-height: 7.467vw;
+              li {
+                a {
+                  text-align: center;
+                  font-size: 6.4vw;
+                  line-height: 7.467vw;
+                }
               }
             }
           }
@@ -405,10 +406,14 @@
           transform: translate(60%, -50%);
           width: 131.347vw;
           height: 131.347vw;
+          border-width: 4.8vw;
+          -webkit-box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
+-moz-box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
+box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
         }
         .services-container {
           position: relative;
-          height: 177.067vw;
+          height: 158.067vw;
           .services__ads-circl {
             top: 67.467vw;
             left: 12.8vw;
@@ -984,6 +989,7 @@
             left: 62.933vw;
             top: 84.685vw;
             backdrop-filter: blur(5.333vw);
+            // background-image: url(../images/instruments/ellipse3.svg);
             h3 {
               font-size: 4.27vw;
               line-height: 4.8vw;
@@ -1095,13 +1101,18 @@
           right: -194.667vw;
           top: 0vw;
           width: 264.051vw;
+          height: 264.051vw;
+          border-width: 8vw;
+          -webkit-box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
+-moz-box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
+box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
         }
         .form-container {
           height: 208.533vw;
           padding: 13.333vw 5.333vw 21.333vw 5.333vw;
           backdrop-filter: blur(10.667vw);
           background-image: url(../images/footer/form-bg-mobile.svg);
-          border-radius: 6.667vw 85.333vw 61.981vw 61.981vw;
+          border-radius: 9.667vw 85.333vw 61.981vw 61.981vw;
           flex-direction: column;
           .form__title {
             width: 100%;
