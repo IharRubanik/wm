@@ -78,9 +78,11 @@
                 margin: 5.333vw 0 2.667vw 0;
                 font-size: 6.4vw;
                 width: min-content;
-                color: #FFFFFF
+                color: #ffffff;
               }
               .buttom-block {
+                justify-content: center;
+                gap: 12vw;
                 .left-block,
                 .right-block {
                   strong {
@@ -110,22 +112,26 @@
           -moz-box-shadow: 0vw 0vw 10.133vw 3.2vw rgba(197, 251, 27, 0.6);
           box-shadow: 0vw 0vw 10.133vw 3.2vw rgba(197, 251, 27, 0.6);
           &::before {
-            -webkit-box-shadow: 0vw 0vw 10.133vw -2.667vw rgba(197, 251, 27, 0.6) inset;
+            -webkit-box-shadow: 0vw 0vw 10.133vw -2.667vw rgba(
+                197,
+                251,
+                27,
+                0.6
+              ) inset;
             -moz-box-shadow: 0vw 0vw 10.133vw -2.667vw rgba(197, 251, 27, 0.6) inset;
             box-shadow: 0vw 0vw 10.133vw -2.667vw rgba(197, 251, 27, 0.6) inset;
           }
         }
         .form-container {
-            background-image: url(../images/hosting/form-bg-mobile.svg.svg);
-            backdrop-filter: blur(5.333vw);
+          background-image: url(../images/hosting/form-bg-mobile.svg.svg);
+          backdrop-filter: blur(5.333vw);
           .form__title {
             width: 68vw;
             gap: 2.667vw;
-            margin: 0 auto 0 0 ;
+            margin: 0 auto 0 0;
             h2 {
-                font-size: 8.533vw;
-                line-height: 9.867vw;
-                
+              font-size: 8.533vw;
+              line-height: 9.867vw;
             }
             span {
               font-size: 5.905vw;
@@ -149,8 +155,8 @@
           .form__application-form {
             gap: 5vw;
             span {
-                font-size: 6.385vw;
-                line-height: 7.467vw;
+              font-size: 6.385vw;
+              line-height: 7.467vw;
             }
             .checkbox-evaluate {
               gap: 6.667vw;

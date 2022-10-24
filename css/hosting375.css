@@ -78,7 +78,11 @@
     width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
-    color: #FFFFFF;
+    color: #ffffff;
+  }
+  body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem .buttom-block {
+    justify-content: center;
+    gap: 12vw;
   }
   body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem .buttom-block .left-block strong,
 body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem .buttom-block .right-block strong {
