@@ -296,9 +296,13 @@ window.onload = () => {
           sentenceElem[i].addEventListener("click", function () {
             if (!sentenceElem[i].classList.contains('active')) {
               sentenceElem[i].classList.add('active')
+             
               for (let x = 0; x < sentenceElem.length; x++) {
                 if(x !== i) {
-                  sentenceElem[x].classList.remove('active')
+                  setTimeout(() => {
+                    sentenceElem[x].classList.remove('active')
+                  }, 10);
+                  
                 }
               }
             } 
