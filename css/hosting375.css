@@ -114,7 +114,7 @@ body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem .
             backdrop-filter: blur(5.333vw);
   }
   body .wrapper .form .form-container .form__title {
-    width: 68vw;
+    width: 100%;
     gap: 2.667vw;
     margin: 0 auto 0 0;
   }
@@ -127,7 +127,8 @@ body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem .
     line-height: 6.667vw;
   }
   body .wrapper .form .form-container .form__title .form__subtitle {
-    margin: 0 auto;
+    justify-content: flex-start;
+    margin: 0 0 0 12.533vw;
     gap: 6.667vw;
   }
   body .wrapper .form .form-container .form__title .form__subtitle img {
