@@ -118,6 +118,7 @@
         .form-container {
             background-image: url(../images/hosting/form-bg-mobile.svg.svg);
             backdrop-filter: blur(5.333vw);
+            align-items:flex-start;
           .form__title {
             width: 68vw;
             gap: 2.667vw;

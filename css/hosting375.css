@@ -108,6 +108,7 @@ body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem .
     background-image: url(../images/hosting/form-bg-mobile.svg.svg);
     -webkit-backdrop-filter: blur(5.333vw);
             backdrop-filter: blur(5.333vw);
+    align-items: flex-start;
   }
   body .wrapper .form .form-container .form__title {
     width: 68vw;
