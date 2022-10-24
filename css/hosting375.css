@@ -137,7 +137,7 @@ body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem .
     text-shadow: 0vw 0.267vw 0.267vw rgba(248, 136, 6, 0.25);
   }
   body .wrapper .form .form-container .form__application-form {
-    gap: 6vw;
+    gap: 5vw;
   }
   body .wrapper .form .form-container .form__application-form span {
     font-size: 6.385vw;
