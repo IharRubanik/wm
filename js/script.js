@@ -27,127 +27,6 @@ window.onload = () => {
     mediaQuery = window.matchMedia("only screen and (max-width: 1280px)"),
     mediaQueryMobile = window.matchMedia("only screen and (max-width: 600px)");
 
-  // scroll
-  const smoothLinks = document.querySelectorAll('a[href^="#"]');
-  for (let smoothLink of smoothLinks) {
-    smoothLink.addEventListener("click", function (e) {
-      e.preventDefault();
-      const id = smoothLink.getAttribute("href");
-      document.querySelector(id).scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    });
-  }
-
-  // preloader
-  if (preloader) {
-    setTimeout(function () {
-      if (!preloader.classList.contains("done")) {
-        preloader.classList.add("done"), (body.style.overflow = "visible");
-      }
-    }, 2000);
-
-    // preloader loading
-    function loading() {
-      setTimeout(() => {
-        setTimeout(() => {
-          preloaderLine.innerHTML = "Loading";
-        }, 500);
-        setTimeout(() => {
-          preloaderLine.innerHTML = "Loading.";
-        }, 1000);
-        setTimeout(() => {
-          preloaderLine.innerHTML = "Loading..";
-        }, 1500);
-        setTimeout(() => {
-          if (!preloader.classList.contains("done")) {
-            preloaderLine.innerHTML = "Loading...";
-            loading();
-          }
-        }, 2000);
-      }, 100);
-    }
-    loading();
-  } else {
-    body.style.overflow = "visible";
-  }
-
-  // animacion scroll
-  const options = {
-    root: null,
-    rootMargin: "30%",
-    threshold: 1,
-  };
-  const observer = new IntersectionObserver((entries, obs, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("active");
-        obs.unobserve(entry.target);
-      }
-    });
-  }, options);
-  for (let i = 0; i < animeElem.length; i++) {
-    observer.observe(animeElem[i]);
-    observer.observe(portfolioElem[0]);
-  }
-
-  // anime cursor
-  body.onmousemove = function (event) {
-    event = event || window.event;
-    hoverLigting.style.left = event.clientX + "px";
-    cursor.style.left = event.clientX + "px";
-    cursor.style.top = event.clientY + "px";
-    headerNav.onmouseout = function () {
-      hoverLigting.style.opacity = "0";
-    };
-    headerNav.onmousemove = function () {
-      hoverLigting.style.opacity = "1";
-    };
-  };
-
-  // lang
-  lang.onclick = function () {
-    if (lang.classList.contains("active")) {
-      lang.classList.remove("active");
-    } else {
-      lang.classList.add("active");
-    }
-  };
-
-  // checkbox
-  checkbox.addEventListener("click", function () {
-    checkbox.classList.toggle("active");
-  });
-
-  if (checkboxButton) {
-    for (let  i = 0; i < checkboxButton.length; i++) {
-      checkboxButton[i].addEventListener("click", function () {
-        if (!checkboxButton[i].classList.contains('active')) {
-          checkboxButton[i].classList.add('active')
-          for (let x = 0; x < checkboxButton.length; x++) {
-            if(x !== i) {
-              checkboxButton[x].classList.remove('active')
-            }
-          }
-        } 
-        else{
-          checkboxButton[i].classList.remove('active')
-        }     
-      });
-    }
-  }
-
-  // textaria focus
-  if (textareaWrapper) {
-    textareaWrapper.addEventListener("click", function () {
-      textareaInput.focus();
-      textareaWrapper.classList.add("active");
-    });
-    textareaWrapper.addEventListener("focusout", function () {
-      textareaWrapper.classList.remove("active");
-    });
-  }
   // resize
   window.addEventListener("resize", function () {
     newScrinWidth = screen.width;
@@ -155,21 +34,144 @@ window.onload = () => {
   });
 
   function media() {
-    if (newScrinWidth <= 1280) {
+    // scroll
+    const smoothLinks = document.querySelectorAll('a[href^="#"]');
+    for (let smoothLink of smoothLinks) {
+      smoothLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute("href");
+        document.querySelector(id).scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      });
+    }
 
+    // preloader
+    if (preloader) {
+      setTimeout(function () {
+        if (!preloader.classList.contains("done")) {
+          preloader.classList.add("done"), (body.style.overflow = "visible");
+        }
+      }, 2000);
+
+      // preloader loading
+      function loading() {
+        setTimeout(() => {
+          setTimeout(() => {
+            preloaderLine.innerHTML = "Loading";
+          }, 500);
+          setTimeout(() => {
+            preloaderLine.innerHTML = "Loading.";
+          }, 1000);
+          setTimeout(() => {
+            preloaderLine.innerHTML = "Loading..";
+          }, 1500);
+          setTimeout(() => {
+            if (!preloader.classList.contains("done")) {
+              preloaderLine.innerHTML = "Loading...";
+              loading();
+            }
+          }, 2000);
+        }, 100);
+      }
+      loading();
+    } else {
+      body.style.overflow = "visible";
+    }
+
+    // animacion scroll
+    const options = {
+      root: null,
+      rootMargin: "30%",
+      threshold: 1,
+    };
+    const observer = new IntersectionObserver((entries, obs, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          obs.unobserve(entry.target);
+        }
+      });
+    }, options);
+    for (let i = 0; i < animeElem.length; i++) {
+      observer.observe(animeElem[i]);
+      observer.observe(portfolioElem[0]);
+    }
+
+    if (newScrinWidth >= 1281) {
+      // anime cursor
+      body.onmousemove = function (event) {
+        event = event || window.event;
+        hoverLigting.style.left = event.clientX + "px";
+        cursor.style.left = event.clientX + "px";
+        cursor.style.top = event.clientY + "px";
+        headerNav.onmouseout = function () {
+          hoverLigting.style.opacity = "0";
+        };
+        headerNav.onmousemove = function () {
+          hoverLigting.style.opacity = "1";
+        };
+      };
+    }
+
+    // lang
+    lang.onclick = function () {
+      if (lang.classList.contains("active")) {
+        lang.classList.remove("active");
+      } else {
+        lang.classList.add("active");
+      }
+    };
+
+    // checkbox
+    checkbox.addEventListener("click", function () {
+      checkbox.classList.toggle("active");
+    });
+
+    if (checkboxButton) {
+      for (let i = 0; i < checkboxButton.length; i++) {
+        checkboxButton[i].addEventListener("click", function () {
+          if (!checkboxButton[i].classList.contains("active")) {
+            checkboxButton[i].classList.add("active");
+            for (let x = 0; x < checkboxButton.length; x++) {
+              if (x !== i) {
+                checkboxButton[x].classList.remove("active");
+              }
+            }
+          } else {
+            checkboxButton[i].classList.remove("active");
+          }
+        });
+      }
+    }
+
+    // textaria focus
+    if (textareaWrapper) {
+      textareaWrapper.addEventListener("click", function () {
+        textareaInput.focus();
+        textareaWrapper.classList.add("active");
+      });
+      textareaWrapper.addEventListener("focusout", function () {
+        textareaWrapper.classList.remove("active");
+      });
+    }
+
+    // tablet
+    if (newScrinWidth <= 1280) {
       if (title) {
         title.innerHTML =
-        "<span>Web-студия</span> решающая задачи любого уровня сложности за честную цену";
+          "<span>Web-студия</span> решающая задачи любого уровня сложности за честную цену";
       }
       if (portfolioTitle) {
         portfolioTitle.innerHTML =
-        "<span>Портфолио</span> — работы нашей команды";
+          "<span>Портфолио</span> — работы нашей команды";
       }
-     if(sentenceTitle) {
-      sentenceTitle.innerHTML =
-      "<span>Мы предлагаем</span>  — широкий спектр web услуг";
-     }
-    
+      if (sentenceTitle) {
+        sentenceTitle.innerHTML =
+          "<span>Мы предлагаем</span>  — широкий спектр web услуг";
+      }
+
       // Portfolio
       if (portfolioElem) {
         for (let i = 0; i < portfolioElem.length; i++) {
@@ -185,21 +187,18 @@ window.onload = () => {
         }
       }
     }
-    // media 600
+    // mobile
     if (newScrinWidth <= 600) {
       if (title) {
         title.innerHTML =
-        "Мы решаем  задачи любого уровня сложности за честную цену";
+          "Мы решаем  задачи любого уровня сложности за честную цену";
       }
-      if(portfolioTitle) {
+      if (portfolioTitle) {
         portfolioTitle.innerHTML = "<span>Портфолио</span>";
       }
-      if(sentenceTitle) {
+      if (sentenceTitle) {
         sentenceTitle.innerHTML = "<span>Мы предлагаем</span>";
       }
-     
-      
-      
 
       // Burger
       burger.onclick = function () {
@@ -292,22 +291,20 @@ window.onload = () => {
         //     e.classList.remove("active");
         //   });
         // }
-        for (let  i = 0; i < sentenceElem.length; i++) {
+        for (let i = 0; i < sentenceElem.length; i++) {
           sentenceElem[i].addEventListener("click", function () {
-            if (!sentenceElem[i].classList.contains('active')) {
-              sentenceElem[i].classList.add('active')
+            if (!sentenceElem[i].classList.contains("active")) {
+              sentenceElem[i].classList.add("active");
               for (let x = 0; x < sentenceElem.length; x++) {
-                if(x !== i) {
-                    sentenceElem[x].classList.remove('active')
-                }
-                else{
-                  sentenceElem[x].classList.add('active')
+                if (x !== i) {
+                  sentenceElem[x].classList.remove("active");
+                } else {
+                  sentenceElem[x].classList.add("active");
                 }
               }
-            } 
-            else{
-              sentenceElem[i].classList.remove('active')
-            }     
+            } else {
+              sentenceElem[i].classList.remove("active");
+            }
           });
         }
       }
