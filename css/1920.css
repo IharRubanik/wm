@@ -438,7 +438,6 @@ textarea::placeholder {
 }
 body {
   background: #131313;
-  overflow: hidden;
   scrollbar-color: #c5fb1b #131313;
   font-style: normal;
 }

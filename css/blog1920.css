@@ -185,6 +185,7 @@ body .wrapper .blog .blog__container .blog-elem-wrapper .blog-elem img {
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0s opacity 0.15s;
+  border-radius: 1.302vw;
 }
 body .wrapper .blog .blog__container .blog-elem-wrapper .blog-elem h2 {
   padding: 0 3.385vw 0 3.385vw;

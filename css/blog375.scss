@@ -105,22 +105,25 @@
               padding: 0 0 8vw 0;
               border-radius: 4vw;
               backdrop-filter: blur(5.362vw);
-              border: 0.533vw solid rgba(163, 161, 161, 0.2);
+              border: 0.533vw solid rgba(163, 161, 161, 0.049);
               a {
-                width: 48vw;
-                height: 48vw;
-                -webkit-box-shadow: 0vw 0vw 8.267vw 3.733vw rgba(221, 53, 27, 0.33);
-                -moz-box-shadow: 0vw 0vw 8.267vw 3.733vw rgba(221, 53, 27, 0.33);
-                box-shadow: 0vw 0vw 8.267vw 3.733vw rgba(221, 53, 27, 0.33);
-                gap: 5.867vw;
+                width: 150px;
+                height: 50px;
+                backdrop-filter: blur(20px);
+                border-radius:  6vw 0 4vw 0;
+                box-shadow: 0vw 0vw 4.267vw 1.6vw rgb(200 251 27 / 21%);
+                top: 170px;
                 span {
-                  font-size: 4.267vw;
-                  padding: 5.867vw 0 0 0;
-                }
-                img {
-                  width: 5.333vw;
+                  padding: 0;
+                  font-size: 18px;
+                  line-height: 21px;
+                  text-shadow: 0vw 0vw 0.267vw #ffffff;
                 }
               }
+
+
+
+
               img {
                 border-radius: 4vw;
                 height: 58.667vw;

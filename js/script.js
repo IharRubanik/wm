@@ -67,15 +67,21 @@ window.onload = () => {
 
     // preloader
     if (preloader) {
-      setTimeout(function () {
-        if (!preloader.classList.contains("done")) {
-          preloader.classList.add("done"), (body.style.overflow = "visible");
-        }
-      }, 2000);
+      if (!localStorage.getItem("preloaderShow")) {
+        setTimeout(function () {
+          if (!preloader.classList.contains("done")) {
+            preloader.classList.add("done"), (body.style.overflow = "visible");
+          }
+        }, 2000);
 
-      setTimeout(() => {
-        preloader.style.display = "none !important";
-      }, 2500);
+        preloader.classList.remove("done");
+        body.style.overflow = "hidden";
+
+        setTimeout(() => {
+          preloader.style.display = "none !important";
+        }, 2500);
+        localStorage.setItem("preloaderShow", true);
+      }
 
       // preloader loading
       function loading() {
@@ -147,7 +153,6 @@ window.onload = () => {
     });
 
     // checkbox
-
     if (checkbox) {
       checkbox.addEventListener("click", function () {
         checkbox.classList.toggle("active");
@@ -193,6 +198,9 @@ window.onload = () => {
       }
       for (let i = 0; i < blogElem.length; i++) {
         blogElem[i].addEventListener("mouseover", onMouseover);
+        if (newScrinWidth <= 1280) {
+          blogElem[i].removeEventListener("mouseover", onMouseover);
+        }
       }
     }
 
@@ -211,32 +219,6 @@ window.onload = () => {
               this.classList.add("active");
             }
           };
-        }
-      }
-
-      if (blogElem) {
-        for (let i = 0; i < blogElem.length; i++) {
-          blogElem[i].removeEventListener("mouseover", onMouseover);
-          blogElem[i].addEventListener("click", function () {
-            if (!blogElem[i].classList.contains("active")) {
-              blogElem[i].classList.add("active");
-              removeClass();
-            }
-            else{
-              blogElem[i].classList.remove("active");
-              removeClass();
-            }
-            function removeClass() {
-              for (let x = 0; x < blogElem.length; x++) {
-                if (i !== x) {
-                  blogElem[x].classList.remove("active");
-                }
-              }
-            }
-           
-          });
-
-        
         }
       }
     }
@@ -333,35 +315,18 @@ window.onload = () => {
       }
       // accordion
       if (sentenceElem) {
-        // sentenceElem.forEach((e) => {
-        //   e.addEventListener("click", () => {
-        //     removeClass();
-        //     e.classList.add("active");
-        //   });
-        // });
-        // function removeClass() {
-        //   sentenceElem.forEach((e) => {
-        //     e.classList.remove("active");
-        //   });
-        // }
-        for (let i = 0; i < sentenceElem.length; i++) {
-          sentenceElem[i].addEventListener("click", function () {
-            if (!sentenceElem[i].classList.contains("active")) {
-              sentenceElem[i].classList.add("active");
-              removeElem();
+        sentenceElem.forEach((event) =>
+          event.addEventListener("click", () => {
+            if (event.classList.contains("active")) {
+              event.classList.remove("active");
             } else {
-              sentenceElem[i].classList.remove("active");
-              removeElem();
+              sentenceElem.forEach((event2) =>
+                event2.classList.remove("active")
+              );
+              event.classList.add("active");
             }
-            function removeElem() {
-              for (let x = 0; x < sentenceElem.length; x++) {
-                if (i != x) {
-                  sentenceElem[x].classList.remove("active");
-                }
-              }
-            }
-          });
-        }
+          })
+        );
       }
     }
   }
