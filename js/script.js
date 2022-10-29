@@ -21,11 +21,13 @@ window.onload = () => {
     sentenceTitle = document.querySelector("#sentence__title-h2"),
     sentenceElem = document.querySelectorAll(".sentence__flex-el"),
     checkboxButton = document.querySelectorAll(".checkbox-button"),
+    blogElem = document.querySelectorAll(".blog-elem"),
     // checkboxArrow = document.querySelectorAll(".checkbox-img"),
     menuMobile = document.querySelector("#header"),
     newScrinWidth = screen.width,
     mediaQuery = window.matchMedia("only screen and (max-width: 1280px)"),
     mediaQueryMobile = window.matchMedia("only screen and (max-width: 600px)");
+  // preloader.style.display = "none";
 
   // resize
   window.addEventListener("resize", function () {
@@ -33,7 +35,23 @@ window.onload = () => {
     media();
   });
 
+  function titleDesk() {
+    if (title) {
+      title.innerHTML =
+        "<span>Web-студия</span> решающая задачи любого уровня сложности за честную цену";
+    }
+    if (portfolioTitle) {
+      portfolioTitle.innerHTML =
+        "<span>Портфолио</span> — работы нашей команды";
+    }
+    if (sentenceTitle) {
+      sentenceTitle.innerHTML =
+        "<span>Мы предлагаем</span>  — широкий спектр web услуг";
+    }
+  }
+
   function media() {
+    titleDesk();
     // scroll
     const smoothLinks = document.querySelectorAll('a[href^="#"]');
     for (let smoothLink of smoothLinks) {
@@ -54,6 +72,10 @@ window.onload = () => {
           preloader.classList.add("done"), (body.style.overflow = "visible");
         }
       }, 2000);
+
+      setTimeout(() => {
+        preloader.style.display = "none !important";
+      }, 2500);
 
       // preloader loading
       function loading() {
@@ -116,18 +138,21 @@ window.onload = () => {
     }
 
     // lang
-    lang.onclick = function () {
+    lang.addEventListener("click", function () {
       if (lang.classList.contains("active")) {
         lang.classList.remove("active");
       } else {
         lang.classList.add("active");
       }
-    };
+    });
 
     // checkbox
-    checkbox.addEventListener("click", function () {
-      checkbox.classList.toggle("active");
-    });
+
+    if (checkbox) {
+      checkbox.addEventListener("click", function () {
+        checkbox.classList.toggle("active");
+      });
+    }
 
     if (checkboxButton) {
       for (let i = 0; i < checkboxButton.length; i++) {
@@ -156,22 +181,24 @@ window.onload = () => {
         textareaWrapper.classList.remove("active");
       });
     }
+    // blog elem hover
+    if (blogElem) {
+      let current = undefined;
+      function onMouseover() {
+        if (current) {
+          current.classList.remove("active");
+        }
+        this.classList.add("active");
+        current = this;
+      }
+      for (let i = 0; i < blogElem.length; i++) {
+        blogElem[i].addEventListener("mouseover", onMouseover);
+      }
+    }
 
     // tablet
     if (newScrinWidth <= 1280) {
-      if (title) {
-        title.innerHTML =
-          "<span>Web-студия</span> решающая задачи любого уровня сложности за честную цену";
-      }
-      if (portfolioTitle) {
-        portfolioTitle.innerHTML =
-          "<span>Портфолио</span> — работы нашей команды";
-      }
-      if (sentenceTitle) {
-        sentenceTitle.innerHTML =
-          "<span>Мы предлагаем</span>  — широкий спектр web услуг";
-      }
-
+      titleDesk();
       // Portfolio
       if (portfolioElem) {
         for (let i = 0; i < portfolioElem.length; i++) {
@@ -184,6 +211,32 @@ window.onload = () => {
               this.classList.add("active");
             }
           };
+        }
+      }
+
+      if (blogElem) {
+        for (let i = 0; i < blogElem.length; i++) {
+          blogElem[i].removeEventListener("mouseover", onMouseover);
+          blogElem[i].addEventListener("click", function () {
+            if (!blogElem[i].classList.contains("active")) {
+              blogElem[i].classList.add("active");
+              removeClass();
+            }
+            else{
+              blogElem[i].classList.remove("active");
+              removeClass();
+            }
+            function removeClass() {
+              for (let x = 0; x < blogElem.length; x++) {
+                if (i !== x) {
+                  blogElem[x].classList.remove("active");
+                }
+              }
+            }
+           
+          });
+
+        
         }
       }
     }
@@ -295,15 +348,17 @@ window.onload = () => {
           sentenceElem[i].addEventListener("click", function () {
             if (!sentenceElem[i].classList.contains("active")) {
               sentenceElem[i].classList.add("active");
-              for (let x = 0; x < sentenceElem.length; x++) {
-                if (x !== i) {
-                  sentenceElem[x].classList.remove("active");
-                } else {
-                  sentenceElem[x].classList.add("active");
-                }
-              }
+              removeElem();
             } else {
               sentenceElem[i].classList.remove("active");
+              removeElem();
+            }
+            function removeElem() {
+              for (let x = 0; x < sentenceElem.length; x++) {
+                if (i != x) {
+                  sentenceElem[x].classList.remove("active");
+                }
+              }
             }
           });
         }

@@ -1021,7 +1021,7 @@ body {
               box-shadow: 0vw 0vw 0.833vw 0.313vw rgba(200, 251, 27, 0.21);
               .preview {
                 transform: translateY(calc(-100% + 17.708vw));
-                transition: 6s ease-in-out transform;
+                transition: 15s linear transform;
               }
             }
             .portfolio__link {

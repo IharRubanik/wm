@@ -1153,7 +1153,7 @@ body .wrapper .portfolio .potfolio-container .portfolio__grid .portfolio__grid-e
 }
 body .wrapper .portfolio .potfolio-container .portfolio__grid .portfolio__grid-elem:hover .preview {
   transform: translateY(calc(-100% + 17.708vw));
-  transition: 6s ease-in-out transform;
+  transition: 15s linear transform;
 }
 body .wrapper .portfolio .potfolio-container .portfolio__grid .portfolio__grid-elem .portfolio__link {
   padding: 2.604vw;
