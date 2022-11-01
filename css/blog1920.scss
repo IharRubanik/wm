@@ -172,48 +172,18 @@ body {
             backdrop-filter: blur(1.047vw);
             border: 0.104vw solid rgba(163, 161, 161, 0.2);
             transition: 0.5s transform, 0s background 0.15s;
-            a {
-              display: block;
-              position: absolute;
-              left: 50%;
-              top: 50%;
-              transform: translate(-50%, -50%) rotateY(-180deg);
-              border-radius: 100%;
-              background: #dd351b;
-              width: 15.625vw;
-              height: 15.625vw;
-              -webkit-box-shadow: 0vw 0vw 1.615vw 0.729vw
-                rgba(221, 53, 27, 0.33);
-              -moz-box-shadow: 0vw 0vw 1.615vw 0.729vw rgba(221, 53, 27, 0.33);
-              box-shadow: 0vw 0vw 1.615vw 0.729vw rgba(221, 53, 27, 0.33);
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-              gap: 1.823vw;
-              opacity: 0;
-              transition: 0s opacity 0.15s, 0s border 0.15s;
-              z-index: -1;
-              span {
-                font-weight: 700;
-                font-size: 1.377vw;
-                line-height: 100%;
-                color: #ffffff;
-                padding: 1.823vw 0 0 0;
-              }
-              img {
-                width: 1.51vw;
-                height: auto;
-
-                filter: saturate(0) brightness(0) invert(1);
-              }
-            }
-            img {
+            .img-container{
               width: 100%;
               height: 17.708vw;
-              object-fit: cover;
-              transition: 0s opacity 0.15s;
               border-radius: 1.302vw;
+              overflow: hidden;
+              img {
+                width: 100%;
+                height: 17.708vw;
+                object-fit: cover;
+                transition: .3s transform;
+                
+              }
             }
             h2 {
               padding: 0 3.385vw 0 3.385vw;
@@ -241,56 +211,24 @@ body {
               color: #fffdfd;
               transition: 0s opacity 0.15s;
             }
-            &.active {
-              transform: rotateY(180deg);
-              transform-style: flat;
-              transition: 1s transform, 0s border 0.3s, 0s background 0.3s;
-              background: rgba(255, 255, 255, 0.2);
-              a {
+            .arrow{
+              width: 20px;
+              height: auto;
+              position: absolute;
+              right: 5%;
+              bottom: 35%;
+              opacity: 0;
+              transition: .3s opacity;
+            }
+            &:hover{
+              img{
+                transform: scale(1.1);
+              }
+              .arrow {
                 opacity: 1;
-                transition: 0s opacity 0.3s;
-                animation: 2s blog-box-shadow ease-in-out infinite;
-                z-index: 1;
-                @keyframes blog-box-shadow {
-                  0% {
-                    -webkit-box-shadow: 0vw 0vw 1.615vw 0.729vw
-                      rgba(221, 53, 27, 0.33);
-                    -moz-box-shadow: 0vw 0vw 1.615vw 0.729vw
-                      rgba(221, 53, 27, 0.33);
-                    box-shadow: 0vw 0vw 1.615vw 0.729vw rgba(221, 53, 27, 0.33);
-                  }
-                  50% {
-                    -webkit-box-shadow: 0vw 0vw 1.615vw 1.667vw
-                      rgba(221, 53, 27, 0.33);
-                    -moz-box-shadow: 0vw 0vw 1.615vw 1.667vw
-                      rgba(221, 53, 27, 0.33);
-                    box-shadow: 0vw 0vw 1.615vw 1.667vw rgba(221, 53, 27, 0.33);
-                  }
-                  100% {
-                    -webkit-box-shadow: 0vw 0vw 1.615vw 0.729vw
-                      rgba(221, 53, 27, 0.33);
-                    -moz-box-shadow: 0vw 0vw 1.615vw 0.729vw
-                      rgba(221, 53, 27, 0.33);
-                    box-shadow: 0vw 0vw 1.615vw 0.729vw rgba(221, 53, 27, 0.33);
-                  }
-                }
-                img {
-                  opacity: 1;
-                  animation: 1.5s portfolio__button-arrow linear infinite;
-                }
+                animation: 1s portfolio__button-arrow linear infinite;
               }
-              img {
-                opacity: 0;
-                transition: 0s opacity 0.3s;
-              }
-              h2 {
-                opacity: 0;
-                transition: 0s opacity 0.3s;
-              }
-              p {
-                opacity: 0;
-                transition: 0s opacity 0.3s;
-              }
+              
             }
           }
         }

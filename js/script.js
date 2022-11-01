@@ -28,22 +28,22 @@ window.onload = () => {
     newScrinWidth = screen.width;
 
 
-  function hover(elem) {
-    let current = undefined;
-    function onMouseover() {
-      if (current) {
-        current.classList.remove("active");
-      }
-      this.classList.add("active");
-      current = this;
-    }
-    for (let i = 0; i < elem.length; i++) {
-      elem[i].addEventListener("mouseover", onMouseover);
-      if (newScrinWidth <= 1280) {
-        elem[i].removeEventListener("mouseover", onMouseover);
-      }
-    }
-  }
+  // function hover(elem) {
+  //   let current = undefined;
+  //   function onMouseover() {
+  //     if (current) {
+  //       current.classList.remove("active");
+  //     }
+  //     this.classList.add("active");
+  //     current = this;
+  //   }
+  //   for (let i = 0; i < elem.length; i++) {
+  //     elem[i].addEventListener("mouseover", onMouseover);
+  //     if (newScrinWidth <= 1280) {
+  //       elem[i].removeEventListener("mouseover", onMouseover);
+  //     }
+  //   }
+  // }
 
 
 
@@ -205,12 +205,12 @@ window.onload = () => {
       });
     }
     // blog elem hover
-    if (blogElem) {
-      hover(blogElem)
-    }
-    if(newsElem) {
-      hover(newsElem)
-    }
+    // if (blogElem) {
+    //   hover(blogElem)
+    // }
+    // if(newsElem) {
+    //   hover(newsElem)
+    // }
 
     // tablet
     if (newScrinWidth <= 1280) {
