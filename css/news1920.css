@@ -222,7 +222,7 @@ body .wrapper .news .news__container .news__container-mini a {
   border-radius: 0.781vw;
 }
 body .wrapper .news .news__container .news__container-mini a img:first-child {
-  width: 70px;
+  width: 3.646vw;
   height: auto;
   transform: translateY(-10%);
 }
@@ -308,7 +308,7 @@ body .wrapper .news .similar-news .news-elem-wrapper .news-elem p {
   color: #fffdfd;
 }
 body .wrapper .news .similar-news .news-elem-wrapper .news-elem .arrow {
-  width: 20px;
+  width: 1.042vw;
   height: auto;
   position: absolute;
   right: 5%;

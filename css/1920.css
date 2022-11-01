@@ -2161,6 +2161,7 @@ body .wrapper .instruments .instruments-container .instruments__circl-js h3 {
 }
 body .wrapper .form {
   position: relative;
+  z-index: 1;
 }
 body .wrapper .form .form__purple-circle {
   position: absolute;

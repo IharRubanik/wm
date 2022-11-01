@@ -2024,6 +2024,7 @@ body {
     }
     .form {
       position: relative;
+      z-index: 1;
       .form__purple-circle {
         position: absolute;
         right: 0;

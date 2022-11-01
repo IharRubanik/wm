@@ -1,3 +1,31 @@
+
+let m = 0,
+t,
+go;
+function show() {
+m++;
+document.body.style.opacity = m/100;
+document.body.style.filter="alpha(opacity="+m+")";
+t = setTimeout("show()",3);
+if (m>=100) clearTimeout(t);
+}
+function hide() {
+m--;
+document.body.style.opacity = m/100;
+document.body.style.filter="alpha(opacity="+m+")";
+t = setTimeout("hide()",5);
+if (m <= 0) {
+clearTimeout(t);
+location.href = go;
+}
+}
+function go_to(url) {
+clearTimeout(t);
+go = url;
+hide();
+}
+show();
+
 window.onload = () => {
   let body = document.querySelector("body"),
     preloader = document.getElementById("page-preloader"),
@@ -21,31 +49,8 @@ window.onload = () => {
     sentenceTitle = document.querySelector("#sentence__title-h2"),
     sentenceElem = document.querySelectorAll(".sentence__flex-el"),
     checkboxButton = document.querySelectorAll(".checkbox-button"),
-    blogElem = document.querySelectorAll(".blog-elem"),
-    newsElem = document.querySelectorAll(".news-elem"),
-    // checkboxArrow = document.querySelectorAll(".checkbox-img"),
     menuMobile = document.querySelector("#header"),
     newScrinWidth = screen.width;
-
-
-  // function hover(elem) {
-  //   let current = undefined;
-  //   function onMouseover() {
-  //     if (current) {
-  //       current.classList.remove("active");
-  //     }
-  //     this.classList.add("active");
-  //     current = this;
-  //   }
-  //   for (let i = 0; i < elem.length; i++) {
-  //     elem[i].addEventListener("mouseover", onMouseover);
-  //     if (newScrinWidth <= 1280) {
-  //       elem[i].removeEventListener("mouseover", onMouseover);
-  //     }
-  //   }
-  // }
-
-
 
   // resize
   window.addEventListener("resize", function () {
@@ -83,48 +88,6 @@ window.onload = () => {
       });
     }
 
-    // preloader
-    if (preloader) {
-      if (!localStorage.getItem("preloaderShow")) {
-        setTimeout(function () {
-          if (!preloader.classList.contains("done")) {
-            preloader.classList.add("done"), (body.style.overflow = "visible");
-          }
-        }, 2000);
-
-        preloader.classList.remove("done");
-        body.style.overflow = "hidden";
-
-        setTimeout(() => {
-          preloader.style.display = "none !important";
-        }, 2500);
-        localStorage.setItem("preloaderShow", true);
-      }
-
-      // preloader loading
-      function loading() {
-        setTimeout(() => {
-          setTimeout(() => {
-            preloaderLine.innerHTML = "Loading";
-          }, 500);
-          setTimeout(() => {
-            preloaderLine.innerHTML = "Loading.";
-          }, 1000);
-          setTimeout(() => {
-            preloaderLine.innerHTML = "Loading..";
-          }, 1500);
-          setTimeout(() => {
-            if (!preloader.classList.contains("done")) {
-              preloaderLine.innerHTML = "Loading...";
-              loading();
-            }
-          }, 2000);
-        }, 100);
-      }
-      loading();
-    } else {
-      body.style.overflow = "visible";
-    }
 
     // animacion scroll
     const options = {
@@ -204,13 +167,6 @@ window.onload = () => {
         textareaWrapper.classList.remove("active");
       });
     }
-    // blog elem hover
-    // if (blogElem) {
-    //   hover(blogElem)
-    // }
-    // if(newsElem) {
-    //   hover(newsElem)
-    // }
 
     // tablet
     if (newScrinWidth <= 1280) {
