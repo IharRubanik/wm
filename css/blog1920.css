@@ -220,7 +220,7 @@ body .wrapper .blog .blog__container .blog-elem-wrapper .blog-elem.active a {
   transition: 0s opacity 0.3s;
   -webkit-animation: 2s blog-box-shadow ease-in-out infinite;
           animation: 2s blog-box-shadow ease-in-out infinite;
-  z-index: 0;
+  z-index: 1;
 }
 @-webkit-keyframes blog-box-shadow {
   0% {

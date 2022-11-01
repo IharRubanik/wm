@@ -22,12 +22,30 @@ window.onload = () => {
     sentenceElem = document.querySelectorAll(".sentence__flex-el"),
     checkboxButton = document.querySelectorAll(".checkbox-button"),
     blogElem = document.querySelectorAll(".blog-elem"),
+    newsElem = document.querySelectorAll(".news-elem"),
     // checkboxArrow = document.querySelectorAll(".checkbox-img"),
     menuMobile = document.querySelector("#header"),
-    newScrinWidth = screen.width,
-    mediaQuery = window.matchMedia("only screen and (max-width: 1280px)"),
-    mediaQueryMobile = window.matchMedia("only screen and (max-width: 600px)");
-  // preloader.style.display = "none";
+    newScrinWidth = screen.width;
+
+
+  function hover(elem) {
+    let current = undefined;
+    function onMouseover() {
+      if (current) {
+        current.classList.remove("active");
+      }
+      this.classList.add("active");
+      current = this;
+    }
+    for (let i = 0; i < elem.length; i++) {
+      elem[i].addEventListener("mouseover", onMouseover);
+      if (newScrinWidth <= 1280) {
+        elem[i].removeEventListener("mouseover", onMouseover);
+      }
+    }
+  }
+
+
 
   // resize
   window.addEventListener("resize", function () {
@@ -188,20 +206,10 @@ window.onload = () => {
     }
     // blog elem hover
     if (blogElem) {
-      let current = undefined;
-      function onMouseover() {
-        if (current) {
-          current.classList.remove("active");
-        }
-        this.classList.add("active");
-        current = this;
-      }
-      for (let i = 0; i < blogElem.length; i++) {
-        blogElem[i].addEventListener("mouseover", onMouseover);
-        if (newScrinWidth <= 1280) {
-          blogElem[i].removeEventListener("mouseover", onMouseover);
-        }
-      }
+      hover(blogElem)
+    }
+    if(newsElem) {
+      hover(newsElem)
     }
 
     // tablet
@@ -315,6 +323,8 @@ window.onload = () => {
       }
       // accordion
       if (sentenceElem) {
+
+
         sentenceElem.forEach((event) =>
           event.addEventListener("click", () => {
             if (event.classList.contains("active")) {
@@ -327,6 +337,8 @@ window.onload = () => {
             }
           })
         );
+
+        
       }
     }
   }
