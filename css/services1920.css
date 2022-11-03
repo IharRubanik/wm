@@ -155,6 +155,7 @@ body .wrapper .directions .directions__continer .directions__wrapper .left-block
   line-height: 100%;
   text-transform: capitalize;
   color: #efefef;
+  line-height: 140%;
 }
 body .wrapper .directions .directions__continer .directions__wrapper .left-block a {
   padding: 0 2.083vw 0 0.26vw;
@@ -218,7 +219,7 @@ body .wrapper .directions .directions__continer .directions__wrapper .right-bloc
   margin: 1.042vw 0 0 0;
   font-weight: 400;
   font-size: 1.572vw;
-  line-height: 100%;
+  line-height: 140%;
   text-transform: capitalize;
   color: #efefef;
 }/*# sourceMappingURL=services1920.css.map */
