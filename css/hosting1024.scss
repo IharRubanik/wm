@@ -2,7 +2,8 @@
   body {
     .wrapper {
       .hosting {
-        padding: 9.896vw 0 0 0;
+        padding: 6.836vw 0 0 0;
+        // padding: 9.896vw 0 0 0;
         .hosting-circle {
           width: 152.788vw;
           height: 152.788vw;
@@ -13,7 +14,8 @@
           -moz-box-shadow: 0vw 0vw 7.129vw 1.172vw rgba(248, 0, 104, 0.58);
           box-shadow: 0vw 0vw 7.129vw 1.172vw rgba(248, 0, 104, 0.58);
           &::before {
-            -webkit-box-shadow: 0vw 0vw 7.129vw -1.758vw rgba(248, 0, 104, 0.58) inset;
+            -webkit-box-shadow: 0vw 0vw 7.129vw -1.758vw rgba(248, 0, 104, 0.58)
+              inset;
             -moz-box-shadow: 0vw 0vw 7.129vw -1.758vw rgba(248, 0, 104, 0.58) inset;
             box-shadow: 0vw 0vw 7.129vw -1.758vw rgba(248, 0, 104, 0.58) inset;
           }
@@ -100,7 +102,8 @@
           -moz-box-shadow: 0vw 0vw 3.711vw 1.172vw rgba(197, 251, 27, 0.6);
           box-shadow: 0vw 0vw 3.711vw 1.172vw rgba(197, 251, 27, 0.6);
           &::before {
-            -webkit-box-shadow: 0vw 0vw 3.711vw -0.977vw rgba(197, 251, 27, 0.6) inset;
+            -webkit-box-shadow: 0vw 0vw 3.711vw -0.977vw rgba(197, 251, 27, 0.6)
+              inset;
             -moz-box-shadow: 0vw 0vw 3.711vw -0.977vw rgba(197, 251, 27, 0.6) inset;
             box-shadow: 0vw 0vw 3.711vw -0.977vw rgba(197, 251, 27, 0.6) inset;
           }
@@ -152,8 +155,8 @@
                   }
                 }
                 &::after {
-                    font-size: 1.442vw;
-                    line-height: 1.66vw;
+                  font-size: 1.442vw;
+                  line-height: 1.66vw;
                 }
                 &.active {
                   transform: scale(1.14);

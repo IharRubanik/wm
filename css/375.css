@@ -766,6 +766,17 @@
     overflow: hidden;
     transition: 0.5s height, 0.5s box-shadow;
   }
+  body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el a {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    -webkit-backdrop-filter: blur(0.488vw);
+            backdrop-filter: blur(0.488vw);
+    border-radius: 15px 0vw 0 0;
+    box-shadow: 0vw 0vw 1.863vw 0.5vw rgba(200, 251, 27, 0.21);
+    font-size: 14px;
+    text-shadow: 0vw 0vw 0.098vw #ffffff;
+  }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el h3 {
     font-size: 5.867vw;
     line-height: 6.667vw;
@@ -802,8 +813,16 @@
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el:hover {
     transform: none;
   }
+  body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el:hover a {
+    transform: translateX(100%);
+    opacity: 0;
+  }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el.active {
     box-shadow: 0vw 0vw 2.4vw 0vw rgb(200, 251, 27);
+  }
+  body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el.active a {
+    transform: translateX(0);
+    opacity: 1;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el.active ul {
     opacity: 1;

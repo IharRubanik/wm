@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
   body .wrapper .news {
-    padding: 26.667vw 0 0 0;
+    padding: 18.667vw 0 0 0;
   }
   body .wrapper .news .purple-circle {
     right: 0;
@@ -55,7 +55,7 @@
     padding: 0.2% 0 0 0;
   }
   body .wrapper .news .news__container .date {
-    padding: 1.333vw 0 0 0;
+    padding: 4.333vw 0 0 0;
     font-size: 4.267vw;
   }
   body .wrapper .news .news__container .news__container-mini {

@@ -1,1 +1,125 @@
-/*# sourceMappingURL=services1024.css.map */
+@media only screen and (max-width: 1280px) {
+  body .wrapper .directions {
+    padding: 6.836vw 0 0 0;
+  }
+  body .wrapper .directions .purple-circle {
+    right: -40vw;
+    top: 10.74vw;
+    width: 70.349vw;
+    height: 70.208vw;
+    border: 1.302vw solid #f80068;
+    box-shadow: 0vw 0vw 3.229vw 2.604vw rgba(248, 0, 104, 0.37);
+  }
+  body .wrapper .directions .purple-circle::after {
+    box-shadow: 0vw 0vw 3.229vw 0.156vw rgba(248, 0, 104, 0.37) inset;
+  }
+  body .wrapper .directions .orange-circle {
+    left: 4vw;
+    bottom: 11.417vw;
+    width: 23.522vw;
+    height: 23.522vw;
+    border-radius: 100%;
+    border: 0.885vw solid #dd351b;
+    box-shadow: 0vw 0vw 5.208vw 2.5vw rgba(221, 53, 27, 0.58);
+  }
+  body .wrapper .directions .orange-circle::before {
+    box-shadow: 0vw 0vw 3.073vw -1.198vw rgba(221, 53, 27, 0.58) inset;
+  }
+  body .wrapper .directions .directions__continer {
+    width: 95.703vw;
+  }
+  body .wrapper .directions .directions__continer .directions__title {
+    padding: 0 3.906vw;
+    height: 7.422vw;
+    border-radius: 1.465vw;
+    -webkit-backdrop-filter: blur(1.953vw);
+            backdrop-filter: blur(1.953vw);
+  }
+  body .wrapper .directions .directions__continer .directions__title h1 {
+    font-size: 3.711vw;
+    line-height: 4.297vw;
+    text-shadow: 0vw 0.098vw 0.098vw rgba(248, 136, 6, 0.25);
+  }
+  body .wrapper .directions .directions__continer .directions__title h1 span {
+    font-size: 3.711vw;
+    line-height: 4.297vw;
+    text-shadow: 0vw 0.098vw 0.098vw rgba(248, 136, 6, 0.25);
+  }
+  body .wrapper .directions .directions__continer .directions__wrapper {
+    padding: 1.66vw 0 6.836vw 0;
+  }
+  body .wrapper .directions .directions__continer .directions__wrapper .left-block {
+    width: 46.973vw;
+  }
+  body .wrapper .directions .directions__continer .directions__wrapper .left-block .content {
+    padding: 3.906vw;
+    -webkit-backdrop-filter: blur(1.953vw);
+            backdrop-filter: blur(1.953vw);
+    border-radius: 1.465vw;
+    border: 0.098vw solid rgba(163, 161, 161, 0.2);
+  }
+  body .wrapper .directions .directions__continer .directions__wrapper .left-block .content .author-container {
+    gap: 1.953vw;
+  }
+  body .wrapper .directions .directions__continer .directions__wrapper .left-block .content .author-container img {
+    width: 14.648vw;
+    height: 14.648vw;
+  }
+  body .wrapper .directions .directions__continer .directions__wrapper .left-block .content .author-container .author {
+    gap: 0.488vw;
+  }
+  body .wrapper .directions .directions__continer .directions__wrapper .left-block .content .author-container .author span {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 3.142vw;
+  }
+  body .wrapper .directions .directions__continer .directions__wrapper .left-block .content .author-container .author strong {
+    font-size: 3.142vw;
+  }
+  body .wrapper .directions .directions__continer .directions__wrapper .left-block .content p {
+    margin: 1.465vw 0 0 0;
+    font-size: 1.758vw;
+  }
+  body .wrapper .directions .directions__continer .directions__wrapper .left-block a {
+    padding: 0 2.93vw 0 0.488vw;
+    margin: 1.66vw 0 0 0;
+    font-size: 3.125vw;
+    -webkit-backdrop-filter: blur(1.953vw);
+            backdrop-filter: blur(1.953vw);
+    border-radius: 1.465vw 11.719vw 11.719vw 1.465vw;
+    height: 7.324vw;
+    border: 0.098vw solid rgba(163, 161, 161, 0.2);
+  }
+  body .wrapper .directions .directions__continer .directions__wrapper .left-block a img:first-child {
+    width: 6.646vw;
+  }
+  body .wrapper .directions .directions__continer .directions__wrapper .left-block a img:last-child {
+    padding: 0.6% 0 0 0;
+    width: 2.5vw;
+    height: auto;
+    margin: 0 0 0 1.953vw;
+  }
+  body .wrapper .directions .directions__continer .directions__wrapper .left-block a:hover img:last-child {
+    -webkit-animation: none;
+            animation: none;
+  }
+  body .wrapper .directions .directions__continer .directions__wrapper .right-block {
+    width: 46.973vw;
+    gap: 1.66vw;
+  }
+  body .wrapper .directions .directions__continer .directions__wrapper .right-block .block {
+    padding: 3.906vw;
+    border: 0.098vw solid rgba(163, 161, 161, 0.2);
+    -webkit-backdrop-filter: blur(2.034vw);
+            backdrop-filter: blur(2.034vw);
+    border-radius: 1.465vw;
+  }
+  body .wrapper .directions .directions__continer .directions__wrapper .right-block .block h2 {
+    font-size: 3.125vw;
+  }
+  body .wrapper .directions .directions__continer .directions__wrapper .right-block .block p {
+    margin: 1.465vw 0 0 0;
+    font-size: 1.758vw;
+  }
+}/*# sourceMappingURL=services1024.css.map */

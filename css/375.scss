@@ -759,6 +759,16 @@ box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
               padding: 5.333vw !important;
               overflow: hidden;
               transition: 0.5s height, 0.5s box-shadow;
+              a {
+                position: absolute;
+                width: 100px;
+                height: 50px;
+                backdrop-filter: blur(0.488vw);
+                border-radius:15px 0vw 0 0;
+                box-shadow: 0vw 0vw 1.863vw 0.5vw rgb(200 251 27 / 21%);
+                font-size: 14px;
+                text-shadow: 0vw 0vw 0.098vw #ffffff;
+              }
               h3 {
                 font-size: 5.867vw;
                 line-height: 6.667vw;
@@ -795,9 +805,17 @@ box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
               }
               &:hover {
                 transform: none;
+                a{
+                  transform: translateX(100%);
+                  opacity: 0;
+                }
               }
               &.active {
                 box-shadow: 0vw 0vw 2.4vw 0vw rgb(200 251 27);
+                a{
+                  transform: translateX(0);
+                  opacity: 1;
+                }
                 ul {
                   opacity: 1;
                 }

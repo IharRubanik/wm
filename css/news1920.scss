@@ -3,7 +3,9 @@ body {
     .news {
       position: relative;
       width: 100%;
-      padding: 9.896vw 0 0 0;
+      padding: 5.729vw 0 0 0;
+   
+      // padding: 9.896vw 0 0 0;
       .purple-circle {
         position: absolute;
         right: 0;
@@ -292,7 +294,7 @@ body {
         position: relative;
         width: 84.375vw;
         margin: 0 auto;
-        z-index: 1;
+        z-index: 2;
         h3 {
           padding: 7.292vw 0 0 0;
           font-weight: 700;

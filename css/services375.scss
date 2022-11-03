@@ -1,0 +1,138 @@
+@media only screen and (max-width: 600px) {
+  body {
+    .wrapper {
+      .directions {
+        padding: 18.667vw 0 0 0;
+        .purple-circle {
+          
+          top: 47.74vw;
+          width: 284.392vw;
+          height: 380.392vw;
+          right: -197vw;
+          bottom: auto;
+          border-width: 5.333vw;
+          -webkit-box-shadow: 0vw 0vw 19.467vw 3.2vw rgba(248, 0, 104, 0.58);
+          -moz-box-shadow: 0vw 0vw 19.467vw 3.2vw rgba(248, 0, 104, 0.58);
+          box-shadow: 0vw 0vw 19.467vw 3.2vw rgba(248, 0, 104, 0.58);
+          &::before {
+            -webkit-box-shadow: 0vw 0vw 19.467vw -4.8vw rgba(248, 0, 104, 0.58) inset;
+            -moz-box-shadow: 0vw 0vw 19.467vw -4.8vw rgba(248, 0, 104, 0.58) inset;
+            box-shadow: 0vw 0vw 19.467vw -4.8vw rgba(248, 0, 104, 0.58) inset;
+          }
+        }
+        .orange-circle {
+         display: none;
+        }
+        .green-circle{
+            bottom: -120vw;
+            width: 101.333vw;
+            height: 101.333vw;
+            border-width: 5.333vw;
+            -webkit-box-shadow: 0vw 0vw 10.133vw 3.2vw rgba(197, 251, 27, 0.6);
+            -moz-box-shadow: 0vw 0vw 10.133vw 3.2vw rgba(197, 251, 27, 0.6);
+            box-shadow: 0vw 0vw 10.133vw 3.2vw rgba(197, 251, 27, 0.6);
+            &::before {
+              -webkit-box-shadow: 0vw 0vw 10.133vw -2.667vw rgba(
+                  197,
+                  251,
+                  27,
+                  0.6
+                ) inset;
+              -moz-box-shadow: 0vw 0vw 10.133vw -2.667vw rgba(197, 251, 27, 0.6) inset;
+              box-shadow: 0vw 0vw 10.133vw -2.667vw rgba(197, 251, 27, 0.6) inset;
+            }
+        }
+        .directions__continer {
+          width: 90.667vw;
+          .directions__title {
+            width: 100%;
+            padding: 0;
+            height: auto;
+            border-radius: 1.465vw;
+            backdrop-filter: blur(0);
+            background: none;
+            h1 {
+              font-size: 8.533vw;
+              line-height: 9.867vw;
+              text-shadow: 0vw 0.267vw 0.267vw rgba(248, 136, 6, 0.25);
+              span {
+                font-size: 8.533vw;
+                line-height: 9.867vw;
+                text-shadow: 0vw 0.267vw 0.267vw rgba(248, 136, 6, 0.25);
+              }
+            }
+          }
+          .directions__wrapper {
+            padding: 4.533vw 0 18.667vw 0;
+            flex-direction: column;
+            .left-block {
+              width: 100%;
+              .content {
+                padding: 5.333vw;
+                backdrop-filter: blur(5.333vw);
+                border-radius: 4vw;
+                .author-container {
+                  gap: 4vw;
+                  img {
+                    width: 26.667vw;
+                    height: 26.667vw;
+                  }
+                  .author {
+                    gap: 0.8vw;
+                    span {
+                      font-size: 5.333vw;
+                    }
+                    strong {
+                      font-size: 5.333vw;
+                    }
+                  }
+                }
+                p {
+                  margin: 4vw 0 0 0;
+                  font-size: 4.267vw;
+                }
+              }
+              a {
+                padding: 0 8vw 0 1.333vw;
+                margin: 4.533vw 0 4.533vw 0;
+                font-size: 5.333vw;
+                backdrop-filter: blur(5.333vw);
+                border-radius: 4vw 32vw 32vw 4vw;
+                height: 13.333vw;
+                border: 0.267vw solid rgba(163, 161, 161, 0.2);
+                img {
+                  &:first-child {
+                    width: 11vw;
+                  }
+                  &:last-child {
+                    padding: 0.6% 0 0 0;
+                    width: 5vw;
+                    height: auto;
+                    margin: 0 0 0 4vw;
+                  }
+                }
+              }
+            }
+            .right-block {
+              width: 100%;
+              gap: 4.533vw;
+              .block {
+                padding: 5.333vw;
+                border: 0.267vw solid rgba(163, 161, 161, 0.2);
+                backdrop-filter: blur(5.554vw);
+                border-radius: 4vw;
+                h2 {
+                  font-size: 5.333vw;
+                }
+                p {
+                  margin: 4vw 0 0 0;
+                  font-size: 4.267vw;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

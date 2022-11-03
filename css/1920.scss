@@ -779,7 +779,8 @@ body {
           width: 100%;
           height: 100%;
           // background: #c4fb17;
-          -webkit-box-shadow: 0vw 0vw 3.229vw 0.156vw rgba(248, 0, 104, 0.37) inset;
+          -webkit-box-shadow: 0vw 0vw 3.229vw 0.156vw rgba(248, 0, 104, 0.37)
+            inset;
           -moz-box-shadow: 0vw 0vw 3.229vw 0.156vw rgba(248, 0, 104, 0.37) inset;
           box-shadow: 0vw 0vw 3.229vw 0.156vw rgba(248, 0, 104, 0.37) inset;
           border-radius: 100%;
@@ -1303,8 +1304,37 @@ body {
             backdrop-filter: blur(1.042vw);
             transition: 0.3s transform;
             background-color: #1c19194d !important;
+            overflow: hidden;
+            a {
+              position: absolute;
+              width: 8.333vw;
+              height: 2.083vw;
+              bottom: 0;
+              right: 0;
+              background: rgba(41, 43, 35, 0.6705882353);
+              backdrop-filter: blur(0.488vw);
+              border-radius: 1.441vw 0vw 0 0;
+              box-shadow: 0vw 0vw 0.563vw 0.2vw rgb(200 251 27 / 21%);
+              font-size: 0.938vw;
+              line-height: 100%;
+              text-shadow: 0vw 0vw 0.098vw #ffffff;
+              color: #ffffff;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: .3s color, .3s opacity, .5s transform;
+              opacity: 0;
+              transform: translateX(100%);
+              &:hover{
+                color:#c4fb17
+              }
+            }
             &:hover {
               transform: scale(1.06);
+              a{
+                transform: translateX(0);
+                opacity: 1;
+              }
             }
             h3 {
               margin-top: 1.042vw;
@@ -1473,6 +1503,7 @@ body {
     .instruments {
       .instruments-container {
         position: relative;
+        z-index: 2;
         .instruments__title {
           position: absolute;
           top: 29.167vw;
@@ -2034,8 +2065,8 @@ body {
         border-radius: 100%;
         border: 1.406vw solid #f80068;
         -webkit-box-shadow: 0vw 0vw 3.073vw 0.156vw rgba(248, 0, 104, 0.58);
--moz-box-shadow: 0vw 0vw 3.073vw 0.156vw rgba(248, 0, 104, 0.58);
-box-shadow: 0vw 0vw 3.073vw 0.156vw rgba(248, 0, 104, 0.58);
+        -moz-box-shadow: 0vw 0vw 3.073vw 0.156vw rgba(248, 0, 104, 0.58);
+        box-shadow: 0vw 0vw 3.073vw 0.156vw rgba(248, 0, 104, 0.58);
         &::before {
           content: "";
           display: block;

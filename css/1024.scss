@@ -602,6 +602,16 @@
               height: 31.25vw;
               backdrop-filter: blur(1.953vw);
               padding: 3.906vw 1.953vw 1.953vw 3.906vw;
+              a {
+                position: absolute;
+                width: 9.766vw;
+                height: 2.93vw;
+                backdrop-filter: blur(0.488vw);
+                border-radius: 1.441vw 0vw 0 0;
+                box-shadow: 0vw 0vw 0.563vw 0.1vw rgb(200 251 27 / 21%);
+                font-size: 1.367vw;
+                text-shadow: 0vw 0vw 0.098vw #ffffff;
+              }
               h3 {
                 font-size: 2.182vw;
                 line-height: 2.539vw;
