@@ -76,7 +76,7 @@ body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem {
   background-size: 100%, 100%;
   transition: 0.3s transform;
 }
-body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem ul span {
+body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem .number {
   font-style: normal;
   font-weight: 700;
   font-size: 3.27vw;
@@ -100,9 +100,14 @@ body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem u
   align-items: center;
   gap: 1.042vw;
 }
-body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem ul li img {
+body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem ul li::before {
+  display: block;
+  content: "";
   width: 1.979vw;
-  height: auto;
+  height: 1.979vw;
+  background-image: url(../images/hosting/arrow.svg);
+  background-size: 100% auto;
+  transform: translateY(7%);
 }
 body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem:nth-child(1) {
   background-image: url(../images/hosting/border-elem1.svg);
@@ -115,7 +120,6 @@ body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem:n
 }
 body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem span {
   display: block;
-  margin: 1.563vw 0 0 0;
   font-weight: 400;
   font-size: 2.5vw;
   line-height: 95%;
@@ -315,18 +319,19 @@ body .wrapper .form .form-container .form__application-form .checkbox-evaluate .
             backdrop-filter: blur(1.042vw);
     border-radius: 1.465vw;
   }
-  body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem ul span {
+  body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem .number {
     font-size: 3.771vw;
     line-height: 4.297vw;
-    margin: 0 0 0.488vw 0;
+    margin: 0;
   }
   body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem ul li {
     font-size: 1.442vw;
     line-height: 1.66vw;
     gap: 0.977vw;
   }
-  body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem ul li img {
+  body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem ul li::before {
     width: 2.441vw;
+    height: 2.441vw;
   }
   body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem:nth-child(1) {
     background-image: url(../images/hosting/border-elem1.svg);
@@ -338,7 +343,6 @@ body .wrapper .form .form-container .form__application-form .checkbox-evaluate .
     background-image: url(../images/hosting/border-elem3.svg);
   }
   body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem span {
-    margin: 0.684vw 0 0.488vw 0;
     font-size: 2.884vw;
   }
   body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem .buttom-block .left-block strong,
@@ -475,18 +479,18 @@ body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem .
             backdrop-filter: blur(5.333vw);
     border-radius: 4.267vw;
   }
-  body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem ul span {
+  body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem .number {
     font-size: 11.26vw;
     line-height: 13.067vw;
-    margin: 0 0 5.333vw 0;
   }
   body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem ul li {
     font-size: 4.8vw;
     line-height: 5.6vw;
     gap: 2.667vw;
   }
-  body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem ul li img {
+  body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem ul li::before {
     width: 6.667vw;
+    height: 6.667vw;
   }
   body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem:nth-child(1) {
     background-image: url(../images/hosting/border-elem1-mobile.svg);

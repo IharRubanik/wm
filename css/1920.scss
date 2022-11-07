@@ -479,7 +479,7 @@ body {
             overflow: hidden;
             cursor: pointer;
             transition: 1s width;
-            a {
+            .lang-item {
               position: absolute;
               right: 0;
               display: flex;
@@ -497,6 +497,16 @@ body {
               -webkit-box-shadow: none;
               -moz-box-shadow: none;
               box-shadow: none;
+              a{
+                width: 100%;
+                height: 100%;
+                text-decoration: none;
+                color: #121212;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: none;
+              }
               &:nth-child(1) {
                 z-index: 3;
                 -webkit-box-shadow: 0vw 0vw 0.677vw 0.052vw
@@ -517,7 +527,7 @@ body {
             }
             &.active {
               width: 8.594vw;
-              a {
+              .lang-item {
                 &:nth-child(2) {
                   right: 2.865vw;
                   &:hover {
@@ -711,12 +721,17 @@ body {
             color: #ffffff;
             li {
               margin-top: 0.781vw;
-              span {
-                color: #ffffff;
-                margin-right: 0.781vw;
-                &:last-child {
-                  color: #ffffff;
-                }
+              display: flex;
+              gap: 0.781vw;
+              &::before {
+                content: '';
+                display: block;
+                margin: 1.4% 0 0 0;
+                width: 0.521vw;
+                height: 0.521vw;
+                border-radius: 100%;
+                background-color: #ffffff ;
+                  flex-shrink: 0;
               }
               &:last-child {
                 color: transparent;
@@ -727,6 +742,14 @@ body {
                   #c5fb1b 0.64%,
                   #fe8900 111.59%
                 );
+                &::before{
+                  color: transparent;
+                  background-image: linear-gradient(
+                    276.24deg,
+                    #c5fb1b 0.64%,
+                    #fe8900 111.59%
+                  );
+                }
               }
             }
           }
@@ -1322,16 +1345,16 @@ body {
               display: flex;
               align-items: center;
               justify-content: center;
-              transition: .3s color, .3s opacity, .5s transform;
+              transition: 0.3s color, 0.3s opacity, 0.5s transform;
               opacity: 0;
               transform: translateX(100%);
-              &:hover{
-                color:#c4fb17
+              &:hover {
+                color: #c4fb17;
               }
             }
             &:hover {
               transform: scale(1.06);
-              a{
+              a {
                 transform: translateX(0);
                 opacity: 1;
               }
@@ -2443,7 +2466,7 @@ body {
               font-size: 1.367vw;
               line-height: 1.563vw;
               border-radius: 0.488vw;
-              a {
+              .lang-item {
                 width: 2.93vw;
                 font-size: 1.367vw;
                 line-height: 1.563vw;
@@ -2466,7 +2489,7 @@ body {
               }
               &.active {
                 width: 9.766vw;
-                a {
+                .lang-item {
                   &:nth-child(2) {
                     right: 3.418vw;
                   }
@@ -2546,8 +2569,10 @@ body {
                   .mini-circl {
                     width: 2.93vw;
                     height: 2.93vw;
-                    -webkit-box-shadow: 0vw 0vw 0.977vw 0vw rgba(197, 251, 27, 0.73);
-                    -moz-box-shadow: 0vw 0vw 0.977vw 0vw rgba(197, 251, 27, 0.73);
+                    -webkit-box-shadow: 0vw 0vw 0.977vw 0vw
+                      rgba(197, 251, 27, 0.73);
+                    -moz-box-shadow: 0vw 0vw 0.977vw 0vw
+                      rgba(197, 251, 27, 0.73);
                     box-shadow: 0vw 0vw 0.977vw 0vw rgba(197, 251, 27, 0.73);
                     margin-left: 7.813vw;
                     margin-right: 2.93vw;
@@ -2577,12 +2602,14 @@ body {
             ul {
               font-size: 1.758vw;
               line-height: 2.051vw;
-
               margin: 1.758vw 0 0 0;
               li {
                 margin-top: 0.488vw;
-                span {
-                  margin-right: 1.465vw;
+                gap: 1.465vw;
+                &::before{
+                  width: 0.684vw;
+                  height: 0.684vw;
+                  margin: 1.8% 0  0 0;
                 }
               }
             }
@@ -3334,10 +3361,10 @@ body {
           top: -18.066vw;
           width: 45.703vw;
           height: 45.703vw;
-          border-width: 1.758vw;  
+          border-width: 1.758vw;
           -webkit-box-shadow: 0vw 0vw 5.762vw 0.293vw rgba(248, 0, 104, 0.58);
--moz-box-shadow: 0vw 0vw 5.762vw 0.293vw rgba(248, 0, 104, 0.58);
-box-shadow: 0vw 0vw 5.762vw 0.293vw rgba(248, 0, 104, 0.58);
+          -moz-box-shadow: 0vw 0vw 5.762vw 0.293vw rgba(248, 0, 104, 0.58);
+          box-shadow: 0vw 0vw 5.762vw 0.293vw rgba(248, 0, 104, 0.58);
         }
         .form-container {
           height: 30.762vw;
@@ -3705,7 +3732,7 @@ box-shadow: 0vw 0vw 5.762vw 0.293vw rgba(248, 0, 104, 0.58);
               font-size: 3.733vw;
               line-height: 4.267vw;
               border-radius: 1.333vw;
-              a {
+              .lang-item {
                 width: 12.533vw;
                 font-size: 5.333vw;
                 line-height: 6.133vw;
@@ -3729,7 +3756,7 @@ box-shadow: 0vw 0vw 5.762vw 0.293vw rgba(248, 0, 104, 0.58);
               &.active {
                 width: 40vw;
 
-                a {
+                .lang-item {
                   &:nth-child(2) {
                     right: 13.867vw;
                   }
@@ -3853,12 +3880,15 @@ box-shadow: 0vw 0vw 5.762vw 0.293vw rgba(248, 0, 104, 0.58);
             ul {
               font-size: 4.8vw;
               line-height: 5.6vw;
-
               margin: 8vw 0 0 0;
               li {
-                margin-top: 4vw;
-                span {
-                  margin-right: 4vw;
+                margin-top: 2vw;
+                width: 100%;
+                gap: 4vw;
+                &::before{
+                  width: 1.867vw;
+                  height: 1.867vw;
+                  margin: 2.7% 0 0  0;
                 }
               }
             }
@@ -3885,8 +3915,8 @@ box-shadow: 0vw 0vw 5.762vw 0.293vw rgba(248, 0, 104, 0.58);
           height: 131.347vw;
           border-width: 4.8vw;
           -webkit-box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
--moz-box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
-box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
+          -moz-box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
+          box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
         }
         .services-container {
           position: relative;
@@ -4241,7 +4271,7 @@ box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
                 width: 100px;
                 height: 50px;
                 backdrop-filter: blur(0.488vw);
-                border-radius:15px 0vw 0 0;
+                border-radius: 15px 0vw 0 0;
                 box-shadow: 0vw 0vw 1.863vw 0.5vw rgb(200 251 27 / 21%);
                 font-size: 14px;
                 text-shadow: 0vw 0vw 0.098vw #ffffff;
@@ -4282,14 +4312,14 @@ box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
               }
               &:hover {
                 transform: none;
-                a{
+                a {
                   transform: translateX(100%);
                   opacity: 0;
                 }
               }
               &.active {
                 box-shadow: 0vw 0vw 2.4vw 0vw rgb(200 251 27);
-                a{
+                a {
                   transform: translateX(0);
                   opacity: 1;
                 }
@@ -4599,8 +4629,8 @@ box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
           height: 264.051vw;
           border-width: 8vw;
           -webkit-box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
--moz-box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
-box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
+          -moz-box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
+          box-shadow: 0vw 0vw 15.733vw 0.8vw rgba(248, 0, 104, 0.58);
         }
         .form-container {
           height: 208.533vw;
