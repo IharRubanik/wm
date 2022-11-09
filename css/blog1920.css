@@ -112,14 +112,13 @@ body .wrapper .blog .blog__container .blog-elem-wrapper {
   margin: 1.042vw 0 0 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 34.115vw 34.115vw 34.115vw;
   gap: 1.042vw;
 }
 body .wrapper .blog .blog__container .blog-elem-wrapper .blog-elem {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 34.115vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -276,10 +275,10 @@ body .wrapper .blog .blog__container .blog-elem-wrapper .blog-elem:hover .arrow 
   body .wrapper .blog .blog__container .blog-elem-wrapper {
     margin: 1.953vw 0 0 0;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 38.574vw 38.574vw 38.574vw;
     gap: 0.977vw;
   }
   body .wrapper .blog .blog__container .blog-elem-wrapper .blog-elem {
+    height: 38.574vw;
     padding: 0 0 2.93vw 0;
     border-radius: 1.465vw;
     -webkit-backdrop-filter: blur(1.964vw);
@@ -382,10 +381,10 @@ body .wrapper .blog .blog__container .blog-elem-wrapper .blog-elem:hover .arrow 
   body .wrapper .blog .blog__container .blog-elem-wrapper {
     margin: 5.333vw 0 0 0;
     grid-template-columns: 1fr;
-    grid-template-rows: 112.533vw 112.533vw 112.533vw;
     gap: 2.667vw;
   }
   body .wrapper .blog .blog__container .blog-elem-wrapper .blog-elem {
+    height: 112.533vw;
     padding: 0 0 8vw 0;
     border-radius: 4vw;
     -webkit-backdrop-filter: blur(5.362vw);
