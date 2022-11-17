@@ -436,103 +436,26 @@ textarea::placeholder {
     transform: translateX(-1%);
   }
 }
+@-webkit-keyframes gear {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes gear {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 body {
   background: #131313;
   scrollbar-color: #c5fb1b #131313;
   font-style: normal;
-}
-body .preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgb(19, 19, 19);
-  z-index: 110;
-  opacity: 1;
-  visibility: visible;
-  transition: 0.5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-body .preloader::before {
-  content: "FreeUkraine";
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  left: 1.563vw;
-  top: 4.427vw;
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.25vw;
-  line-height: 1.458vw;
-  color: #131313;
-  width: 21.094vw;
-  height: 1.823vw;
-  text-align: center;
-  background: linear-gradient(90.14deg, rgba(36, 36, 36, 0) 12.65%, #f7ce00 39.8%, #0058b5 47.78%, rgba(16, 16, 16, 0) 83.95%);
-  filter: drop-shadow(0vw 0.308vw 0.252vw rgba(0, 0, 0, 0.25));
-  border-radius: 0.841vw;
-  box-shadow: 0vw 0vw 2.083vw 0 rgba(19, 19, 19, 0.73) inset;
-}
-body .preloader.done {
-  opacity: 0;
-  visibility: hidden;
-}
-body .preloader .preloader__block {
-  height: auto;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-body .preloader .preloader__block .preloader__logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5.208vw;
-  height: 14.74vw;
-  width: 40.104vw;
-}
-body .preloader .preloader__block .preloader__logo .preloader-anime {
-  width: 14.74vw;
-  height: auto;
-  transform: rotate(-90deg);
-}
-body .preloader .preloader__block .preloader__logo h2 {
-  width: 14.583vw;
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 5vw;
-  line-height: 4vw;
-  background: linear-gradient(271.16deg, #ff38cc -18.55%, #fe8900 94.48%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  text-shadow: 0vw 0.573vw 0.469vw rgba(0, 0, 0, 0.25);
-  transform: translateY(10%);
-}
-body .preloader .preloader__block .preloader__line {
-  padding: 0 0 0 44%;
-  display: flex;
-  align-items: center;
-  height: 3.385vw;
-  width: 59.375vw;
-  background: linear-gradient(90.14deg, rgba(254, 133, 12, 0) 0.55%, #fe7c23 31.87%, #ff5682 71.57%, rgba(255, 78, 149, 0) 99.49%);
-  filter: drop-shadow(0vw 0.573vw 0.469vw rgba(0, 0, 0, 0.25));
-  border-radius: 0.26vw;
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.876vw;
-  line-height: 2.135vw;
-  color: rgba(19, 19, 19, 0.64);
 }
 body::-webkit-scrollbar {
   background: #131313;
@@ -2470,6 +2393,117 @@ body .wrapper .footer .footer__info .footer__right-block h3 {
   line-height: 0.833vw;
   color: #c5fb1b;
 }
+body .wrapper-error {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #131313;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .wrapper-error .error {
+  display: flex;
+  flex-direction: column;
+}
+body .wrapper-error .error .top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+body .wrapper-error .error .top .lamp-container {
+  position: relative;
+}
+body .wrapper-error .error .top .lamp-container .lamp {
+  width: 16.421vw;
+  height: auto;
+}
+body .wrapper-error .error .top .lamp-container .grey-gear {
+  position: absolute;
+  width: 5.935vw;
+  height: auto;
+}
+body .wrapper-error .error .top .lamp-container .grey-gear:nth-child(2) {
+  left: -2.083vw;
+  bottom: 0.781vw;
+  -webkit-animation: 2s gear linear infinite;
+          animation: 2s gear linear infinite;
+}
+body .wrapper-error .error .top .lamp-container .grey-gear:nth-child(3) {
+  left: 10.156vw;
+  top: -1.823vw;
+  animation: 5s gear linear infinite reverse;
+}
+body .wrapper-error .error .top .lamp-container .orange-gear {
+  position: absolute;
+  width: 3.854vw;
+  height: auto;
+  left: 6.25vw;
+  top: -4.167vw;
+  -webkit-animation: 3s gear linear infinite;
+          animation: 3s gear linear infinite;
+}
+body .wrapper-error .error .top .text-container {
+  display: flex;
+  align-items: flex-end;
+}
+body .wrapper-error .error .top .text-container span {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12.867vw;
+  line-height: 94%;
+  background: linear-gradient(271.16deg, #ff38cc -18.55%, #fe8900 94.48%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0px 1.297vw 1.061vw rgba(0, 0, 0, 0.25);
+}
+body .wrapper-error .error .top .text-container .human {
+  transform: translateX(-0.625vw);
+  width: 4.757vw;
+  height: 7.025vw;
+}
+body .wrapper-error .error .bottom {
+  width: 59.375vw;
+  height: 3.385vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90.14deg, rgba(254, 133, 12, 0) 0.55%, #fe7c23 31.87%, #ff5682 71.57%, rgba(255, 78, 149, 0) 99.49%);
+  filter: drop-shadow(0px 11px 9px rgba(0, 0, 0, 0.25));
+  border-radius: 1.563vw;
+}
+body .wrapper-error .error .bottom span {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.558vw;
+  line-height: 2.917vw;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(90.14deg, #000000 0.55%, #341b0a 31.87%, #090204 71.57%, #131313 99.49%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+body .wrapper-error a {
+  position: absolute;
+  bottom: 10%;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.168vw;
+  line-height: 2.5vw;
+  color: #454545;
+  text-shadow: -0.104vw 0.104vw 0.417vw rgba(0, 0, 0, 0.25);
+  transition: 0.3s color;
+}
+body .wrapper-error a:hover {
+  color: #c4fb17;
+}
 
 @media only screen and (max-width: 1280px) {
   .container {
@@ -3581,6 +3615,12 @@ body .wrapper .footer .footer__info .footer__right-block h3 {
     font-size: 1.172vw;
     line-height: 1.367vw;
   }
+  body .wrapper-error .error {
+    transform: scale(1.2);
+  }
+  body .wrapper-error a {
+    transform: scale(1.2);
+  }
 }
 @media only screen and (min-aspect-ratio: 375/667) and (max-width: 600px) {
   body .wrapper .header {
@@ -3632,41 +3672,6 @@ body .wrapper .footer .footer__info .footer__right-block h3 {
     100% {
       box-shadow: 0vw 0vw 2.133vw 0vw #f80068;
     }
-  }
-  body .preloader::before {
-    left: 50%;
-    top: 10.667vw;
-    font-size: 6.4vw;
-    line-height: 7.467vw;
-    width: 108vw;
-    height: 9.333vw;
-    text-shadow: -0.533vw 0.533vw 2.133vw rgba(0, 0, 0, 0.25);
-    filter: drop-shadow(0vw 1.579vw 1.292vw rgba(0, 0, 0, 0.25));
-    border-radius: 4.308vw;
-    transform: translateX(-50%);
-  }
-  body .preloader .preloader__block .preloader__logo {
-    gap: 9.766vw;
-    height: 27.437vw;
-    width: 75.195vw;
-  }
-  body .preloader .preloader__block .preloader__logo .preloader-anime {
-    width: 27.637vw;
-  }
-  body .preloader .preloader__block .preloader__logo h2 {
-    width: 27.344vw;
-    font-size: 9.375vw;
-    line-height: 7.5vw;
-    text-shadow: 0vw 1.074vw 0.879vw rgba(0, 0, 0, 0.25);
-  }
-  body .preloader .preloader__block .preloader__line {
-    padding: 0 0 0 41%;
-    height: 9.348vw;
-    width: 94.328vw;
-    filter: drop-shadow(0vw 1.074vw 0.879vw rgba(0, 0, 0, 0.25));
-    border-radius: 0.488vw;
-    font-size: 4.518vw;
-    line-height: 4.004vw;
   }
   body .wrapper .burger-menu {
     width: 6.667vw;
@@ -4867,5 +4872,12 @@ body .wrapper .footer .footer__info .footer__right-block h3 {
     font-weight: normal;
     font-size: 3.2vw;
     line-height: 3.733vw;
+  }
+  body .wrapper-error .error {
+    transform: scale(1.7) translateY(-60%);
+  }
+  body .wrapper-error a {
+    transform: scale(3);
+    bottom: 15%;
   }
 }/*# sourceMappingURL=1920.css.map */
