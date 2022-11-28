@@ -1316,11 +1316,9 @@ body .wrapper .sentence .sentence-circle::before {
   box-shadow: 0vw 0vw 3.073vw -1.198vw rgba(221, 53, 27, 0.58) inset;
 }
 body .wrapper .sentence .sentence-container .sentence__title {
+  box-shadow: 0vw 0vw 0.469vw 0.208vw rgba(196, 251, 23, 0.2);
   width: 100%;
   height: 6.51vw;
-  background-image: url(../images/sentence/sentence-title-bg.svg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   padding: 0 3.385vw;
@@ -1350,12 +1348,13 @@ body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex
   position: relative;
   z-index: 1;
   border-radius: 1.302vw;
-  height: 17.708vw;
+  height: auto;
   -webkit-backdrop-filter: blur(1.042vw);
           backdrop-filter: blur(1.042vw);
-  transition: 0.3s transform;
+  transition: 0.3s transform, 0.3s box-shadow;
   background-color: rgba(28, 25, 25, 0.3019607843) !important;
   overflow: hidden;
+  box-shadow: 0vw 0vw 0.469vw 0.208vw rgba(196, 251, 23, 0.2);
 }
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el a {
   position: absolute;
@@ -1384,6 +1383,7 @@ body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex
 }
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el:hover {
   transform: scale(1.06);
+  box-shadow: 0vw 0vw 0.469vw 0vw rgb(200, 251, 27);
 }
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el:hover a {
   transform: translateX(0);
@@ -1451,9 +1451,6 @@ body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex
   padding: 1.042vw;
 }
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-1 {
-  background-image: url(../images/sentence/elem1.svg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   width: 27.5vw;
 }
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-1 .sentence__circl-block {
@@ -1463,36 +1460,24 @@ body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex
   transform: scale(1.035, 1.06);
 }
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-2 {
-  background-image: url(../images/sentence/elem2.svg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   width: 17.917vw;
 }
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-2 .sentence__circl-block {
   right: 1.042vw;
 }
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-3 {
-  background-image: url(../images/sentence/elem3.svg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   width: 17.917vw;
 }
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-3 .sentence__circl-block {
   right: 1.042vw;
 }
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-4 {
-  background-image: url(../images/sentence/elem4.svg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   width: 17.917vw;
 }
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-4 .sentence__circl-block {
   right: 1.042vw;
 }
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-5 {
-  background-image: url(../images/sentence/elem5.svg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   width: 27.5vw;
 }
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-5 .sentence__circl-block {
@@ -1502,9 +1487,6 @@ body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex
   transform: scale(1.035, 1.06);
 }
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-6 {
-  background-image: url(../images/sentence/elem6.svg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   width: 27.5vw;
 }
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-6 .sentence__circl-block {
@@ -1514,9 +1496,6 @@ body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex
   transform: scale(1.035, 1.06);
 }
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-7 {
-  background-image: url(../images/sentence/elem7.svg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   width: 27.5vw;
 }
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-7 .sentence__circl-block {
@@ -3097,10 +3076,10 @@ body .wrapper-error a:hover {
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el {
     border-radius: 1.465vw;
-    height: 31.25vw;
+    height: auto;
     -webkit-backdrop-filter: blur(1.953vw);
             backdrop-filter: blur(1.953vw);
-    padding: 3.906vw 1.953vw 1.953vw 3.906vw;
+    padding: 1.953vw 1.953vw 1.953vw 3.906vw;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el a {
     position: absolute;
@@ -3118,7 +3097,7 @@ body .wrapper-error a:hover {
     line-height: 2.539vw;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el ul {
-    margin: 2.93vw 0 0 0;
+    margin: 2vw 0 0 0;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el ul li {
     font-size: 1.367vw;
@@ -3145,7 +3124,6 @@ body .wrapper-error a:hover {
     line-height: 1.367vw;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-1 {
-    background-image: url(../images/sentence/elem1-mobile.svg);
     width: 31.055vw;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-1 h3 {
@@ -3155,9 +3133,8 @@ body .wrapper-error a:hover {
     right: 3.906vw;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-2 {
-    background-image: url(../images/sentence/elem2-mobile.svg);
     width: 20.508vw;
-    padding: 3.906vw 1.953vw 1.953vw 1.953vw;
+    padding: 1.953vw 1.953vw 1.953vw 1.953vw;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-2 h3 {
     margin: 0;
@@ -3166,23 +3143,20 @@ body .wrapper-error a:hover {
     right: 1.953vw;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-3 {
-    background-image: url(../images/sentence/elem3-mobile.svg);
     width: 20.508vw;
-    padding: 3.906vw 1.953vw 1.953vw 1.953vw;
+    padding: 1.953vw 1.953vw 1.953vw 1.953vw;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-3 h3 {
     margin: 0;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-4 {
-    background-image: url(../images/sentence/elem4-mobile.svg);
     width: 20.508vw;
-    padding: 3.906vw 1.953vw 1.953vw 1.953vw;
+    padding: 1.953vw 1.953vw 1.953vw 1.953vw;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-4 h3 {
     margin: 0;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-5 {
-    background-image: url(../images/sentence/elem5-mobile.svg);
     width: 31.055vw;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-5 h3 {
@@ -3192,7 +3166,6 @@ body .wrapper-error a:hover {
     right: 3.906vw;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-6 {
-    background-image: url(../images/sentence/elem6-mobile.svg);
     width: 31.055vw;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-6 h3 {
@@ -3202,7 +3175,6 @@ body .wrapper-error a:hover {
     right: 3.906vw;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-7 {
-    background-image: url(../images/sentence/elem7-mobile.svg);
     width: 31.055vw;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-7 h3 {
@@ -4324,6 +4296,7 @@ body .wrapper-error a:hover {
     height: auto;
   }
   body .wrapper .sentence .sentence-container .sentence__title {
+    box-shadow: none;
     margin: 0 0 5.333vw 0;
     width: 66.667vw;
     height: auto;
@@ -4354,10 +4327,10 @@ body .wrapper-error a:hover {
     width: 100% !important;
     background: rgba(28, 25, 25, 0.3019607843) !important;
     border-radius: 5.333vw;
-    height: 17.333vw;
     padding: 5.333vw !important;
     overflow: hidden;
-    transition: 0.5s height, 0.5s box-shadow;
+    transition: 0.5s height, 0.5s box-shadow, 0.5s max-height;
+    height: 17.333vw;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el a {
     position: absolute;
@@ -4411,6 +4384,7 @@ body .wrapper-error a:hover {
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el:hover {
     transform: none;
+    box-shadow: 0vw 0vw 1.067vw 0.267vw rgba(196, 251, 23, 0.2);
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el:hover a {
     transform: translateX(100%);
@@ -4428,27 +4402,6 @@ body .wrapper-error a:hover {
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el.active .sentence__circl-block {
     transform: rotate(45deg);
-  }
-  body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el.active.sentence__flex-el-1 {
-    height: 60.267vw;
-  }
-  body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el.active.sentence__flex-el-2 {
-    height: 53.333vw;
-  }
-  body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el.active.sentence__flex-el-3 {
-    height: 39.467vw;
-  }
-  body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el.active.sentence__flex-el-4 {
-    height: 60.267vw;
-  }
-  body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el.active.sentence__flex-el-5 {
-    height: 57.6vw;
-  }
-  body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el.active.sentence__flex-el-6 {
-    height: 57.6vw;
-  }
-  body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el.active.sentence__flex-el-7 {
-    height: 53.333vw;
   }
   body .wrapper .instruments {
     padding: 40vw 0 0 0;
