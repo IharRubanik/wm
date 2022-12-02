@@ -1314,13 +1314,13 @@ body {
           .sentence__flex-el-5,
           .sentence__flex-el-6,
           .sentence__flex-el-7 {
-            padding: 1.042vw 1.042vw 1.042vw 3.385vw;
+            padding: 1.042vw 1.042vw 1.42vw 3.385vw;
           }
 
           .sentence__flex-el-2,
           .sentence__flex-el-3,
           .sentence__flex-el-4 {
-            padding: 1.042vw;
+            padding: 1.042vw 1.042vw 1.42vw 1.042vw;
           }
           .sentence__flex-el-1 {
             width: 27.5vw;
@@ -2969,7 +2969,6 @@ body {
           }
           .container-flex-elem {
             margin-top: 1.465vw;
-
             .sentence__flex-el {
               border-radius: 1.465vw;
               height: auto;
@@ -2994,7 +2993,7 @@ body {
                 li {
                   font-size: 1.367vw;
                   line-height: 1.563vw;
-                  margin: 0.977vw 0 0 0;
+                  margin: 0.5vw 0 0 0;
                   gap: 0.977vw;
                   &::before {
                     width: 0.684vw;
@@ -4213,7 +4212,7 @@ body {
               width: 100% !important;
               background: #1c19194d !important;
               border-radius: 5.333vw;
-              padding: 5.333vw !important;
+              padding: 5.333vw 10.333vw 5.333vw 5.333vw !important;
               overflow: hidden;
               transition: 0.5s height, 0.5s box-shadow, 0.5s  max-height;
               height: 17.333vw;
@@ -4707,7 +4706,6 @@ body {
       a{
         transform: scale(3);
         bottom: 15%;
-
       }
     }
   }

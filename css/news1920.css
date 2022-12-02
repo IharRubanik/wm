@@ -282,7 +282,7 @@ body .wrapper .news .similar-news .news-elem-wrapper .news-elem .img-container {
 }
 body .wrapper .news .similar-news .news-elem-wrapper .news-elem .img-container img {
   width: 100%;
-  height: 17.708vw;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0.3s transform;

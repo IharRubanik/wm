@@ -1443,12 +1443,12 @@ body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-5,
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-6,
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-7 {
-  padding: 1.042vw 1.042vw 1.042vw 3.385vw;
+  padding: 1.042vw 1.042vw 1.42vw 3.385vw;
 }
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-2,
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-3,
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-4 {
-  padding: 1.042vw;
+  padding: 1.042vw 1.042vw 1.42vw 1.042vw;
 }
 body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el-1 {
   width: 27.5vw;
@@ -3102,7 +3102,7 @@ body .wrapper-error a:hover {
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el ul li {
     font-size: 1.367vw;
     line-height: 1.563vw;
-    margin: 0.977vw 0 0 0;
+    margin: 0.5vw 0 0 0;
     gap: 0.977vw;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el ul li::before {
@@ -4327,7 +4327,7 @@ body .wrapper-error a:hover {
     width: 100% !important;
     background: rgba(28, 25, 25, 0.3019607843) !important;
     border-radius: 5.333vw;
-    padding: 5.333vw !important;
+    padding: 5.333vw 10.333vw 5.333vw 5.333vw !important;
     overflow: hidden;
     transition: 0.5s height, 0.5s box-shadow, 0.5s max-height;
     height: 17.333vw;
