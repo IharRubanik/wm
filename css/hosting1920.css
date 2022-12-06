@@ -44,14 +44,14 @@ body .wrapper .hosting .hosting__continer .hosting-title {
 body .wrapper .hosting .hosting__continer .hosting-title h1 {
   font-weight: bold;
   font-size: 3.333vw;
-  line-height: 3.854vw;
+  line-height: 132%;
   text-shadow: 0vw 0.052vw 0.052vw rgba(248, 136, 6, 0.25);
   color: #ffffff;
 }
 body .wrapper .hosting .hosting__continer .hosting-title h1 span {
   font-weight: bold;
   font-size: 3.333vw;
-  line-height: 3.854vw;
+  line-height: 132%;
   text-shadow: 0vw 0.052vw 0.052vw rgba(248, 136, 6, 0.25);
   color: transparent;
   -webkit-background-clip: text;
@@ -179,7 +179,7 @@ body .wrapper .form .form-container .form__title {
 }
 body .wrapper .form .form-container .form__title h2 {
   font-size: 2.951vw;
-  line-height: 3.385vw;
+  line-height: 132%;
 }
 body .wrapper .form .form-container .form__title span {
   width: 100%;
@@ -301,12 +301,12 @@ body .wrapper .form .form-container .form__application-form .checkbox-evaluate .
   }
   body .wrapper .hosting .hosting__continer .hosting-title h1 {
     font-size: 3.711vw;
-    line-height: 4.297vw;
+    line-height: 132%;
     text-shadow: 0vw 0.098vw 0.098vw rgba(248, 136, 6, 0.25);
   }
   body .wrapper .hosting .hosting__continer .hosting-title h1 span {
     font-size: 3.711vw;
-    line-height: 4.297vw;
+    line-height: 132%;
     text-shadow: 0vw 0.098vw 0.098vw rgba(248, 136, 6, 0.25);
   }
   body .wrapper .hosting .hosting__continer .hosting__elem-wrapper {
@@ -375,7 +375,7 @@ body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem .
   }
   body .wrapper .form .form-container .form__title h2 {
     font-size: 3.403vw;
-    line-height: 3.906vw;
+    line-height: 132%;
   }
   body .wrapper .form .form-container .form__title span {
     font-size: 2.163vw;
@@ -458,12 +458,12 @@ body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem .
   }
   body .wrapper .hosting .hosting__continer .hosting-title h1 {
     font-size: 8.533vw;
-    line-height: 9.867vw;
+    line-height: 132%;
     text-shadow: 0vw 0.267vw 0.267vw rgba(248, 136, 6, 0.25);
   }
   body .wrapper .hosting .hosting__continer .hosting-title h1 span {
     font-size: 8.533vw;
-    line-height: 9.867vw;
+    line-height: 132%;
     text-shadow: 0vw 0.267vw 0.267vw rgba(248, 136, 6, 0.25);
   }
   body .wrapper .hosting .hosting__continer .hosting__elem-wrapper {
@@ -550,7 +550,7 @@ body .wrapper .hosting .hosting__continer .hosting__elem-wrapper .hosting-elem .
   }
   body .wrapper .form .form-container .form__title h2 {
     font-size: 8.533vw;
-    line-height: 9.867vw;
+    line-height: 132%;
   }
   body .wrapper .form .form-container .form__title span {
     font-size: 5.905vw;
