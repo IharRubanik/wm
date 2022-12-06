@@ -452,6 +452,10 @@ textarea::placeholder {
     transform: rotate(360deg);
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #131313;
   scrollbar-color: #c5fb1b #131313;
@@ -1671,7 +1675,7 @@ body .wrapper .instruments .instruments-container .instruments__circl-ux {
   position: absolute;
   width: 7.448vw;
   height: 7.24vw;
-  left: 27.969vw;
+  left: 28.969vw;
   top: 32.344vw;
   border-radius: 50%;
   -webkit-backdrop-filter: blur(1.042vw);

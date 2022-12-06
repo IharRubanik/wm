@@ -498,7 +498,7 @@ body .wrapper .news .similar-news .news-elem-wrapper .news-elem:hover .arrow {
     border-radius: 2.441vw;
   }
   body .wrapper .news .similar-news .news-elem-wrapper .news-elem .img-container img {
-    height: 20.508vw;
+    height: auto;
   }
   body .wrapper .news .similar-news .news-elem-wrapper .news-elem h2 {
     padding: 0 2.93vw 0 2.93vw;
@@ -675,7 +675,7 @@ body .wrapper .news .similar-news .news-elem-wrapper .news-elem:hover .arrow {
     border-radius: 4vw;
   }
   body .wrapper .news .similar-news .news-elem-wrapper .news-elem .img-container img {
-    height: 56vw;
+    height: auto;
   }
   body .wrapper .news .similar-news .news-elem-wrapper .news-elem h2 {
     padding: 0 5.333vw 0 5.333vw;

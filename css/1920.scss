@@ -263,6 +263,10 @@ textarea::placeholder {
     transform: rotate(360deg);
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #131313;
 
@@ -1541,7 +1545,7 @@ body {
           position: absolute;
           width: 7.448vw;
           height: 7.24vw;
-          left: 27.969vw;
+          left: 28.969vw;
           top: 32.344vw;
           border-radius: 50%;
           backdrop-filter: blur(1.042vw);
