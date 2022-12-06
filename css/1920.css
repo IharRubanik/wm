@@ -4,18 +4,18 @@ Theme Name: Webmedia
 /* ubuntu-regular - latin_cyrillic */
 @font-face {
   font-family: "Ubuntu";
-  src: url("../fonts/ubuntu-v19-latin-cyrillic-regular.woff2") format("woff2"), url("../fonts/ubuntu-v19-latin-cyrillic-regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
+  src: url("../fonts/ubuntu-v19-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/ubuntu-v19-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-v19-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/ubuntu-v19-latin_cyrillic-regular.woff") format("woff"), url("../fonts/ubuntu-v19-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/ubuntu-v19-latin_cyrillic-regular.svg#Ubuntu") format("svg"); /* Legacy iOS */
 }
 /* ubuntu-700 - latin_cyrillic */
 @font-face {
   font-family: "Ubuntu";
-  src: url("../fonts/ubuntu-v19-latin-cyrillic-700.woff2") format("woff2"), url("../fonts/ubuntu-v19-latin-cyrillic-700.woff") format("woff");
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
+  src: url("../fonts/ubuntu-v19-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/ubuntu-v19-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-v19-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/ubuntu-v19-latin_cyrillic-700.woff") format("woff"), url("../fonts/ubuntu-v19-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/ubuntu-v19-latin_cyrillic-700.svg#Ubuntu") format("svg"); /* Legacy iOS */
 }
 .container {
   margin: 0 auto;
@@ -3947,7 +3947,8 @@ body .wrapper-error a:hover {
     width: 100%;
     height: auto;
     border-radius: 5.333vw;
-    background-image: url(../images/main/right-block-bg-mobile.svg);
+    background-image: none;
+    box-shadow: 0vw 0vw 1.067vw 0.267vw rgba(196, 251, 23, 0.2);
     padding: 10.667vw 5.333vw 5.333vw 5.333vw;
     -webkit-backdrop-filter: blur(5.333vw);
             backdrop-filter: blur(5.333vw);
@@ -4348,7 +4349,7 @@ body .wrapper-error a:hover {
     text-shadow: 0vw 0vw 0.098vw #ffffff;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el h3 {
-    font-size: 5.867vw;
+    font-size: 5vw;
     line-height: 6.667vw;
   }
   body .wrapper .sentence .sentence-container .container-flex-elem .sentence__flex-el h3 br {
