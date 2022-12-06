@@ -4,18 +4,18 @@ Theme Name: Webmedia
 /* ubuntu-regular - latin_cyrillic */
 @font-face {
   font-family: "Ubuntu";
+  src: url("../fonts/ubuntu-v19-latin-cyrillic-regular.woff2") format("woff2"), url("../fonts/ubuntu-v19-latin-cyrillic-regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ubuntu-v19-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/ubuntu-v19-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-v19-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/ubuntu-v19-latin_cyrillic-regular.woff") format("woff"), url("../fonts/ubuntu-v19-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/ubuntu-v19-latin_cyrillic-regular.svg#Ubuntu") format("svg"); /* Legacy iOS */
+  font-display: swap;
 }
 /* ubuntu-700 - latin_cyrillic */
 @font-face {
   font-family: "Ubuntu";
+  src: url("../fonts/ubuntu-v19-latin-cyrillic-700.woff2") format("woff2"), url("../fonts/ubuntu-v19-latin-cyrillic-700.woff") format("woff");
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ubuntu-v19-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/ubuntu-v19-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-v19-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/ubuntu-v19-latin_cyrillic-700.woff") format("woff"), url("../fonts/ubuntu-v19-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/ubuntu-v19-latin_cyrillic-700.svg#Ubuntu") format("svg"); /* Legacy iOS */
+  font-display: swap;
 }
 .container {
   margin: 0 auto;

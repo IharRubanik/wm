@@ -4,30 +4,20 @@ Theme Name: Webmedia
 /* ubuntu-regular - latin_cyrillic */
 @font-face {
   font-family: "Ubuntu";
+  src: url("../fonts/ubuntu-v19-latin-cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/ubuntu-v19-latin-cyrillic-regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ubuntu-v19-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
-  src: local(""),
-    url("../fonts/ubuntu-v19-latin_cyrillic-regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/ubuntu-v19-latin_cyrillic-regular.woff2") format("woff2"),
-    url("../fonts/ubuntu-v19-latin_cyrillic-regular.woff") format("woff"),
-    url("../fonts/ubuntu-v19-latin_cyrillic-regular.ttf") format("truetype"),
-    url("../fonts/ubuntu-v19-latin_cyrillic-regular.svg#Ubuntu") format("svg"); /* Legacy iOS */
+  font-display: swap;
 }
 /* ubuntu-700 - latin_cyrillic */
 @font-face {
   font-family: "Ubuntu";
+  src: url("../fonts/ubuntu-v19-latin-cyrillic-700.woff2") format("woff2"),
+    url("../fonts/ubuntu-v19-latin-cyrillic-700.woff") format("woff");
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ubuntu-v19-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
-  src: local(""),
-    url("../fonts/ubuntu-v19-latin_cyrillic-700.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/ubuntu-v19-latin_cyrillic-700.woff2") format("woff2"),
-    url("../fonts/ubuntu-v19-latin_cyrillic-700.woff") format("woff"),
-    url("../fonts/ubuntu-v19-latin_cyrillic-700.ttf") format("truetype"),
-    url("../fonts/ubuntu-v19-latin_cyrillic-700.svg#Ubuntu") format("svg"); /* Legacy iOS */
+  font-display: swap;
 }
 
 .container {
@@ -1222,10 +1212,10 @@ body {
             border-radius: 1.302vw;
             height: auto;
             backdrop-filter: blur(1.042vw);
-            transition: 0.3s transform, .3s box-shadow;
+            transition: 0.3s transform, 0.3s box-shadow;
             background-color: #1c19194d !important;
             overflow: hidden;
-            box-shadow: 0vw 0vw 0.469vw 0.208vw rgb(196 251 23 / 20%) ;
+            box-shadow: 0vw 0vw 0.469vw 0.208vw rgb(196 251 23 / 20%);
             a {
               position: absolute;
               width: 8.333vw;
@@ -2364,8 +2354,8 @@ body {
       line-height: 2.5vw;
       color: #454545;
       text-shadow: -0.104vw 0.104vw 0.417vw rgba(0, 0, 0, 0.25);
-      transition: .3s color;
-      &:hover{
+      transition: 0.3s color;
+      &:hover {
         color: #c4fb17;
       }
     }
@@ -3032,7 +3022,7 @@ body {
             }
             .sentence__flex-el-2 {
               width: 20.508vw;
-              padding:  1.953vw 1.953vw 1.953vw 1.953vw;
+              padding: 1.953vw 1.953vw 1.953vw 1.953vw;
               h3 {
                 margin: 0;
               }
@@ -3484,11 +3474,11 @@ body {
         }
       }
     }
-    .wrapper-error{
-      .error{
+    .wrapper-error {
+      .error {
         transform: scale(1.2);
       }
-      a{
+      a {
         transform: scale(1.2);
       }
     }
@@ -4218,7 +4208,7 @@ body {
               border-radius: 5.333vw;
               padding: 5.333vw 10.333vw 5.333vw 5.333vw !important;
               overflow: hidden;
-              transition: 0.5s height, 0.5s box-shadow, 0.5s  max-height;
+              transition: 0.5s height, 0.5s box-shadow, 0.5s max-height;
               height: 17.333vw;
               a {
                 position: absolute;
@@ -4703,11 +4693,11 @@ body {
         }
       }
     }
-    .wrapper-error{
-      .error{
+    .wrapper-error {
+      .error {
         transform: scale(1.7) translateY(-60%);
       }
-      a{
+      a {
         transform: scale(3);
         bottom: 15%;
       }
